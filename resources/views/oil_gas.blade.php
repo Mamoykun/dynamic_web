@@ -5,7 +5,7 @@
 @section('content')
     @push('styles')
         <link rel="stylesheet" href="{{ asset('asset/css/navbar.css') }}">
-        <link rel="stylesheet" href="{{ asset('asset/css/Oil_gas.css') }}">
+        <link rel="stylesheet" href="{{ asset('asset/css/Oil_Gas.css') }}">
         <link rel="stylesheet" href="{{ asset('asset/css/footer.css') }}">
     @endpush
 
@@ -135,7 +135,7 @@
                         <h2>Energy Market Redesign</h2>
                         <p>For a Decarbonised Europe</p>
                     </div>
-                    <div class="logo">
+                    <div class="logo-oil">
                         <img src="wartsila-logo.png" alt="Wärtsilä Logo">
                     </div>
                 </div>
