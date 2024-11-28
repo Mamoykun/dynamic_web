@@ -21,6 +21,8 @@
     @include('partials.footer')
 
     <script src="{{ asset('asset/js/home.js') }}"></script>
+    <script src="{{ asset('asset/js/navbar.js') }}"></script>
+
     @stack('scripts')
 </body>
 </html>

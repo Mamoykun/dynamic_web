@@ -1,191 +1,5 @@
-// =============================================
-// 1. NAVIGATION SECTION - Menu Management
-// =============================================
-// Deklarasi variabel DOM elements
-const energyNav = document.getElementById('energy-nav');
-const marineNav = document.getElementById('marine-nav');
-const companyNav = document.getElementById('company-nav');
-const galleryNav = document.getElementById('gallery-nav');
-const globeNav = document.getElementById('globe-nav');
-const navBtns = document.querySelectorAll('.nav-btn');
-const navItems = [energyNav, marineNav, companyNav, galleryNav];
 
-// Navigation State Variables
-let activeNav = null;
-let isDropdownOpen = false;
-
-// Menu Items Configuration
-const MENU_ITEMS = {
-  product: '#energy-nav',
-  insight: '#marine-nav',
-  gallery: '#gallery-nav',
-  company: '#company-nav'
-};
-
-const COMPANY_SECTIONS = {
-  'About': 'careersContent',
-  'Suppliers': 'sustainabilityContent',
-  'Investors': 'mediaContent',
-  'Contact Information': 'mediaContent',
-  'Careers & Multitechnic': 'careersContent'
-};
-
-// Menu State Management
-const menuState = {
-  activeMenu: null,
-  activeButton: null,
-  isOpen: false
-};
-
-// Event Delegation untuk Navigation Items
-document.querySelector('.nav-items').addEventListener('click', (event) => {
-  const navItem = event.target.closest('.nav-item');
-  if (!navItem || event.target.closest('.mega-dropdown')) return;
-  
-  event.preventDefault();
-  event.stopPropagation();
-  
-  const dropdownButton = navItem;
-  
-  if (dropdownButton) {
-    if (activeNav === navItem) {
-      navItem.classList.remove('active');
-      navItem.querySelector('.arrow').innerHTML = '&#9662;';
-      navItem.querySelector('.mega-dropdown').classList.remove('active');
-      activeNav = null;
-      menuState.isOpen = false;
-    } else {
-      if (activeNav) {
-        activeNav.classList.remove('active');
-        activeNav.querySelector('.arrow').innerHTML = '&#9662;';
-        activeNav.querySelector('.mega-dropdown').classList.remove('active');
-      }
-      navItem.classList.add('active');
-      navItem.querySelector('.arrow').innerHTML = '&#9652;';
-      navItem.querySelector('.mega-dropdown').classList.add('active');
-      activeNav = navItem;
-      menuState.isOpen = true;
-    }
-  }
-});
-
-// Content Toggle Functions
-function toggleMegaDropdown(nav, show) {
-  const dropdown = nav.querySelector('.mega-dropdown');
-  if (dropdown) {
-    dropdown.style.display = show ? 'flex' : 'none';
-    menuState.isOpen = show;
-  }
-}
-
-function toggleContentSections(nav, buttonId) {
-  const sections = nav.querySelectorAll('.menu-section');
-  sections.forEach(section => {
-    const heading = section.querySelector('h4');
-    if (heading && heading.textContent.trim() === buttonId) {
-      section.style.display = 'block';
-    } else {
-      section.style.display = 'none';
-    }
-  });
-}
-
-function resetContentSections(nav) {
-  const sections = nav.querySelectorAll('.menu-section');
-  sections.forEach(section => {
-    section.style.display = 'block';
-  });
-}
-
-function toggleCompanyContent(buttonText) {
-  const companyNav = document.querySelector('#company-nav');
-  const sections = companyNav.querySelectorAll('.menu-section');
-  const targetSection = COMPANY_SECTIONS[buttonText];
-  
-  sections.forEach(section => {
-    section.style.display = section.id === targetSection ? 'block' : 'none';
-  });
-}
-
-function resetCompanyContent() {
-  const companyNav = document.querySelector('#company-nav');
-  const sections = companyNav.querySelectorAll('.menu-section');
-  sections.forEach(section => {
-    section.style.display = 'block';
-  });
-}
-
-// Sidebar Button Event Delegation
-document.addEventListener('click', (event) => {
-  const sidebarButton = event.target.closest('.nav-sidebar .nav-item');
-  if (!sidebarButton || !activeNav) return;
-  
-  event.preventDefault();
-  event.stopPropagation();
-  
-  const buttonText = sidebarButton.querySelector('span')?.textContent.trim();
-  if (!buttonText) return;
-  
-  const isCompanyNav = activeNav.id === 'company-nav';
-  
-  if (menuState.activeButton === buttonText) {
-    isCompanyNav ? resetCompanyContent() : resetContentSections(activeNav);
-    menuState.activeButton = null;
-  } else {
-    isCompanyNav ? toggleCompanyContent(buttonText) : toggleContentSections(activeNav, buttonText);
-    menuState.activeButton = buttonText;
-  }
-});
-
-// Initialize Event Listeners
-document.addEventListener('DOMContentLoaded', () => {
-  // Search Icon
-  const searchIcon = document.querySelector('.search-icon');
-  searchIcon?.addEventListener('click', () => console.log('Search clicked'));
-
-  // Globe Icon
-  const globeIcon = document.querySelector('#globe-nav');
-  const tooltip = globeIcon?.querySelector('.tooltip');
-  if (globeIcon && tooltip) {
-    globeIcon.addEventListener('mouseenter', () => tooltip.style.display = 'block');
-    globeIcon.addEventListener('mouseleave', () => tooltip.style.display = 'none');
-  }
-
-  // Portal Button
-  const portalButton = document.querySelector('.portal-button');
-  portalButton?.addEventListener('click', (e) => {
-    e.preventDefault();
-    console.log('Portal clicked');
-  });
-
-  // Outside Click Handler
-  document.addEventListener('click', (e) => {
-    if (menuState.isOpen && !e.target.closest('.nav-item') && !e.target.closest('.mega-dropdown')) {
-      if (activeNav) {
-        activeNav.classList.remove('active');
-        activeNav.querySelector('.arrow').innerHTML = '&#9662;';
-        activeNav.querySelector('.mega-dropdown').classList.remove('active');
-        activeNav = null;
-        menuState.isOpen = false;
-      }
-      menuState.activeMenu = null;
-    }
-  });
-
-  // Resize Handler with Debounce
-  let resizeTimer;
-  window.addEventListener('resize', () => {
-    clearTimeout(resizeTimer);
-    resizeTimer = setTimeout(() => {
-      if (activeNav) {
-        const isCompanyNav = activeNav.id === 'company-nav';
-        isCompanyNav ? resetCompanyContent() : resetContentSections(activeNav);
-        menuState.activeButton = null;
-      }
-    }, 250);
-  });
-});
-// =============================================
+// =========================
 // 2. SLIDER SECTION - Image/Content Slider
 // =============================================
 const slides = document.querySelectorAll('.slide');
@@ -629,21 +443,127 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // =============================================
-// 6. EVENT LISTENERS SECTION - Global Events
+// 6. Power & generation /success stories
 // =============================================
-document.addEventListener('click', (e) => {
-    if (activeNav && !activeNav.contains(e.target)) {
-        activeNav.classList.remove('active');
-        activeNav.querySelector('.arrow').innerHTML = '&#9662;';
-        activeNav.querySelector('.mega-dropdown').classList.remove('active');
-        activeNav = null;
+const carousel = document.querySelector('.carousel');
+const slides1 = document.querySelectorAll('.slide');
+const prevBtn = document.querySelector('.prev');
+const nextBtn = document.querySelector('.next');
+let currentSlide1 = 0;
+
+function updateCarousel() {
+    carousel.style.transform = `translateX(-${currentSlide1 * 100}%)`;
+}
+
+prevBtn.addEventListener('click', () => {
+    currentSlide1 = (currentSlide1 - 1 + slides1.length) % slides1.length;
+    updateCarousel();
+});
+
+nextBtn.addEventListener('click', () => {
+    currentSlide1 = (currentSlide1 + 1) % slides1.length;
+    updateCarousel();
+});
+
+// Optional: Auto-play
+setInterval(() => {
+    currentSlide1 = (currentSlide1 + 1) % slides1.length;
+    updateCarousel();
+}, 5000);
+
+// 
+const video = document.getElementById('customVideo');
+const playPauseBtn = document.getElementById('playPauseBtn');
+const timeline = document.getElementById('timeline');
+const timelineProgress = document.getElementById('timelineProgress');
+const currentTimeDisplay = document.getElementById('currentTime');
+const durationDisplay = document.getElementById('duration');
+const volumeSlider = document.getElementById('volumeSlider');
+const volumeIcon = document.getElementById('volumeIcon');
+const fullscreenBtn = document.getElementById('fullscreenBtn');
+
+// Play/Pause
+playPauseBtn.addEventListener('click', () => {
+    if (video.paused) {
+        video.play();
+        playPauseBtn.textContent = '⏸';
+    } else {
+        video.pause();
+        playPauseBtn.textContent = '▶';
     }
 });
 
+// Timeline update
+video.addEventListener('timeupdate', () => {
+    const percentage = (video.currentTime / video.duration) * 100;
+    timelineProgress.style.width = percentage + '%';
+    currentTimeDisplay.textContent = formatTime(video.currentTime);
+});
+
+// Timeline seek
+timeline.addEventListener('click', (e) => {
+    const rect = timeline.getBoundingClientRect();
+    const pos = (e.clientX - rect.left) / rect.width;
+    video.currentTime = pos * video.duration;
+});
+
+// Volume control
+volumeSlider.addEventListener('input', (e) => {
+    video.volume = e.target.value;
+    updateVolumeIcon(e.target.value);
+});
+
+// Fullscreen
+fullscreenBtn.addEventListener('click', () => {
+    if (!document.fullscreenElement) {
+        video.requestFullscreen();
+    } else {
+        document.exitFullscreen();
+    }
+});
+
+// Load metadata
+video.addEventListener('loadedmetadata', () => {
+    durationDisplay.textContent = formatTime(video.duration);
+});
+
+// Helper function to format time
+function formatTime(seconds) {
+    const minutes = Math.floor(seconds / 60);
+    seconds = Math.floor(seconds % 60);
+    return `${minutes}:${seconds.toString().padStart(2, '0')}`;
+}
+
+// Helper function to update volume icon
+function updateVolumeIcon(volume) {
+    if (volume === 0) {
+        volumeIcon.textContent = '🔇';
+    } else if (volume < 0.5) {
+        volumeIcon.textContent = '🔉';
+    } else {
+        volumeIcon.textContent = '🔊';
+    }
+}
+
+// Keyboard controls
 document.addEventListener('keydown', (e) => {
-    if (e.code === 'Space' && document.activeElement.tagName !== 'INPUT' && 
-        document.activeElement.tagName !== 'TEXTAREA') {
-        e.preventDefault();
-        togglePlayPause();
+    switch(e.key.toLowerCase()) {
+        case ' ':
+            playPauseBtn.click();
+            e.preventDefault();
+            break;
+        case 'f':
+            fullscreenBtn.click();
+            break;
+        case 'arrowup':
+            volumeSlider.value = Math.min(1, parseFloat(volumeSlider.value) + 0.1);
+            volumeSlider.dispatchEvent(new Event('input'));
+            e.preventDefault();
+            break;
+        case 'arrowdown':
+            volumeSlider.value = Math.max(0, parseFloat(volumeSlider.value) - 0.1);
+            volumeSlider.dispatchEvent(new Event('input'));
+            e.preventDefault();
+            break;
     }
 });

@@ -1,0 +1,146 @@
+.footer {
+    background-color: #14213D;
+    color: white;
+    padding: 60px 0 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .footer-logo {
+    margin-bottom: 40px;
+  }
+  
+  .footer-logo .logo {
+    height: 40px;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+  
+  .footer-nav {
+    display: flex;
+    gap: 100px;
+  }
+  
+  .footer-col {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .footer-col a {
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+  }
+  
+  .footer-col a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-about {
+    max-width: 600px;
+    margin-left: 40px;
+  }
+  
+  .footer-about h3 {
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+  
+  .footer-about p {
+    line-height: 1.6;
+    font-size: 16px;
+  }
+  
+  .footer-social {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 40px;
+    justify-content: flex-end;
+    padding-right: 15rem;
+  }
+  
+  .social-icon {
+    color: white; /* Membuat icon berwarna putih */
+    font-size: 24px;
+    text-decoration: none;
+    transition: opacity 0.2s ease;
+  }
+  
+  .social-icon:hover {
+    opacity: 0.8;
+  }
+  
+  /* Memastikan icon memiliki ukuran yang konsisten */
+  .fab {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .footer-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  .footer-bottom p{
+    padding-right: 2rem;
+    font-size: 20px;
+  }
+  .footer-links {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .footer-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 1024px) {
+    .footer-content {
+        flex-direction: column;
+    }
+  
+    .footer-about {
+        margin-left: 0;
+        margin-top: 40px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .footer-nav {
+        flex-direction: column;
+        gap: 30px;
+    }
+  
+    .footer-bottom {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+  
+    .footer-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+  }
+  

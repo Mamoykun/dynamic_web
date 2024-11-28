@@ -6,7 +6,12 @@
 @section('content')
 
 @push('styles')
+<link rel="stylesheet" href="{{ asset('asset/css/navbar.css') }}">
 <link rel="stylesheet" href="{{ asset('asset/css/home.css') }}">
+<link rel="stylesheet" href="{{ asset('asset/css/footer.css') }}">
+@endpush
+@push('scripts')
+<script src="{{ asset('asset/js/home.js') }}"></script>
 @endpush
   <!-- navbar end -->
   <!-- conten 1 home -->

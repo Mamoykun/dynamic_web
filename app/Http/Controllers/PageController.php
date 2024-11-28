@@ -10,4 +10,22 @@ class PageController extends Controller
     {
         return view('welcome');
     }
+
+    public function portals()
+    {
+        return view('portals');
+    }
+
+    public function marine_shipbuilding()
+    {
+        return view('marine_shipbuilding');
+    }
+    public function power_generation()
+    {
+        return view('power_generation');
+    }
+    public function oil_gas()
+    {
+        return view('oil_gas');
+    }
 }
