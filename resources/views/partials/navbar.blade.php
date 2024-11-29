@@ -86,9 +86,7 @@
                         <div id="industrialSolutionsContent" class="menu-section">
                             <h4>Industrial Solutions</h4>
                             <ul>
-                                <li><a href="#">Technology solutions</a></li>
-                                <li><a href="#">Engineering and maintenance</a></li>
-                                <li><a href="#">Project consultancy</a></li>
+                                <img src="{{ asset('asset/image/alam.jpg') }}" alt="">
                             </ul>
                         </div>
                     </div>
@@ -110,11 +108,11 @@
 
                     <div class="nav-list">
                         <a href="#" class="nav-item">
-                            <span>Articles</span>
+                            <span>News & Articles</span>
                             <span class="arrow">→</span>
                         </a>
                         <a href="#" class="nav-item">
-                            <span>Case Studies</span>
+                            <span>Case Study</span>
                             <span class="arrow">→</span>
                         </a>
                         <a href="#" class="nav-item">
@@ -132,7 +130,7 @@
                             <img src="{{ asset('asset/image/foto_home.jpg') }}" alt="Power and propulsion"
                                 class="section-img">
                             <a href="">
-                                <h4>Articles</h4>
+                                <a href="{{route('News_Articles')}}"><h4>News & Articles</h4></a>
                             </a>
                             <ul>
                                 <li><a href="#">Electric shipping and hybrid ships</a></li>
@@ -147,7 +145,7 @@
                             <img src="{{ asset('asset/image/foto pekerja pabrik.jpg') }}" alt="Liquid and gas handling"
                                 class="section-img">
                             <a href="">
-                                <h4>Case Studies</h4>
+                                <a href="{{route('case_study')}}"><h4>Case Study</h4></a>
                             </a>
                             <ul>
                                 <li><a href="#">Gas solutions</a></li>

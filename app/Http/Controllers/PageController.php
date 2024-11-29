@@ -28,4 +28,12 @@ class PageController extends Controller
     {
         return view('oil_gas');
     }
+    public function News_Articles()
+    {
+        return view('News_Articles');
+    }
+    public function case_study()
+    {
+        return view('case_study');
+    }
 }
