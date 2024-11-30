@@ -1,0 +1,1001 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Noto Sans small", "Noto Sans", sans-serif;
+}
+
+/* First Hero Section - Keeping original padding */
+.breadcrumb {
+    padding: 20px 40px;
+    background: white;
+    padding-top: 8rem;
+}
+
+.breadcrumb a {
+    color: #064283;
+    text-decoration: none;
+}
+
+.breadcrumb span {
+    margin: 0 10px;
+    color: #666;
+}
+
+.carousel-container {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    background: linear-gradient(to right, #041e42 40%, rgba(4, 30, 66, 0.8) 100%);
+}
+
+.carousel-slides {
+    position: relative;
+    width: 600%;
+    height: 100%;
+    display: flex;
+    transition: transform 0.8s ease-in-out;
+}
+
+.carousel-slide {
+    position: relative;
+    width: 16.666%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+    color: white;
+    flex-shrink: 0;
+}
+
+.carousel-content {
+    width: 50%;
+    z-index: 2;
+    padding-right: 20px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease-out;
+}
+
+.carousel-slide.active .carousel-content {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.carousel-image {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 60%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+}
+
+h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+    line-height: 1.5;
+}
+
+.download-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    color: white;
+    border: 1px solid white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.download-btn:hover {
+    background: white;
+    color: #041e42;
+}
+
+.navigation-dots {
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    z-index: 3;
+}
+
+.dot {
+    width: 15px;   /* Ubah ini menjadi lebih besar, misal 20px */
+    height: 15px;  /* Ubah ini menjadi lebih besar, misal 20px */
+    background: rgba(255, 255, 255, 0.3);
+    border: 2px solid white;  /* Bisa juga memperbesar border, misal 3px */
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.dot.active {
+    background: white;
+    transform: scale(1.3);  /* Bisa disesuaikan, misal scale(1.3) */
+}
+
+.overlay {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 60%;
+    height: 100%;
+    background: linear-gradient(to right, #041e42 0%, rgba(4, 30, 66, 0) 100%);
+    z-index: 1;
+}
+
+
+.title-section{
+    padding: 3rem 3rem;
+}
+.main-title {
+    font-size: 4rem;
+    font-weight: 300;
+    margin-bottom: 3rem;
+    color: #333;
+}
+
+.section-title {
+    font-size: 3rem;
+    font-weight: 300;
+    margin: 2rem 0;
+    color: #333;
+}
+
+.text-content {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    font-weight: 300;
+    color: #444;
+    margin-bottom: 1.5rem;
+}
+
+.timeline {
+    margin: 3rem 0;
+    text-align: center;
+}
+
+.timeline img {
+    max-width: 100%;
+    height: auto;
+}
+
+.goals-list {
+    margin: 1.5rem 0;
+    padding-left: 1.5rem;
+}
+
+.goals-list li {
+    margin-bottom: 0.5rem;
+    color: #444;
+}
+
+.download-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 3rem;
+    padding: 2rem;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+}
+
+.download-content {
+    flex: 1;
+    padding-right: 2rem;
+}
+
+.download-button {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    border: 2px solid #333;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #333;
+    margin-top: 1rem;
+}
+
+.download-button:hover{
+    color: #f5f5f5;
+    background-color: rgb(0, 0, 0);
+}
+.report-cover {
+    width: 200px;
+    object-fit: cover;
+}
+
+
+
+section {
+    padding: 40px 0;
+}
+
+section:nth-child(even) {
+    background-color: #f5f7fa;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.card {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 1.5rem;
+}
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+/* Subtle fade-in animation for hero content */
+.hero {
+    animation: fadeIn 0.8s ease-out;
+}
+
+.hero .subtitle {
+    animation: slideUp 0.6s ease-out 0.2s both;
+}
+
+.hero .grid {
+    animation: slideUp 0.6s ease-out 0.4s both;
+}
+
+
+.facts-list {
+    padding: 0;
+    margin: 2rem 0;
+}
+
+.facts-list li {
+    margin-bottom: 1rem;
+    list-style: none;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.facts-list li:before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #0066cc;
+}
+
+.button {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background: #0066cc;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 1rem;
+}
+
+.solutions-list {
+    padding-left: 1.2rem;
+}
+
+.solutions-list li {
+    margin-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.container {
+    margin: 0 auto;
+    padding: 3rem 3rem;
+}
+
+.container h2{
+    font-size: 3rem;
+}
+
+section {
+    padding: 30px 0;
+}
+
+section:nth-child(even) {
+    background-color: #f5f7fa;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 300;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.subtitle {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin: 1.5rem 0;
+}
+
+.card {
+    background: #fff;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 1rem;
+}
+
+.card-content h2 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.card-content p {
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.facts-list {
+    padding: 0;
+    margin: 1rem 0;
+}
+
+.facts-list li {
+    margin-bottom: 0.75rem;
+    list-style: none;
+    padding-left: 1.25rem;
+    position: relative;
+    font-size: 0.95rem;
+}
+
+.facts-list li:before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #0066cc;
+}
+
+.button {
+    display: inline-block;
+    padding: 0.6rem 1.2rem;
+    background: #0066cc;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+}
+
+.solutions-list {
+    padding-left: 1.2rem;
+    margin: 0.75rem 0;
+}
+
+.solutions-list li {
+    margin-bottom: 0.4rem;
+    font-size: 0.95rem;
+}
+
+.cii-status-section {
+    background: #fff;
+    padding: 30px 0;
+}
+
+.cii-status-container {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: 2rem;
+    align-items: start;
+    margin-top: 1.5rem;
+}
+
+.cii-guide-image {
+    width: 100%;
+    max-width: 220px;
+}
+
+.cii-guide-image img {
+    width: 100%;
+    height: auto;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+    border-radius: 4px;
+}
+
+.cii-content {
+    padding-right: 1rem;
+}
+
+.cii-content h2 {
+    margin-top: 0;
+}
+
+.cii-content p {
+    font-size: 0.95rem;
+    margin-bottom: 0.75rem;
+}
+
+.button.download {
+    background: #1a1a1a;
+}
+
+ul {
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.link-text {
+    color: #0066cc;
+    text-decoration: underline;
+}
+p {
+    font-size: 0.95rem;
+    margin-bottom: 0.75rem;
+}
+
+@media (max-width: 768px) {
+    .grid, .cii-status-container {
+        grid-template-columns: 1fr;
+    }
+
+    .cii-guide-image {
+        margin: 0 auto;
+    }
+
+    h1 {
+        font-size: 1.75rem;
+    }
+
+    h2 {
+        font-size: 1.25rem;
+    }
+}
+
+.maritime-section {
+    padding: 3rem 3rem;
+    margin: 0 auto;
+}
+
+.maritime-title {
+    font-size: 3rem;
+    color: #000;
+    margin-bottom: 20px;
+    font-weight: 300;
+
+}
+
+.maritime-subtitle {
+    font-size: 24px;
+    color: #000;
+    margin: 30px 0 20px;
+    font-weight: 400;
+}
+
+.maritime-text {
+    color: #333;
+    line-height: 1.5;
+    margin-bottom: 15px;
+
+}
+
+.maritime-link {
+    color: #0066cc;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 10px;
+
+}
+
+.maritime-list {
+    list-style-type: disc;
+    margin: 15px 0;
+    padding-left: 20px;
+}
+
+.maritime-list li {
+    margin-bottom: 10px;
+    color: #333;
+
+}
+
+.maritime-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.maritime-card {
+    margin-bottom: 30px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.maritime-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.maritime-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    margin-bottom: 15px;
+    transition: transform 0.5s ease;
+}
+
+.maritime-card:hover img {
+    transform: scale(1.05);
+}
+
+.maritime-card-content {
+    padding: 15px;
+    background: white;
+}
+
+.maritime-card-title {
+    font-size: 20px;
+    color: #000;
+    margin-bottom: 10px;
+    font-weight: 400;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.maritime-card-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #0066cc;
+    transition: width 0.3s ease;
+}
+
+.maritime-card:hover .maritime-card-title::after {
+    width: 50px;
+}
+
+.maritime-card-text {
+    color: #333;
+    line-height: 1.5;
+}
+
+/* Loading animation for images */
+@keyframes imageLoad {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.maritime-card img {
+    animation: imageLoad 0.5s ease-out;
+}
+
+/* Base styles */
+.maritime2-section {
+    margin: 0 auto;
+    padding: 3rem 3rem;
+
+}
+
+/* Typography */
+.maritime2-title {
+    font-size: 3rem;
+    color: #000;
+    margin-bottom: 20px;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+.maritime2-text {
+    color: #333;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+/* Links */
+.maritime2-link {
+    color: #0066cc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.maritime2-link:hover {
+    text-decoration: underline;
+    color: #004c99;
+}
+
+/* Lists */
+.maritime2-list {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin: 20px 0;
+}
+
+.maritime2-list li {
+    margin-bottom: 10px;
+    color: #333;
+    line-height: 1.5;
+}
+
+/* Buttons */
+.maritime2-buttons {
+    display: flex;
+    gap: 20px;
+    margin: 30px 0;
+}
+
+.maritime2-button {
+    padding: 15px 25px;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    display: inline-block;
+    text-align: center;
+}
+
+.maritime2-button-dark {
+    background: #14213d;
+    color: white;
+}
+
+.maritime2-button-dark:hover {
+    background: #1c2e4a;
+    transform: translateY(-2px);
+}
+
+.maritime2-button-light {
+    border: 1px solid #14213d;
+    color: #14213d;
+    background: white;
+}
+
+.maritime2-button-light:hover {
+    background: #f5f5f5;
+    transform: translateY(-2px);
+}
+
+/* Grid Layout */
+.maritime2-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 30px;
+}
+
+/* Card Styles */
+.maritime2-card {
+    margin-bottom: 30px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 8px;
+    background: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    animation: fadeIn 0.8s ease forwards;
+}
+
+.maritime2-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Card Images */
+.maritime2-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: all 0.5s ease;
+    filter: brightness(1);
+}
+
+.maritime2-card:hover img {
+    transform: scale(1.05);
+    filter: brightness(1.05);
+}
+
+/* Card Content */
+.maritime2-card-content {
+    padding: 20px;
+}
+
+.maritime2-card-meta {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.maritime2-card-title {
+    font-size: 20px;
+    color: #000;
+    margin-bottom: 10px;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+.maritime2-card-description {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+/* Tags */
+.maritime2-tags {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+.maritime2-tag {
+    background: #f5f5f5;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #333;
+    transition: background-color 0.3s ease;
+}
+
+.maritime2-tag:hover {
+    background: #e5e5e5;
+}
+
+/* Read More Link */
+.maritime2-read-more {
+    text-align: right;
+    margin-top: 30px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animation Delays */
+.maritime2-card:nth-child(1) { animation-delay: 0.1s; }
+.maritime2-card:nth-child(2) { animation-delay: 0.2s; }
+.maritime2-card:nth-child(3) { animation-delay: 0.3s; }
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .maritime2-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .maritime2-title {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 768px) {
+    .maritime2-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .maritime2-buttons {
+        flex-direction: column;
+    }
+    
+    .maritime2-button {
+        width: 100%;
+    }
+    
+    .maritime2-title {
+        font-size: 28px;
+    }
+    
+    .maritime2-section {
+        padding: 30px 15px;
+    }
+}
+
+@media (hover: none) {
+    .maritime2-card:hover {
+        transform: none;
+    }
+    
+    .maritime2-card:hover img {
+        transform: none;
+    }
+}
+
+.wartsila-section {
+    margin: 0 auto;
+    padding: 3rem 3rem;
+}
+
+.wartsila-title {
+    font-size: 3rem;
+    color: #000;
+    margin-bottom: 25px;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+.wartsila-subtitle {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+.wartsila-list {
+    list-style-type: decimal;
+    padding-left: 20px;
+    margin: 30px 0;
+}
+
+.wartsila-list li {
+    margin-bottom: 15px;
+    color: #333;
+    line-height: 1.6;
+    font-size: 16px;
+    padding-left: 10px;
+}
+
+.wartsila-connect {
+    margin-top: 60px;
+    border-top: 1px solid #eee;
+    padding-top: 40px;
+}
+
+.wartsila-connect-text {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 30px;
+    line-height: 1.4;
+}
+
+.wartsila-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.wartsila-brand {
+    font-size: 3rem;
+    color: #000;
+    font-weight: 300;
+}
+
+.wartsila-contact {
+    padding: 12px 24px;
+    border: 1px solid #333;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+.wartsila-contact:hover {
+    background: #333;
+    color: white;
+}
+
+.wartsila-social {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.wartsila-social img {
+    height: 24px;
+    width: auto;
+    transition: opacity 0.3s ease;
+}
+
+.wartsila-social img:hover {
+    opacity: 0.8;
+}

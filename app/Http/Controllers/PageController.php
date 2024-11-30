@@ -36,4 +36,8 @@ class PageController extends Controller
     {
         return view('case_study');
     }
+    public function exhibitions()
+    {
+        return view('exhibitions');
+    }
 }

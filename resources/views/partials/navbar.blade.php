@@ -129,8 +129,8 @@
                         <div class="menu-section">
                             <img src="{{ asset('asset/image/foto_home.jpg') }}" alt="Power and propulsion"
                                 class="section-img">
-                            <a href="">
-                                <a href="{{route('News_Articles')}}"><h4>News & Articles</h4></a>
+                            <a href="{{route('News_Articles')}}">
+                                <h4>News & Articles</h4>
                             </a>
                             <ul>
                                 <li><a href="#">Electric shipping and hybrid ships</a></li>
@@ -144,8 +144,8 @@
                         <div class="menu-section">
                             <img src="{{ asset('asset/image/foto pekerja pabrik.jpg') }}" alt="Liquid and gas handling"
                                 class="section-img">
-                            <a href="">
-                                <a href="{{route('case_study')}}"><h4>Case Study</h4></a>
+                            <a href="{{route('case_study')}}">
+                                <h4>Case Study</h4>
                             </a>
                             <ul>
                                 <li><a href="#">Gas solutions</a></li>
@@ -160,7 +160,7 @@
                         <div class="menu-section">
                             <img src="{{ asset('asset/image/pabrik.jpg') }}" alt="Voyage and fleet optimisation"
                                 class="section-img">
-                            <a href="">
+                            <a href="{{route('exhibitions')}}">
                                 <h4>Exhibitions</h4>
                             </a>
                             <ul>
