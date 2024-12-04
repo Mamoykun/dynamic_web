@@ -265,7 +265,7 @@
                     </div>
 
                     <div class="nav-list">
-                        <a href="#" class="nav-item" id="about-button">
+                        <a href="{{ route('about') }}" class="nav-item" id="about-button">
                             <span>About</span>
                             <span class="arrow">→</span>
                         </a>
@@ -273,7 +273,7 @@
                             <span>Suppliers</span>
                             <span class="arrow">→</span>
                         </a>
-                        <a href="" class="nav-item" id="investors-button">
+                        <a href="{{route('investors')}}" class="nav-item" id="investors-button">
                             <span>Investors</span>
                             <span class="arrow">→</span>
                         </a>
@@ -323,7 +323,7 @@
                         <!-- Media Section -->
                         <div id="mediaContent" class="menu-section">
                             <img src="{{ asset('asset/image/pabrik.jpg') }}" alt="Media" class="section-img">
-                            <a href="{{route('investors')}}">
+                            <a href="">
                                 <h4>investors</h4>
                             </a>
                             <ul>

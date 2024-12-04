@@ -3,21 +3,19 @@
 // =============================================
 // Deklarasi variabel DOM elements
 const energyNav = document.getElementById('energy-nav');
-const marineNav = document.getElementById('marine-nav');
+const marineNav = document.getElementById('marine-nav'); 
 const companyNav = document.getElementById('company-nav');
 const galleryNav = document.getElementById('gallery-nav');
 const globeNav = document.getElementById('globe-nav');
 const navBtns = document.querySelectorAll('.nav-btn');
 const navItems = [energyNav, marineNav, companyNav, galleryNav];
 
-// Navigation State Variables
 let activeNav = null;
 let isDropdownOpen = false;
 
-// Menu Items Configuration
 const MENU_ITEMS = {
   product: '#energy-nav',
-  insight: '#marine-nav',
+  insight: '#marine-nav', 
   gallery: '#gallery-nav',
   company: '#company-nav'
 };
@@ -26,27 +24,30 @@ const COMPANY_SECTIONS = {
   'About': 'careersContent',
   'Suppliers': 'sustainabilityContent',
   'Investors': 'mediaContent',
-  'Contact Information': 'mediaContent',
+  'Contact Information': '',
   'Careers & Multitechnic': 'careersContent'
 };
 
-// Menu State Management
 const menuState = {
   activeMenu: null,
   activeButton: null,
   isOpen: false
 };
 
-// Event Delegation untuk Navigation Items
 document.querySelector('.nav-items').addEventListener('click', (event) => {
   const navItem = event.target.closest('.nav-item');
   if (!navItem || event.target.closest('.mega-dropdown')) return;
+
+  // Don't prevent default for internal nav-items in mega-dropdown
+  if (event.target.closest('.nav-list')) {
+    return;
+  }
   
   event.preventDefault();
   event.stopPropagation();
-  
+      
   const dropdownButton = navItem;
-  
+      
   if (dropdownButton) {
     if (activeNav === navItem) {
       navItem.classList.remove('active');
@@ -69,7 +70,6 @@ document.querySelector('.nav-items').addEventListener('click', (event) => {
   }
 });
 
-// Content Toggle Functions
 function toggleMegaDropdown(nav, show) {
   const dropdown = nav.querySelector('.mega-dropdown');
   if (dropdown) {
@@ -101,7 +101,7 @@ function toggleCompanyContent(buttonText) {
   const companyNav = document.querySelector('#company-nav');
   const sections = companyNav.querySelectorAll('.menu-section');
   const targetSection = COMPANY_SECTIONS[buttonText];
-  
+      
   sections.forEach(section => {
     section.style.display = section.id === targetSection ? 'block' : 'none';
   });
@@ -114,77 +114,6 @@ function resetCompanyContent() {
     section.style.display = 'block';
   });
 }
-
-// Sidebar Button Event Delegation
-document.addEventListener('click', (event) => {
-  const sidebarButton = event.target.closest('.nav-sidebar .nav-item');
-  if (!sidebarButton || !activeNav) return;
-  
-  event.preventDefault();
-  event.stopPropagation();
-  
-  const buttonText = sidebarButton.querySelector('span')?.textContent.trim();
-  if (!buttonText) return;
-  
-  const isCompanyNav = activeNav.id === 'company-nav';
-  
-  if (menuState.activeButton === buttonText) {
-    isCompanyNav ? resetCompanyContent() : resetContentSections(activeNav);
-    menuState.activeButton = null;
-  } else {
-    isCompanyNav ? toggleCompanyContent(buttonText) : toggleContentSections(activeNav, buttonText);
-    menuState.activeButton = buttonText;
-  }
-});
-
-// Initialize Event Listeners
-document.addEventListener('DOMContentLoaded', () => {
-  // Search Icon
-  const searchIcon = document.querySelector('.search-icon');
-  searchIcon?.addEventListener('click', () => console.log('Search clicked'));
-
-  // Globe Icon
-  const globeIcon = document.querySelector('#globe-nav');
-  const tooltip = globeIcon?.querySelector('.tooltip');
-  if (globeIcon && tooltip) {
-    globeIcon.addEventListener('mouseenter', () => tooltip.style.display = 'block');
-    globeIcon.addEventListener('mouseleave', () => tooltip.style.display = 'none');
-  }
-
-  // Portal Button
-  const portalButton = document.querySelector('.portal-button');
-  portalButton?.addEventListener('click', (e) => {
-    e.preventDefault();
-    console.log('Portal clicked');
-  });
-
-  // Outside Click Handler
-  document.addEventListener('click', (e) => {
-    if (menuState.isOpen && !e.target.closest('.nav-item') && !e.target.closest('.mega-dropdown')) {
-      if (activeNav) {
-        activeNav.classList.remove('active');
-        activeNav.querySelector('.arrow').innerHTML = '&#9662;';
-        activeNav.querySelector('.mega-dropdown').classList.remove('active');
-        activeNav = null;
-        menuState.isOpen = false;
-      }
-      menuState.activeMenu = null;
-    }
-  });
-
-  // Resize Handler with Debounce
-  let resizeTimer;
-  window.addEventListener('resize', () => {
-    clearTimeout(resizeTimer);
-    resizeTimer = setTimeout(() => {
-      if (activeNav) {
-        const isCompanyNav = activeNav.id === 'company-nav';
-        isCompanyNav ? resetCompanyContent() : resetContentSections(activeNav);
-        menuState.activeButton = null;
-      }
-    }, 250);
-  });
-});
 
 // =============================================
 //   search
