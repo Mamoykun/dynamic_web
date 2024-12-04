@@ -1,0 +1,424 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+ 
+ body {
+    font-family: "Noto Sans small", "Noto Sans", sans-serif;
+ }
+ 
+ .breadcrumb {
+    padding: 20px 40px;
+    background: white;
+    padding-top: 8rem;
+ }
+ 
+ .breadcrumb a {
+    color: #064283;
+    text-decoration: none;
+ }
+ 
+ .breadcrumb span {
+    margin: 0 10px;
+    color: #666;
+ }
+ .read-more-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    border: 2px solid white;
+    border-radius: 4px;
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.read-more-btn:hover {
+    background: white;
+    color: #064283;
+}
+ .hero {
+    position: relative;
+    height: 500px;
+    color: white;
+    overflow: hidden;
+ }
+ 
+ .hero-image-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+ }
+ 
+ .hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+ }
+ 
+ .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg,
+        rgba(0,0,0,0.8) 0%,
+        rgba(0,0,0,0.6) 40%,
+        rgba(0,0,0,0.4) 60%,
+        rgba(0,0,0,0) 100%);
+    clip-path: polygon(0 0, 100% 0, 85% 100%, 0 100%);
+ }
+ 
+ .hero-content {
+    position: relative;
+    max-width: 600px;
+    padding: 100px;
+    margin-top: 60px;
+    z-index: 2;
+ }
+ 
+ .hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    font-weight: 300;
+ }
+ 
+ .hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+ }
+ 
+ .wartsila-container {
+    display: flex;
+    min-height: 100vh;
+    padding: 3rem 3rem;
+ }
+ 
+ .wartsila-sidebar {
+    width: 280px;
+    min-width: 280px;
+    position: sticky;
+    top: 100px;
+    max-height: calc(100vh - 100px);
+    overflow-y: auto;
+    background: #fff;
+    border-right: 1px solid #eee;
+ }
+ 
+ .wartsila-content {
+    flex: 1;
+    padding: 1rem 1rem;
+    overflow-y: auto;
+ }
+ 
+
+ .this-watsila h1 {
+    font-size: 55px;
+    font-weight: 300;
+}
+ 
+ .wartsila-content p {
+    padding: 1rem 0rem;
+    font-weight: 300;
+ }
+ 
+ .wartsila-content h2 {
+    padding-top: 2rem;
+    font-size: 40px;
+    font-weight: 300;
+ }
+ 
+ .wartsila-nav-item {
+    padding: 15px 20px;
+    cursor: pointer;
+    border-bottom: 1px solid #eee;
+    position: relative;
+ }
+ 
+ .wartsila-nav-item.has-submenu::after {
+    content: '';
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 8px;
+    height: 8px;
+    border-right: 2px solid #666;
+    border-bottom: 2px solid #666;
+    transform: rotate(45deg);
+    transition: transform 0.3s;
+ }
+ 
+ .wartsila-nav-item.active::after {
+    transform: rotate(-135deg);
+ }
+ 
+ .wartsila-submenu {
+    display: none;
+    background: #f9f9f9;
+ }
+ 
+ .wartsila-submenu.active {
+    display: block;
+ }
+ 
+ .wartsila-submenu-item {
+    padding: 12px 20px 12px 40px;
+    cursor: pointer;
+    border-bottom: 1px solid #eee;
+ }
+ 
+ .wartsila-submenu-item:hover {
+    background: #f0f0f0;
+ }
+ 
+ .video-section {
+    margin: 40px 0;
+    max-width: 100%;
+ }
+ 
+ .video-section h2 {
+    padding-bottom: 1rem;
+ }
+ 
+ .video-container {
+    position: relative;
+    width: 100%;
+    background: #000;
+    border-radius: 4px;
+    overflow: hidden;
+ }
+ 
+ .video-player {
+    width: 100%;
+    display: block;
+    max-height: 100vh;
+ }
+ 
+ .video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0,0,0,0.4);
+    opacity: 1;
+    transition: opacity 0.3s;
+ }
+ 
+ .play-button {
+    width: 80px;
+    height: 80px;
+    background: #ff8200;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s;
+ }
+ 
+ .play-button:hover {
+    transform: scale(1.1);
+ }
+ 
+ .play-icon {
+    color: white;
+    font-size: 40px;
+ }
+ 
+ .video-controls {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.7);
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+ }
+ 
+ .control-button {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 8px;
+    font-size: 16px;
+ }
+ 
+ .progress-bar {
+    flex: 1;
+    height: 4px;
+    background: rgba(255,255,255,0.3);
+    border-radius: 2px;
+    cursor: pointer;
+ }
+ 
+ .progress-filled {
+    height: 100%;
+    background: #ff8200;
+    border-radius: 2px;
+    width: 0%;
+ }
+ 
+ .time {
+    color: white;
+    font-size: 14px;
+    min-width: 50px;
+    text-align: center;
+ }
+ 
+ .right-controls {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+ }
+ 
+ /* Styles for key figures section */
+ .content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin-top: 40px;
+ }
+ 
+ .left-content {
+    flex: 0 0 60%;
+ }
+
+ .left-content h1{
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    font-weight: 300;
+    font-size: 40px
+ }
+ 
+ .right-content {
+    flex: 0 0 35%;
+    display: flex;
+    align-items: center;
+ }
+ 
+ .wartsila-figures {
+    list-style: none;
+    padding: 0;
+ }
+ 
+ .wartsila-figures li {
+    margin-bottom: 4px;
+    color: #666;
+    position: relative;
+    padding-left: 20px;
+ }
+ 
+ .wartsila-figures li:before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    top: -10px; /* Sesuaikan posisi vertikal */
+    color: #000;
+    font-size: 30px; /* Sesuaikan ukuran bullet */
+}
+ 
+ .wartsila-prev-value {
+    color: #999;
+ }
+ 
+ .wartsila-factsheet {
+    margin-top: 40px;
+    padding-bottom: 40px;
+ }
+ 
+ .wartsila-factsheet h2 {
+    font-weight: 400;
+    margin-bottom: 1rem;
+    font-size: 25px;
+ }
+ 
+ .wartsila-factsheet p {
+    color: #666;
+    margin-bottom: 20px;
+ }
+ 
+ .wartsila-pdf {
+    display: inline-block;
+    padding: 8px 20px;
+    border: 1px solid #666;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #666;
+ }
+
+ .wartsila-pdf:hover{
+    color: #fff;
+    background-color: #000;
+ }
+
+ .sustainability-container {
+    margin: 40px auto;
+}
+
+.sustainability-title {
+    color: #333;
+    margin-bottom: 1.5rem;
+    font-weight: 300;
+}
+
+ .sustainability-title h1{
+    font-size: 40px;
+    font-weight: 300;
+}
+
+.sustainability-intro {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 2rem;
+    font-weight: 300;
+}
+
+.sustainability-approach {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 2.5rem;
+    font-weight: 300;
+}
+
+.sustainability-link {
+    display: inline-block;
+    padding: 8px 20px;
+    border: 1px solid #666;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #666;
+    transition: all 0.3s ease;
+}
+
+.sustainability-link:hover {
+    background-color: #000;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .wartsila-container {
+        padding: 1rem;
+    }
+
+    .sustainability-container {
+        padding: 1rem;
+    }
+
+    .sustainability-title {
+        font-size: 2rem;
+    }
+}

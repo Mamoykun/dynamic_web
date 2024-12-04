@@ -84,7 +84,7 @@
 
                         <!-- Industrial Solutions Section -->
                         <div id="industrialSolutionsContent" class="menu-section">
-                            <h4>Industrial Solutions</h4>
+                            <a href="{{route('Industrial_Solutions')}}"><h4>Industrial Solutions</h4></a>
                             <ul>
                                 <img src="{{ asset('asset/image/alam.jpg') }}" alt="">
                             </ul>
@@ -184,10 +184,9 @@
                 <div class="nav-sidebar">
                     <div class="about-section">
                         <h3>About Gallery</h3>
-                        <p>Learn about what we do in the marine market where Wärtsilä is a global leader in complete
-                            lifecycle power solutions.</p>
+                        <p>Learn about what we do in the marine market where Wärtsilä is a global leader in complete lifecycle power solutions.</p>
                     </div>
-
+    
                     <div class="nav-list">
                         <a href="#" class="nav-item">
                             <span>Photos</span>
@@ -199,24 +198,41 @@
                         </a>
                     </div>
                 </div>
-
+    
                 <!-- Right Content -->
                 <div class="right-content">
                     <div class="content-grid-marine">
-                        <!-- Photos Section -->
-                        <div class="menu-section">
-                            <img src="{{ asset('asset/image/foto pekerja pabrik.jpg') }}" alt="Power and propulsion"
-                                class="section-img">
-                            <a href="">
-                                <h4>Photos</h4>
-                            </a>
-                            <ul>
-                                <li><a href="#">Why Wartsila?</a></li>
-                                <li><a href="#">Career areas</a></li>
-                                <li><a href="#">Join us</a></li>
-                            </ul>
+                        <!-- Photos Grid Section -->
+                        <div class="photo-grid">
+                            <!-- Baris 1 -->
+                            <div class="photo-item">
+                                <img src="{{ asset('asset/image/foto pekerja pabrik.jpg') }}" alt="Photo 1">
+                                <a href=""><h4>Photos</h4></a>
+                            </div>
+                            <div class="photo-item">
+                                <img src="{{ asset('asset/image/foto pekerja pabrik.jpg') }}" alt="Photo 2">
+                                <a href=""><h4>Photos</h4></a>
+                            </div>
+                            <div class="photo-item">
+                                <img src="{{ asset('asset/image/foto pekerja pabrik.jpg') }}" alt="Photo 3">
+                                <a href=""><h4>Photos</h4></a>
+                            </div>
+                            <!-- Baris 2 -->
+                            <div class="photo-item">
+                                <img src="{{ asset('asset/image/foto pekerja pabrik.jpg') }}" alt="Photo 4">
+                                <a href=""><h4>Photos</h4></a>
+                            </div>
+                            <div class="photo-item">
+                                <img src="{{ asset('asset/image/foto pekerja pabrik.jpg') }}" alt="Photo 5">
+                                <a href=""><h4>Photos</h4></a>
+                            </div>
+                            <div class="photo-item">
+                                <img src="{{ asset('asset/image/foto pekerja pabrik.jpg') }}" alt="Photo 6">
+                                <a href=""><h4>Photos</h4></a>
+                            </div>
+                           
                         </div>
-
+    
                         <!-- Videos Section -->
                         <div class="menu-section">
                             <img src="{{ asset('asset/image/kapal.jpg') }}" alt="Liquid and gas handling"
@@ -236,8 +252,6 @@
                 </div>
             </div>
         </li>
-
-
         <li class="nav-item" id="company-nav">
             Company
             <span class="arrow">&#9662;</span>
@@ -259,7 +273,7 @@
                             <span>Suppliers</span>
                             <span class="arrow">→</span>
                         </a>
-                        <a href="#" class="nav-item" id="investors-button">
+                        <a href="" class="nav-item" id="investors-button">
                             <span>Investors</span>
                             <span class="arrow">→</span>
                         </a>
@@ -282,12 +296,12 @@
                             <img src="{{ asset('asset/image/foto pekerja pabrik.jpg') }}" alt="Careers"
                                 class="section-img">
                             <a href="">
-                                <h4>Careers</h4>
+                                <h4>About</h4>
                             </a>
                             <ul>
-                                <li><a href="#">Why Wärtsilä?</a></li>
-                                <li><a href="#">Career Areas</a></li>
-                                <li><a href="#">Join Us</a></li>
+                                <li><a href="#">Industri company</a></li>
+                                <li><a href="#">Visi dan Misi Proyek</a></li>
+                                <li><a href="#">Managenment</a></li>
                             </ul>
                         </div>
 
@@ -309,8 +323,8 @@
                         <!-- Media Section -->
                         <div id="mediaContent" class="menu-section">
                             <img src="{{ asset('asset/image/pabrik.jpg') }}" alt="Media" class="section-img">
-                            <a href="">
-                                <h4>Media</h4>
+                            <a href="{{route('investors')}}">
+                                <h4>investors</h4>
                             </a>
                             <ul>
                                 <li><a href="#">Press Releases and News</a></li>

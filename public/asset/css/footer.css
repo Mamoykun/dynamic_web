@@ -1,14 +1,13 @@
 .footer {
     background-color: #14213D;
     color: white;
-    padding: 60px 0 20px;
+    padding: 3rem 3rem;
     font-family: Arial, sans-serif;
   }
   
   .footer-container {
-    max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 3rem 3rem;
   }
   
   .footer-logo {

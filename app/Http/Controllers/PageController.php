@@ -28,6 +28,10 @@ class PageController extends Controller
     {
         return view('oil_gas');
     }
+    public function Industrial_Solutions()
+    {
+        return view('Industrial_Solutions');
+    }
     public function News_Articles()
     {
         return view('News_Articles');
@@ -39,5 +43,13 @@ class PageController extends Controller
     public function exhibitions()
     {
         return view('exhibitions');
+    }
+    public function about()
+    {
+        return view('about');
+    }
+    public function investors()
+    {
+        return view('investors');
     }
 }

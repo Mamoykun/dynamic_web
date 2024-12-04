@@ -421,9 +421,8 @@
     display: grid; /* Ubah dari display: none */
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
-    max-width: 1200px;
     margin: 0 auto;
-    padding-right: 4rem;
+    padding-right: 3rem 3rem;
     opacity: 0; /* Mulai dengan opacity 0 */
     visibility: hidden; /* Tambahkan visibility hidden */
     transition: opacity 0.3s ease, visibility 0.3s ease;
@@ -727,7 +726,6 @@
   }
   
   .container {
-    max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
     display: grid;
@@ -1167,7 +1165,7 @@
   .container {
     width: 100%;
     display: flex;
-    padding: 3rem 1rem;
+    padding: 3rem 3rem;
     gap: 2rem;
   }
   
