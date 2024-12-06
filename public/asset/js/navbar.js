@@ -46,7 +46,8 @@ const GALLERY_SECTIONS = {
 const menuState = {
     activeMenu: null,
     activeButton: null,
-    isOpen: false
+    isOpen: false,
+    lastClickedSection: null  // Menambahkan state untuk section terakhir yang diklik
 };
 
 // Main navigation click handler
@@ -65,18 +66,21 @@ document.querySelector('.nav-items').addEventListener('click', (event) => {
     
     if (dropdownButton) {
         if (activeNav === navItem) {
-            // Close current dropdown
+            // Close current dropdown and reset content
             navItem.classList.remove('active');
             navItem.querySelector('.arrow').innerHTML = '&#9662;';
             navItem.querySelector('.mega-dropdown').classList.remove('active');
+            resetContentSections(navItem); // Reset content when closing
             activeNav = null;
             menuState.isOpen = false;
+            menuState.lastClickedSection = null; // Reset last clicked section
         } else {
             // Close previous dropdown if exists
             if (activeNav) {
                 activeNav.classList.remove('active');
                 activeNav.querySelector('.arrow').innerHTML = '&#9662;';
                 activeNav.querySelector('.mega-dropdown').classList.remove('active');
+                resetContentSections(activeNav); // Reset content of previous nav
             }
             // Open new dropdown
             navItem.classList.add('active');
@@ -88,21 +92,19 @@ document.querySelector('.nav-items').addEventListener('click', (event) => {
     }
 });
 
-// Function to toggle mega dropdown
-function toggleMegaDropdown(nav, show) {
-    const dropdown = nav.querySelector('.mega-dropdown');
-    if (dropdown) {
-        dropdown.style.display = show ? 'flex' : 'none';
-        menuState.isOpen = show;
-    }
-}
-
-// Enhanced toggleContentSections function
+// Function to toggle content sections
 function toggleContentSections(nav, buttonId) {
+    // If clicking the same section again, reset all content
+    if (menuState.lastClickedSection === buttonId) {
+        resetContentSections(nav);
+        menuState.lastClickedSection = null;
+        return;
+    }
+
     const sections = nav.querySelectorAll('.menu-section');
     const photoGrid = nav.querySelector('.photo-grid');
     
-    // Reset all sections first
+    // Hide all sections first
     sections.forEach(section => {
         section.style.display = 'none';
     });
@@ -123,11 +125,13 @@ function toggleContentSections(nav, buttonId) {
     if (buttonId === 'Photos' && photoGrid) {
         photoGrid.style.display = 'grid';
     }
+
+    // Update last clicked section
+    menuState.lastClickedSection = buttonId;
 }
 
 // Function to reset content sections
 function resetContentSections(nav) {
-    // Don't reset if it's the company nav
     if (nav === companyNav) return;
     
     const sections = nav.querySelectorAll('.menu-section');
@@ -187,8 +191,10 @@ document.addEventListener('click', function(e) {
         activeNav.classList.remove('active');
         activeNav.querySelector('.arrow').innerHTML = '&#9662;';
         activeNav.querySelector('.mega-dropdown').classList.remove('active');
+        resetContentSections(activeNav); // Reset content when closing
         activeNav = null;
         menuState.isOpen = false;
+        menuState.lastClickedSection = null; // Reset last clicked section
     }
 });
 
@@ -198,8 +204,10 @@ document.addEventListener('keydown', function(e) {
         activeNav.classList.remove('active');
         activeNav.querySelector('.arrow').innerHTML = '&#9662;';
         activeNav.querySelector('.mega-dropdown').classList.remove('active');
+        resetContentSections(activeNav); // Reset content when closing
         activeNav = null;
         menuState.isOpen = false;
+        menuState.lastClickedSection = null; // Reset last clicked section
     }
 });
 
@@ -212,15 +220,6 @@ document.querySelectorAll('.mega-dropdown').forEach(dropdown => {
 document.querySelectorAll('.nav-item').forEach(item => {
     item.addEventListener('mouseenter', () => {
         item.style.cursor = 'pointer';
-    });
-});
-
-// Reset content when dropdown closes
-document.querySelectorAll('.nav-item').forEach(item => {
-    item.addEventListener('mouseleave', () => {
-        if (!menuState.isOpen) {
-            resetContentSections(item);
-        }
     });
 });
 // =============================================

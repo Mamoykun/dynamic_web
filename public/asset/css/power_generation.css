@@ -13,6 +13,33 @@ section {
     margin: 0; /* Hapus margin auto */
 }
 
+.first-hero {
+    margin-top: 60px; /* Adjust this value based on your navbar height */
+}
+ 
+.breadcrumb {
+    padding: 20px 40px;  /* Reduced from 20px to 10px for top/bottom padding */
+    background: white;  /* Reduced from 8rem to 4rem */
+}
+
+.breadcrumb a {
+    color: #064283;
+    text-decoration: none;
+}
+
+/* Add this new rule to target the last link */
+.breadcrumb a:last-of-type {
+    color: #000000;
+}
+
+.breadcrumb span {
+    margin: 0 10px;
+    color: #666;
+}
+
+.breadcrumb a span {
+    color: #000000;
+}
 .hero {
     position: relative;
     justify-content: flex-start;

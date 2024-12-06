@@ -269,7 +269,7 @@
                             <span>About</span>
                             <span class="arrow">→</span>
                         </a>
-                        <a href="#" class="nav-item" id="suppliers-button">
+                        <a href="{{route('suppliers')}}" class="nav-item" id="suppliers-button">
                             <span>Suppliers</span>
                             <span class="arrow">→</span>
                         </a>
@@ -277,7 +277,7 @@
                             <span>Investors</span>
                             <span class="arrow">→</span>
                         </a>
-                        <a href="#" class="nav-item" id="contact-button">
+                        <a href="{{route('contact_information')}}" class="nav-item" id="contact-button">
                             <span>Contact Information</span>
                             <span class="arrow">→</span>
                         </a>

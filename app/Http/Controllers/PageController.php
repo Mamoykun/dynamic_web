@@ -52,4 +52,12 @@ class PageController extends Controller
     {
         return view('investors');
     }
+    public function suppliers()
+    {
+        return view('suppliers');
+    }
+    public function contact_information()
+    {
+        return view('contact_information');
+    }
 }

@@ -9,6 +9,14 @@
         <link rel="stylesheet" href="{{ asset('asset/css/footer.css') }}">
     @endpush
 
+    <section class="first-hero">
+        <nav class="breadcrumb">
+            <a href="#">Home</a>
+            <span>></span>
+            <a href="#">Power & Generation</a>
+        </nav>
+    </section>
+
     <section class="hero">
         <img src="{{ asset('asset/image/pabrik.jpg') }}" alt="Power Plant"
             style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1;">

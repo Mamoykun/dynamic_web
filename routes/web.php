@@ -13,6 +13,8 @@ Route::get('/case_study', [App\Http\Controllers\PageController::class, 'case_stu
 Route::get('/exhibitions', [App\Http\Controllers\PageController::class, 'exhibitions'])->name('exhibitions');
 Route::get('/about', [App\Http\Controllers\PageController::class, 'about'])->name('about');
 Route::get('/investors', [App\Http\Controllers\PageController::class, 'investors'])->name('investors');
+Route::get('/suppliers', [App\Http\Controllers\PageController::class, 'suppliers'])->name('suppliers');
+Route::get('/contact_information', [App\Http\Controllers\PageController::class, 'contact_information'])->name('contact_information');
 Route::get('/test-image', function () {
     $homeSetting = \App\Models\HomeSettings::first();
     return view('test-image', compact('homeSetting'));
