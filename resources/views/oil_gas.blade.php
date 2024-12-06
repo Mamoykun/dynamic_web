@@ -16,7 +16,7 @@
             <span>></span>
             <a href="#">Energy</a>
             <span>></span>
-            <a href="#">Towards 100% renewable energy</a>
+            <a href="#">Oil & Gas</a>
             <span>></span>
             <span>Our vision of 100% renewable energy future</span>
         </nav>

@@ -13,7 +13,7 @@
         <nav class="breadcrumb">
             <a href="#">Home</a>
             <span>></span>
-            <a href="#">about</a>
+            <a href="#">About</a>
         </nav>
     </section>
 

@@ -13,7 +13,7 @@
         <nav class="breadcrumb">
             <a href="#">Home</a>
             <span>></span>
-            <a href="#">investors</a>
+            <a href="#">Investors</a>
         </nav>
     </section>
 
