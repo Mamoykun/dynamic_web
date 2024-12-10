@@ -10,6 +10,14 @@
     @endpush
 
     <section>
+        <div class="breadcrumb">
+            <a href="#">Home</a> &gt; 
+            <a href="#">Gallery</a> &gt; 
+            Video
+        </div>
+    </section>
+
+    <section>
         <div class="man_wrapper">
             <!-- First Video Section -->
             <div class="man_maintenance_container">

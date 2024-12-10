@@ -8,6 +8,24 @@ body {
     font-family: "Noto Sans small", "Noto Sans", sans-serif;
 }
 
+
+.breadcrumb {
+    padding: 20px 40px;
+    background: white;
+    padding-top: 8rem;
+ }
+ 
+ .breadcrumb a {
+    color: #064283;
+    text-decoration: none;
+ }
+ 
+ .breadcrumb span {
+    margin: 0 10px;
+    color: #666;
+ }
+
+ 
 .man_wrapper {
     background: #f5f5f5;
     padding: 2rem 0;
