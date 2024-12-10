@@ -60,4 +60,12 @@ class PageController extends Controller
     {
         return view('contact_information');
     }
+    public function  gallery_foto()
+    {
+        return view('gallery_foto');
+    }
+    public function  gallery_video()
+    {
+        return view('gallery_video');
+    }
 }

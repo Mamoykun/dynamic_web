@@ -37,10 +37,6 @@ const INSIGHT_SECTIONS = {
     'Exhibitions': 'exhibitionsContent'
 };
 
-const GALLERY_SECTIONS = {
-    'Photos': 'photosContent',
-    'Video': 'videoContent'
-};
 
 // Menu state object
 const menuState = {

@@ -207,29 +207,9 @@
                             <!-- Baris 1 -->
                             <div class="photo-item">
                                 <img src="{{ asset('asset/image/foto pekerja pabrik.jpg') }}" alt="Photo 1">
-                                <a href=""><h4>Photos</h4></a>
+                                <a href="{{route('gallery_foto')}}"><h4>Photos</h4></a>
                             </div>
-                            <div class="photo-item">
-                                <img src="{{ asset('asset/image/foto pekerja pabrik.jpg') }}" alt="Photo 2">
-                                <a href=""><h4>Photos</h4></a>
-                            </div>
-                            <div class="photo-item">
-                                <img src="{{ asset('asset/image/foto pekerja pabrik.jpg') }}" alt="Photo 3">
-                                <a href=""><h4>Photos</h4></a>
-                            </div>
-                            <!-- Baris 2 -->
-                            <div class="photo-item">
-                                <img src="{{ asset('asset/image/foto pekerja pabrik.jpg') }}" alt="Photo 4">
-                                <a href=""><h4>Photos</h4></a>
-                            </div>
-                            <div class="photo-item">
-                                <img src="{{ asset('asset/image/foto pekerja pabrik.jpg') }}" alt="Photo 5">
-                                <a href=""><h4>Photos</h4></a>
-                            </div>
-                            <div class="photo-item">
-                                <img src="{{ asset('asset/image/foto pekerja pabrik.jpg') }}" alt="Photo 6">
-                                <a href=""><h4>Photos</h4></a>
-                            </div>
+                           
                            
                         </div>
     
@@ -237,7 +217,7 @@
                         <div class="menu-section">
                             <img src="{{ asset('asset/image/kapal.jpg') }}" alt="Liquid and gas handling"
                                 class="section-img">
-                            <a href="">
+                            <a href="{{route('gallery_video')}}">
                                 <h4>Video</h4>
                             </a>
                             <ul>

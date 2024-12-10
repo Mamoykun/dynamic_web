@@ -143,16 +143,18 @@
 .content-grid-marine .photo-grid .photo-item img {
   width: 150px;
   height: 100px;
-  object-fit: cover;
   border-radius: 4px;
   margin-bottom: 0.5rem;
   transition: all 0.3s ease;
+  font-weight: 300;
 }
 
-.content-grid-marine .photo-grid .photo-item:hover img {
-  transform: scale(1.1);
-  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+.photo-item h4{
+  font-size: 1rem;
+  font-weight: 400;
+  color: #000;
 }
+
 
 .menu-section h4 {
   font-size: 1rem;
