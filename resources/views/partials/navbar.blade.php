@@ -6,11 +6,18 @@
 
 <nav class="navbar">
     <div class="logo">
+       
         <img src="{{ asset('asset/image/images.png') }}" alt="Wärtsilä">
+        <button class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <button class="close-menu" aria-label="Close Menu"></button>
     </div>
+      
     <ul class="nav-items">
-        <div class="nav-menu" >
-            <a href="{{ route('welcome')}}">Home</a></div>
+        <li class="nav-item"><a href="{{asset('home')}}">Home</a></li>
         <li class="nav-item" id="energy-nav">
             Product & Services
             <span class="arrow">&#9662;</span>

@@ -251,3 +251,279 @@ document.querySelector('.search-input').addEventListener('keypress', function(e)
             window.location.href = `search-results.html?q=${encodeURIComponent(searchTerm)}`;
         }
     }});
+
+
+// =============================================
+//   responsive
+// =============================================
+document.addEventListener('DOMContentLoaded', function() {
+    // Get all navigation elements
+    const menuToggle = document.querySelector('.menu-toggle');
+    const closeMenu = document.querySelector('.close-menu');
+    const navItems = document.querySelector('.nav-items');
+    const navButtons = document.querySelectorAll('.nav-item[id$="-nav"]');
+    const homeLink = document.querySelector('.nav-items li a[href*="welcome"]');
+    const searchIcon = document.querySelector('.search-icon');
+    const searchInput = document.querySelector('.search-input-container');
+
+    // Content configuration for each section
+    const sectionContents = {
+        'energy-nav': [
+            { title: "Marines & Shipbuilding", route: "marine_shipbuilding" },
+            { title: "Power Generation", route: "power_generation" },
+            { title: "Oil & Gas", route: "oil_gas" },
+            { title: "Industrial Solutions", route: "Industrial_Solutions" }
+        ],
+        'marine-nav': [
+            { title: "News & Articles", route: "News_Articles" },
+            { title: "Case Study", route: "case_study" },
+            { title: "Exhibitions", route: "exhibitions" }
+        ],
+        'gallery-nav': [
+            { title: "Photos", route: "gallery_foto" },
+            { title: "Video", route: "gallery_video" }
+        ],
+        'company-nav': [
+            { title: "About", route: "about" },
+            { title: "Suppliers", route: "suppliers" },
+            { title: "Investors", route: "investors" },
+            { title: "Contact Information", route: "contact_information" },
+            { title: "Careers & Multitechnic", route: "" }
+        ]
+    };
+
+    // Create mobile dropdown menu
+    function createMobileDropdown(sectionId) {
+        const mobileDropdown = document.createElement('div');
+        mobileDropdown.classList.add('mobile-dropdown');
+
+        // Add header with back button
+        const backHeader = document.createElement('div');
+        backHeader.classList.add('mobile-dropdown-header');
+        backHeader.innerHTML = `
+            <button class="back-button">
+                <span class="back-arrow">←</span> Back
+            </button>
+        `;
+        mobileDropdown.appendChild(backHeader);
+
+        // Add content container
+        const contentContainer = document.createElement('div');
+        contentContainer.classList.add('mobile-dropdown-content');
+
+        // Get section-specific content
+        const sections = sectionContents[sectionId] || [];
+        
+        // Add sections
+        sections.forEach(section => {
+            const sectionElem = document.createElement('a');
+            sectionElem.href = section.route ? `/${section.route}` : '#';
+            sectionElem.classList.add('mobile-section');
+            sectionElem.innerHTML = `
+                ${section.title}
+                <span class="forward-arrow">→</span>
+            `;
+            contentContainer.appendChild(sectionElem);
+        });
+
+        mobileDropdown.appendChild(contentContainer);
+        return mobileDropdown;
+    }
+
+    // Add styles for mobile navigation
+    const style = document.createElement('style');
+    style.textContent = `
+        .mobile-dropdown {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background: white;
+            z-index: 1002;
+            padding-top: 10px;
+            overflow-y: auto;
+        }
+        
+        .mobile-dropdown-header {
+            padding: 15px;
+            border-bottom: 1px solid #eee;
+            background: white;
+            position: sticky;
+            top: 0;
+            z-index: 1;
+        }
+        
+        .back-button {
+            background: none;
+            border: none;
+            font-size: 16px;
+            color: #333;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 0;
+        }
+        
+        .mobile-dropdown-content {
+            padding: 15px;
+        }
+        
+        .mobile-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+            color: #333;
+            text-decoration: none;
+            border-bottom: 1px solid #eee;
+            font-size: 16px;
+        }
+        
+        .mobile-section:active {
+            background: #f8f8f8;
+        }
+        
+        .forward-arrow {
+            color: #666;
+        }
+        
+        .back-arrow {
+            font-size: 20px;
+            line-height: 1;
+        }
+
+        @media screen and (max-width: 768px) {
+            .nav-items li a[href*="welcome"] {
+                display: block;
+                width: 100%;
+                padding: 15px;
+                color: #333;
+                text-decoration: none;
+                border-bottom: 1px solid #eee;
+                font-size: 16px;
+            }
+
+            .nav-items li a[href*="welcome"]:active {
+                background: #f8f8f8;
+            }
+
+            .search-input-container.active {
+                display: flex;
+                position: relative;
+                right: 0;
+                width: 100%;
+                padding: 10px 15px;
+                border-bottom: 1px solid #eee;
+            }
+
+            .search-input {
+                width: 100%;
+                padding: 8px;
+                border: 1px solid #ddd;
+                border-radius: 4px;
+            }
+        }
+    `;
+    document.head.appendChild(style);
+
+    // Handle mobile menu interactions
+    navButtons.forEach(button => {
+        button.addEventListener('click', function(e) {
+            if (window.innerWidth <= 768) {
+                e.preventDefault();
+                const sectionId = this.id;
+                
+                // Create and show mobile dropdown
+                const mobileDropdown = createMobileDropdown(sectionId);
+                document.body.appendChild(mobileDropdown);
+
+                // Handle back button
+                const backButton = mobileDropdown.querySelector('.back-button');
+                backButton.addEventListener('click', () => {
+                    mobileDropdown.remove();
+                });
+            }
+        });
+    });
+
+    // Handle Home link click
+    if (homeLink) {
+        homeLink.addEventListener('click', function(e) {
+            if (window.innerWidth <= 768) {
+                // Close the mobile menu before navigation
+                navItems.classList.remove('active');
+                closeMenu.style.display = 'none';
+                menuToggle.style.display = 'block';
+                document.body.style.overflow = '';
+            }
+        });
+    }
+
+    // Toggle menu open
+    menuToggle?.addEventListener('click', function() {
+        navItems.classList.add('active');
+        closeMenu.style.display = 'block';
+        menuToggle.style.display = 'none';
+        document.body.style.overflow = 'hidden';
+    });
+
+    // Toggle menu close
+    closeMenu?.addEventListener('click', function() {
+        navItems.classList.remove('active');
+        closeMenu.style.display = 'none';
+        menuToggle.style.display = 'block';
+        document.body.style.overflow = '';
+        
+        // Remove any open mobile dropdowns
+        const mobileDropdowns = document.querySelectorAll('.mobile-dropdown');
+        mobileDropdowns.forEach(dropdown => dropdown.remove());
+    });
+
+    // Handle search functionality
+    if (searchIcon && searchInput) {
+        searchIcon.addEventListener('click', function() {
+            searchInput.classList.toggle('active');
+        });
+    }
+
+    // Close menu when clicking outside
+    document.addEventListener('click', function(event) {
+        if (!event.target.closest('.nav-items') && 
+            !event.target.closest('.menu-toggle') && 
+            !event.target.closest('.close-menu') && 
+            !event.target.closest('.mobile-dropdown') &&
+            navItems.classList.contains('active')) {
+            
+            navItems.classList.remove('active');
+            closeMenu.style.display = 'none';
+            menuToggle.style.display = 'block';
+            document.body.style.overflow = '';
+            
+            // Remove any open mobile dropdowns
+            const mobileDropdowns = document.querySelectorAll('.mobile-dropdown');
+            mobileDropdowns.forEach(dropdown => dropdown.remove());
+        }
+    });
+
+    // Handle window resize
+    window.addEventListener('resize', function() {
+        if (window.innerWidth > 768) {
+            navItems.classList.remove('active');
+            closeMenu.style.display = 'none';
+            menuToggle.style.display = 'block';
+            document.body.style.overflow = '';
+            
+            // Remove any open mobile dropdowns
+            const mobileDropdowns = document.querySelectorAll('.mobile-dropdown');
+            mobileDropdowns.forEach(dropdown => dropdown.remove());
+
+            // Reset search input
+            if (searchInput) {
+                searchInput.classList.remove('active');
+            }
+        }
+    });
+});
+
