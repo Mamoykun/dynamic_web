@@ -217,20 +217,7 @@
     font-weight: 300;
 }
 
-@media (max-width: 768px) {
-    .reports-gallery {
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 1rem;
-        padding: 1rem;
-    }
-}
 
-@media (prefers-reduced-motion: reduce) {
-    .gallery-item,
-    .gallery-item img {
-        transition: none;
-    }
-}
 
 .financial-section {
     max-width: 1200px;
@@ -294,20 +281,6 @@
     top: -0.25rem;
 }
 
-@media (max-width: 768px) {
-    .financial-grid,
-    .financial-lists {
-        grid-template-columns: 1fr;
-    }
-    
-    .financial-header h1 {
-        font-size: 2.5rem;
-    }
-    
-    .financial-item h3 {
-        font-size: 2rem;
-    }
-}
  /* Styles for key figures section */
  .events-section {
     max-width: 1200px;
@@ -362,16 +335,6 @@
     color: #fff;
 }
 
-@media (max-width: 768px) {
-    .events-grid {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-    }
-    
-    .events-section h1 {
-        font-size: 2.5rem;
-    }
-}
 
 .quick-links {
     max-width: 1200px;
@@ -405,19 +368,7 @@
     background-color: #1a365d;
 }
 
-@media (max-width: 768px) {
-    .quick-links h1 {
-        font-size: 2.5rem;
-    }
-    
-    .links-container {
-        flex-direction: column;
-    }
 
-    .link-button {
-        text-align: center;
-    }
-}
 
 .releases-section {
     max-width: 1200px;
@@ -501,16 +452,7 @@
     color: #fff;
 }
 
-@media (max-width: 768px) {
-    .releases-grid {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-    }
-    
-    .releases-section h1 {
-        font-size: 2.5rem;
-    }
-}
+
 
 .blog-section {
     max-width: 1200px;
@@ -572,21 +514,6 @@
     line-height: 1.5;
 }
 
-@media (max-width: 968px) {
-    .blog-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 576px) {
-    .blog-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .blog-section h1 {
-        font-size: 2.5rem;
-    }
-}
 
 .contacts-section {
     max-width: 1200px;
@@ -652,21 +579,7 @@
   .email:hover, .linkedin-link:hover {
     text-decoration: underline;
   }
-  
-  @media (max-width: 968px) {
-    .contacts-grid {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
-  
-  @media (max-width: 576px) {
-    .contacts-grid {
-      grid-template-columns: 1fr;
-    }
-    .contacts-section h1 {
-      font-size: 2.5rem;
-    }
-  }
+
 
   .join-section {
     max-width: 1200px;
@@ -706,9 +619,266 @@
     font-weight: 300;
 }
 
+@media (max-width: 1200px) {
+    .hero-content {
+        padding: 60px;
+        margin-top: 40px;
+    }
+
+    .wartsila-container,
+    .financial-section,
+    .events-section,
+    .quick-links,
+    .releases-section,
+    .blog-section,
+    .contacts-section,
+    .join-section,
+    .survey-section {
+        padding: 2rem 1.5rem;
+    }
+
+    .financial-header h1,
+    .events-section h1,
+    .quick-links h1,
+    .releases-section h1,
+    .blog-section h1,
+    .contacts-section h1 {
+        font-size: 3rem;
+    }
+
+    .blog-grid,
+    .events-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 992px) {
+    /* Hide sidebar */
+    .wartsila-sidebar {
+        display: none;
+    }
+
+    .wartsila-container {
+        flex-direction: column;
+    }
+
+    .wartsila-content {
+        width: 100%;
+        padding: 0;
+    }
+
+    /* Grid Layouts */
+    .financial-grid,
+    .contacts-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    /* Typography */
+    .this-watsila h1 {
+        font-size: 45px;
+    }
+
+    .wartsila-content h2 {
+        font-size: 35px;
+    }
+
+    .financial-header h1,
+    .events-section h1,
+    .quick-links h1,
+    .releases-section h1,
+    .blog-section h1,
+    .contacts-section h1 {
+        font-size: 2.5rem;
+    }
+}
+
 @media (max-width: 768px) {
-    .join-section h1,
-    .survey-section h1 {
+    /* Header & Hero */
+    .breadcrumb {
+        padding: 15px 20px;
+        padding-top: 6rem;
+    }
+
+    .hero {
+        height: 400px;
+    }
+
+    .hero-content {
+        padding: 30px 20px;
+        margin-top: 20px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    /* Container Spacing */
+    .wartsila-container,
+    .financial-section,
+    .events-section,
+    .quick-links,
+    .releases-section,
+    .blog-section,
+    .contacts-section,
+    .join-section,
+    .survey-section {
+        padding: 1.5rem 1rem;
+    }
+
+    /* Grid Layouts */
+    .financial-grid,
+    .financial-lists,
+    .events-grid,
+    .releases-grid,
+    .blog-grid,
+    .contacts-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    /* Typography */
+    .this-watsila h1,
+    .financial-header h1,
+    .events-section h1,
+    .quick-links h1,
+    .releases-section h1,
+    .blog-section h1,
+    .contacts-section h1 {
         font-size: 2rem;
+    }
+
+    .wartsila-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .financial-item h3 {
+        font-size: 2rem;
+    }
+
+    /* Links & Buttons */
+    .links-container {
+        flex-direction: column;
+    }
+
+    .link-button,
+    .request-btn,
+    .calendar-btn,
+    .btn-primary,
+    .btn-secondary {
+        width: 100%;
+        text-align: center;
+    }
+
+    .action-buttons {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    /* Blog Cards */
+    .blog-card img {
+        height: 180px;
+    }
+
+    /* Contact Cards */
+    .contact-card {
+        align-items: center;
+        text-align: center;
+    }
+
+    .contact-image {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Container Spacing */
+    .wartsila-container,
+    .financial-section,
+    .events-section,
+    .quick-links,
+    .releases-section,
+    .blog-section,
+    .contacts-section,
+    .join-section,
+    .survey-section {
+        padding: 1rem;
+    }
+
+    /* Hero Section */
+    .hero {
+        height: 350px;
+    }
+
+    .hero-content {
+        padding: 20px 15px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+
+    /* Typography */
+    .this-watsila h1,
+    .financial-header h1,
+    .events-section h1,
+    .quick-links h1,
+    .releases-section h1,
+    .blog-section h1,
+    .contacts-section h1 {
+        font-size: 1.8rem;
+    }
+
+    .wartsila-content h2,
+    .financial-item h3,
+    .release-column h2 {
+        font-size: 1.6rem;
+    }
+
+    .gallery-text,
+    .event-title,
+    .blog-card h2 {
+        font-size: 1.1rem;
+    }
+
+    /* Buttons & Links */
+    .request-btn,
+    .link-button,
+    .calendar-btn,
+    .btn-primary,
+    .btn-secondary {
+        padding: 0.75rem 1.25rem;
+        font-size: 0.95rem;
+    }
+
+    /* Contact Cards */
+    .contact-image {
+        width: 120px;
+        height: 120px;
+    }
+
+    .contact-card h2 {
+        font-size: 1.3rem;
+    }
+
+    .position {
+        font-size: 1rem;
+    }
+
+    /* Lists */
+    .bullet-list li {
+        font-size: 0.95rem;
+        padding-left: 1.25rem;
+        margin-bottom: 0.75rem;
     }
 }

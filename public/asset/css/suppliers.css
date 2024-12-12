@@ -12,23 +12,17 @@
     padding: 20px 40px;
     background: white;
     padding-top: 8rem;
-}
-
-.breadcrumb a {
+ }
+ 
+ .breadcrumb a {
     color: #064283;
     text-decoration: none;
-}
-
-/* Mengubah warna khusus untuk link "Suppliers" */
-.breadcrumb a[href="#Suppliers"],
-.breadcrumb a:last-child {
-    color: black;
-}
-
-.breadcrumb span {
+ }
+ 
+ .breadcrumb span {
     margin: 0 10px;
     color: #666;
-}
+ }
  .read-more-btn {
     display: inline-block;
     padding: 12px 24px;
@@ -388,34 +382,225 @@
 }
 
 /* Responsive styles */
-@media (max-width: 768px) {
-    .wartsila-container {
-        flex-direction: column;
-        padding: 1rem;
+@media (max-width: 1200px) {
+    .wartsila-container, 
+    .w1-container,
+    .w2-mission-container,
+    .w3-role-container,
+    .w4-container {
+        padding: 2rem 1.5rem;
     }
 
+    .w1-main-title {
+        font-size: 2.5rem;
+    }
+
+    .w1-content-wrapper {
+        gap: 2rem;
+    }
+
+    .reports-gallery {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 992px) {
     .wartsila-sidebar {
+        display: none; /* Menyembunyikan sidebar */
+    }
+
+    .wartsila-container {
+        flex-direction: column;
+    }
+
+    .wartsila-content {
         width: 100%;
-        min-width: 100%;
-        position: relative;
-        top: 0;
-        max-height: none;
+        padding: 0;
     }
 
     .w1-content-wrapper {
         grid-template-columns: 1fr;
-        gap: 2rem;
     }
 
-    .w1-main-title, .w2-supply-title {
+    .w1-main-title,
+    .w2-supply-title {
+        font-size: 2.2rem;
+    }
+
+    .w1-apply-title,
+    .w2-subtitle,
+    .w3-role-title {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .breadcrumb {
+        padding: 15px 20px;
+        padding-top: 6rem;
+    }
+
+    .hero {
+        height: 400px;
+    }
+
+    .hero-content {
+        padding: 30px 20px;
+        margin-top: 20px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .hero-overlay {
+        clip-path: polygon(0 0, 100% 0, 90% 100%, 0 100%);
+    }
+
+    /* Container Adjustments */
+    .wartsila-container,
+    .w1-container,
+    .w2-mission-container,
+    .w3-role-container,
+    .w4-container {
+        padding: 1.5rem 1rem;
+    }
+
+    /* Typography Adjustments */
+    .w1-main-title,
+    .w2-supply-title {
         font-size: 2rem;
+        margin-bottom: 1rem;
     }
 
-    .w1-apply-title, .w2-subtitle, .w3-role-title {
+    .w1-apply-title,
+    .w2-subtitle,
+    .w3-role-title {
+        font-size: 1.6rem;
+        margin-bottom: 1rem;
+    }
+
+    .w1-paragraph,
+    .w2-content,
+    .w3-role-item,
+    .w4-paragraph {
+        font-size: 1rem;
+        line-height: 1.5;
+        margin-bottom: 1rem;
+    }
+
+    .w1-apply-text {
+        font-size: 1rem;
+    }
+
+    /* Layout Adjustments */
+    .w1-content-wrapper {
+        gap: 1.5rem;
+    }
+
+    .w1-right-section {
+        gap: 1rem;
+    }
+
+    .w1-image-container {
+        margin-bottom: 1rem;
+    }
+
+    .w1-apply-section {
+        padding: 1rem;
+    }
+
+    .w3-role-item {
+        padding-left: 1.5rem;
+    }
+
+    .w4-image {
+        height: 250px;
+    }
+
+    .reports-gallery {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        height: 350px;
+    }
+
+    .hero-content {
+        padding: 20px 15px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+
+    .read-more-btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    /* Container Adjustments */
+    .wartsila-container,
+    .w1-container,
+    .w2-mission-container,
+    .w3-role-container,
+    .w4-container {
+        padding: 1rem;
+    }
+
+    /* Typography Adjustments */
+    .w1-main-title,
+    .w2-supply-title {
         font-size: 1.8rem;
     }
 
-    .w2-content, .w3-role-item, .w4-paragraph {
-        font-size: 1rem;
+    .w1-apply-title,
+    .w2-subtitle,
+    .w3-role-title {
+        font-size: 1.4rem;
+    }
+
+    .w1-paragraph,
+    .w2-content,
+    .w3-role-item,
+    .w4-paragraph,
+    .w1-apply-text {
+        font-size: 0.95rem;
+    }
+
+    /* Image Adjustments */
+    .w4-image {
+        height: 200px;
+    }
+
+    .w1-apply-section {
+        padding: 0.75rem;
+    }
+
+    .w3-role-item {
+        padding-left: 1.25rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .reports-gallery {
+        padding: 0.75rem;
+        gap: 0.75rem;
+    }
+
+    .w1-apply-link {
+        font-size: 0.9rem;
     }
 }

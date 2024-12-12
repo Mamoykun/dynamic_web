@@ -11,7 +11,7 @@
 
     <section class="first-hero">
         <nav class="breadcrumb">
-            <a href="#">Home</a>
+            <a href="{{ route('home') }}">Home</a>
             <span>></span>
             <a href="#">Power & Generation</a>
         </nav>

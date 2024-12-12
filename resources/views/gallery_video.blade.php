@@ -11,7 +11,7 @@
 
     <section>
         <div class="breadcrumb">
-            <a href="#">Home</a> &gt; 
+            <a href="{{ route('home') }}">Home</a> &gt; 
             <a href="#">Gallery</a> &gt; 
             Video
         </div>

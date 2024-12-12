@@ -940,13 +940,13 @@ p {
 }
 
 @media screen and (max-width: 768px) {
-    /* Global Container */
+    /* Container dan Layout */
     .container {
         padding: 20px;
         margin: 0;
     }
 
-    /* Header and Navigation */
+    /* Header dan Navigation */
     .breadcrumb {
         padding: 15px 20px;
         padding-top: 4rem;
@@ -957,225 +957,287 @@ p {
         height: 24px;
     }
 
-    /* Common Text Styles */
-    h1 {
+    /* Hero Section */
+    .carousel-slide {
+        position: relative;
+        color: #fff !important;
+        background: rgba(0, 0, 0, 0.5);
+    }
+
+    .carousel-slide::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(to bottom, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.4) 100%);
+        z-index: 1;
+    }
+
+    .carousel-content {
+        position: relative;
+        z-index: 2;
+        padding: 30px 20px;
+    }
+
+    .carousel-content h1 {
+        color: #fff !important;
         font-size: 32px;
         font-weight: 300;
-        margin-bottom: 20px;
-        line-height: 1.3;
-        color: #333;
+        margin-bottom: 15px;
+        text-shadow: 0 2px 4px rgba(0,0,0,0.3);
     }
 
-    p {
+    .carousel-content p {
+        color: #fff !important;
         font-size: 16px;
-        line-height: 1.6;
-        color: #666;
         margin-bottom: 20px;
+        text-shadow: 0 1px 3px rgba(0,0,0,0.3);
     }
 
-    /* Card Grid Layout */
-    .card-grid {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 20px;
-        padding: 0;
-        margin: 20px 0;
+    .carousel-content .download-btn {
+        background: rgba(255,255,255,0.15);
+        color: #fff !important;
+        border: 2px solid #fff;
+        padding: 12px 24px;
+        border-radius: 6px;
+        text-decoration: none;
+    }
+
+    /* Maritime Section */
+    .maritime2-section {
+        padding: 20px;
+    }
+
+    .maritime2-title {
+        font-size: 28px;
+        font-weight: 300;
+        margin-bottom: 15px;
+        line-height: 1.2;
+    }
+
+    .maritime2-text {
+        font-size: 14px;
+        margin-bottom: 25px;
+        line-height: 1.5;
+    }
+
+    /* Grid Layout */
+    .maritime2-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        margin: 25px 0;
     }
 
     /* Card Styles */
-    .card {
-        background: #fff;
-        border-radius: 8px;
-        overflow: hidden;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-        transition: transform 0.3s ease;
-    }
-
-    .card:hover {
-        transform: translateY(-3px);
-    }
-
-    .card img {
+    .maritime2-card {
         width: 100%;
-        height: 200px;
+        display: flex !important;
+        flex-direction: column !important;
+        background: #fff;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+        margin-bottom: 25px;
+    }
+
+    /* Image Positioning */
+    .maritime2-card img {
+        width: 100% !important;
+        height: 220px !important;
         object-fit: cover;
+        order: -1 !important;
+        margin: 0 !important;
         display: block;
     }
 
-    .card-content {
+    /* Card Content */
+    .maritime2-card-content {
         padding: 20px;
+        width: 100% !important;
     }
 
-    .card-title {
-        font-size: 18px;
-        font-weight: 500;
-        margin-bottom: 10px;
-        color: #333;
-        line-height: 1.4;
-    }
-
-    .card-description {
+    /* Meta Information */
+    .maritime2-card-meta {
         font-size: 14px;
         color: #666;
-        margin-bottom: 15px;
-        line-height: 1.5;
-    }
-
-    /* Article Grid */
-    .article-grid {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 24px;
-        margin: 24px 0;
-    }
-
-    .article-card {
-        background: #fff;
-        border-radius: 8px;
-        overflow: hidden;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    }
-
-    .article-image {
-        width: 100%;
-        height: 200px;
-        object-fit: cover;
-    }
-
-    .article-content {
-        padding: 20px;
-    }
-
-    .article-meta {
+        margin-bottom: 12px;
         display: flex;
-        gap: 12px;
-        margin-bottom: 12px;
-        font-size: 14px;
-        color: #666;
+        gap: 10px;
+        align-items: center;
     }
 
-    .article-title {
+    /* Card Title */
+    .maritime2-card-title {
         font-size: 18px;
         font-weight: 500;
-        margin-bottom: 12px;
+        color: #000;
+        margin: 12px 0;
         line-height: 1.4;
-        color: #333;
     }
 
-    .article-excerpt {
+    /* Card Description */
+    .maritime2-card-description {
         font-size: 14px;
         color: #666;
-        line-height: 1.5;
+        line-height: 1.6;
         margin-bottom: 15px;
     }
 
     /* Tags */
-    .tag-container {
+    .maritime2-tags {
         display: flex;
-        gap: 8px;
+        gap: 10px;
         flex-wrap: wrap;
-        margin-top: 12px;
+        margin-top: 15px;
     }
 
-    .tag {
+    .maritime2-tag {
         font-size: 12px;
-        padding: 4px 12px;
+        padding: 6px 14px;
         background: #f5f5f5;
-        border-radius: 16px;
+        border-radius: 20px;
         color: #666;
     }
 
-    /* Webinar Cards */
-    .webinar-grid {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 20px;
-        margin: 24px 0;
-    }
-
-    .webinar-card {
-        background: #fff;
-        border-radius: 8px;
-        overflow: hidden;
-    }
-
-    .webinar-date {
-        font-size: 14px;
-        color: #666;
-        margin-bottom: 8px;
-    }
-
-    .webinar-type {
-        font-size: 14px;
-        color: #0066cc;
-        margin-bottom: 12px;
-    }
-
-    /* Read More Links */
-    .read-more {
-        color: #0066cc;
-        text-decoration: none;
-        font-size: 14px;
-        display: inline-flex;
+    /* Footer Section */
+    .wartsila-footer {
+        display: flex;
+        flex-direction: column;
         align-items: center;
-        gap: 4px;
-    }
-
-    .read-more:after {
-        content: "→";
-        transition: transform 0.3s ease;
-    }
-
-    .read-more:hover:after {
-        transform: translateX(4px);
-    }
-
-    /* Buttons */
-    .button {
-        display: inline-block;
-        padding: 12px 24px;
-        border: 2px solid #333;
-        border-radius: 4px;
-        color: #333;
-        text-decoration: none;
-        font-size: 16px;
-        transition: all 0.3s ease;
+        padding: 30px 20px;
         text-align: center;
-        width: 100%;
-        margin: 8px 0;
+        gap: 20px;
+        background: #fff;
+        margin-top: 40px;
     }
 
-    .button:hover {
-        background: #333;
-        color: #fff;
+    .wartsila-brand {
+        font-size: 32px;
+        color: #000;
+        font-weight: 300;
+        line-height: 1.2;
+        order: 1;
+    }
+
+    .wartsila-contact {
+        display: inline-block;
+        padding: 12px 30px;
+        border: 1px solid #333;
+        border-radius: 4px;
+        text-decoration: none;
+        color: #333;
+        font-size: 15px;
+        transition: all 0.3s ease;
+        order: 2;
+        margin: 10px 0;
+    }
+
+    .wartsila-social {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+        order: 3;
+    }
+
+    .wartsila-social img {
+        height: 24px;
+        width: auto;
+        transition: opacity 0.3s ease;
+    }
+}
+
+/* Small Devices */
+@media screen and (max-width: 576px) {
+    .container,
+    .maritime2-section {
+        padding: 15px;
+    }
+
+    .maritime2-card img {
+        height: 200px !important;
+    }
+
+    .maritime2-card-content {
+        padding: 15px;
+    }
+
+    .wartsila-footer {
+        padding: 25px 15px;
+    }
+
+    .wartsila-brand {
+        font-size: 28px;
+    }
+
+    .wartsila-contact {
+        padding: 10px 25px;
+        font-size: 14px;
+    }
+
+    .wartsila-social img {
+        height: 20px;
     }
 }
 
 /* Extra Small Devices */
 @media screen and (max-width: 375px) {
-    .card img,
-    .article-image {
-        height: 180px;
+    .container,
+    .maritime2-section {
+        padding: 12px;
     }
 
-    .card-title,
-    .article-title {
-        font-size: 16px;
+    .maritime2-card img {
+        height: 180px !important;
     }
 
-    .card-description,
-    .article-excerpt {
+    .maritime2-card-content {
+        padding: 12px;
+    }
+
+    .wartsila-footer {
+        padding: 20px 12px;
+    }
+
+    .wartsila-brand {
+        font-size: 24px;
+    }
+
+    .wartsila-contact {
+        padding: 8px 20px;
         font-size: 13px;
     }
 
-    .tag {
-        font-size: 11px;
-        padding: 3px 10px;
-    }
-
-    .button {
-        font-size: 14px;
-        padding: 10px 20px;
+    .wartsila-social img {
+        height: 18px;
     }
 }
 
+/* Touch Device Optimizations */
+@media (hover: none) {
+    .maritime2-card {
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    .wartsila-contact:active {
+        background: #333;
+        color: #fff;
+    }
+
+    .wartsila-social img:active {
+        opacity: 0.7;
+    }
+}
+
+/* Performance Optimization */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}

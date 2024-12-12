@@ -11,15 +11,11 @@
 
 
     <section class="first-hero">
-        <nav class="breadcrumb">
-            <a href="#">Home</a>
-            <span>></span>
-            <a href="#">Energy</a>
-            <span>></span>
-            <a href="#">Oil & Gas</a>
-            <span>></span>
-            <span>Our vision of 100% renewable energy future</span>
-        </nav>
+        <div class="breadcrumb">
+            <a href="{{ route('home') }}">Home</a> &gt; 
+            <a href="#">Product & Services</a> &gt; 
+            Oil & Gas
+        </div>
 
         <div class="hero-container">
             <img src="{{ asset('asset/image/pabrik.jpg') }}" alt="Wind turbines at sunset" class="hero-img">

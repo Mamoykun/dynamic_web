@@ -10,15 +10,11 @@
     @endpush
 
     <section class="first-hero">
-        <nav class="breadcrumb">
-            <a href="#">Home</a>
-            <span>></span>
-            <a href="#">Insight</a>
-            <span>></span>
-            <a href="#">News & Articles</a>
-            <span>></span>
-            <span>Our vision of 100% renewable energy future</span>
-        </nav>
+        <div class="breadcrumb">
+            <a href="{{ route('home') }}">Home</a> &gt; 
+            <a href="#">Insight</a> &gt; 
+            News & Articles
+        </div>
 
         <div class="carousel-container">
             <div class="carousel-slides">

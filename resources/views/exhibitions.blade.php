@@ -10,13 +10,11 @@
     @endpush
 
     <section class="first-hero">
-        <nav class="breadcrumb">
-            <a href="#">Home</a>
-            <span>></span>
-            <a href="#">Insight</a>
-            <span>></span>
-            <a href="#">Exhibitions</a>
-        </nav>
+        <div class="breadcrumb">
+            <a href="{{ route('home') }}">Home</a> &gt; 
+            <a href="#">Insight</a> &gt; 
+            Exhibitions
+        </div>
 
         <div class="carousel-container">
             <div class="carousel-slides">

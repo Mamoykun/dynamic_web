@@ -186,8 +186,86 @@ body {
 }
 
 @media (max-width: 768px) {
+    .breadcrumb {
+        padding: 15px 20px;
+        padding-top: 6rem;
+    }
+ 
     .man_maintenance_container {
-        flex-direction: column;
+        flex-direction: column !important;
+        padding: 1.5rem;
+        gap: 2rem;
+    }
+ 
+    .man_text_section,
+    .man_video_section {
+        width: 100%;
+        max-width: 100%;
+    }
+ 
+    .man_maintenance_title {
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+        text-align: left;
+    }
+ 
+    .man_maintenance_description {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+        text-align: left;
+    }
+ 
+    .man_cta_button {
+        width: 100%;
+        text-align: center;
+    }
+ 
+    .man_video_container {
+        margin-top: 1rem;
+    }
+ 
+    .man_video_controls {
+        padding: 8px 5px;
+    }
+ 
+    .man_play_button, 
+    .man_mute_button, 
+    .man_fullscreen_button {
+        width: 25px;
+        height: 25px;
+    }
+ 
+    .man_time_display {
+        font-size: 12px;
+        min-width: 80px;
+    }
+ 
+    .man_volume_container:hover .man_volume_slider {
+        width: 50px;
+    }
+ }
+ 
+ @media (max-width: 480px) {
+    .man_maintenance_container {
         padding: 1rem;
     }
-}
+ 
+    .man_maintenance_title {
+        font-size: 1.6rem;
+    }
+ 
+    .man_video_controls {
+        padding: 5px 3px;
+    }
+ 
+    .man_time_display {
+        min-width: 60px;
+    }
+ 
+    .man_play_button, 
+    .man_mute_button, 
+    .man_fullscreen_button {
+        width: 20px;
+        height: 20px;
+    }
+ }

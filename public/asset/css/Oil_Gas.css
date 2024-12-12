@@ -12,18 +12,19 @@ body {
 .breadcrumb {
     padding: 20px 40px;
     background: white;
-    padding-top: 6.5rem;
-}
-
-.breadcrumb a {
+    padding-top: 8rem;
+ }
+ 
+ .breadcrumb a {
     color: #064283;
     text-decoration: none;
-}
-
-.breadcrumb span {
+ }
+ 
+ .breadcrumb span {
     margin: 0 10px;
     color: #666;
-}
+ }
+
 
 .hero-container {
     position: relative;
