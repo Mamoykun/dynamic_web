@@ -183,6 +183,11 @@ video::-webkit-media-controls-timeline {
     margin-top: 20px;
 }
 
+.download-btn:hover{
+    color: #e0e0e0;
+    background-color: #000;
+}
+
 /* Heading Styles */
 .main-heading {
     font-size: 48px;
@@ -257,70 +262,7 @@ video::-webkit-media-controls-timeline {
     display: block;
 }
 
-/* Responsive styling */
-@media (max-width: 768px) {
-    .container-Lifecycle-Solutions {
-        flex-direction: column;
-        padding: 0 5px; /* Tetap 5px untuk konsistensi */
-    }
 
-    .left-content,
-    .img-workers {
-        max-width: 100%;
-    }
-
-    .left-content h2 {
-        font-size: 28px;
-    }
-}
-/* Responsive styling */
-@media (max-width: 768px) {
-    .container-Lifecycle-Solutions {
-        flex-direction: column;
-        padding: 0 12px;
-    }
-
-    .left-content,
-    .img-workers {
-        max-width: 100%;
-    }
-
-    .left-content h2 {
-        font-size: 28px;
-    }
-}
-/* Responsive Styles */
-@media (max-width: 1200px) {
-    .content-watsila {
-        padding: 0 40px;
-    }
-}
-
-@media (max-width: 768px) {
-    .two-columns {
-        grid-template-columns: 1fr;
-    }
-
-    .stats-container {
-        grid-template-columns: 1fr;
-    }
-
-    .content-watsila {
-        padding: 0 20px;
-    }
-
-    .hero h1 {
-        font-size: 36px;
-    }
-
-    .hero p {
-        font-size: 20px;
-    }
-
-    .main-heading {
-        font-size: 36px;
-    }
-}
 
 .container-card {
     max-width: 1700px;
@@ -432,17 +374,7 @@ h1 {
     border-color: #002D59;
 }
 
-@media (max-width: 968px) {
-    .cards-container {
-        flex-direction: column;
-    }
 
-    .card {
-        width: 100%;
-        max-width: 600px;
-        margin: 0 auto;
-    }
-}
 
 .container-remote {
     max-width: 1700px;
@@ -499,22 +431,6 @@ h1 {
     color: white;
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .container-remote {
-        flex-direction: column;
-        padding: 2rem 1rem;
-    }
-    
-    .conten-img,
-    .conten-remote.suport {
-        width: 100%;
-    }
-    
-    .teks h1 {
-        font-size: 2rem;
-    }
-}
 
 
 .carousel-container {
@@ -897,8 +813,180 @@ h1 {
     line-height: 1.5;
 }
 
-@media (max-width: 768px) {
-    .downloads-grid2, .articles-grid2, .solutions-grid2 {
+@media screen and (max-width: 768px) {
+    /* General Adjustments */
+    section {
+        padding: 20px 0;
+    }
+
+    /* Breadcrumb */
+    .breadcrumb {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    /* Hero Section */
+    .hero {
+        height: 60vh;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+        padding-left: 20px;
+        max-width: 100%;
+    }
+
+    .hero p {
+        font-size: 18px;
+        padding-left: 20px;
+    }
+
+    /* Content Wärtsilä Section */
+    .content-watsila {
+        padding: 0 20px;
+    }
+
+    .two-columns {
         grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    /* Stats Section */
+    .stats-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .stats-heading {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+
+    /* Lifecycle Solutions */
+    .container-Lifecycle-Solutions {
+        flex-direction: column;
+        margin: 0 20px;
+        gap: 20px;
+    }
+
+    .left-content {
+        max-width: 100%;
+    }
+
+    .img-workers {
+        max-width: 100%;
+    }
+
+    /* Card Container */
+    .container-card {
+        padding: 0 20px;
+    }
+
+    .container-card h1 {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+
+    .cards-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .card {
+        min-width: 100%;
+    }
+
+    /* Remote Section */
+    .container-remote {
+        padding: 30px 20px;
+    }
+
+    .content-wrapper {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .content-text h1 {
+        font-size: 28px;
+    }
+
+    /* Success Stories Carousel */
+    .carousel .slide {
+        flex-direction: column;
+    }
+
+    .carousel .image {
+        order: -1;
+    }
+
+    .carousel .image img {
+        height: 200px;
+    }
+
+    .navigation {
+        right: 20px;
+        bottom: 20px;
+        top: auto;
+    }
+
+    /* Video Section */
+    .video-wrapper {
+        height: 50vh;
+    }
+
+    .video-title {
+        font-size: 24px;
+        top: 20px;
+        left: 20px;
+    }
+
+    .controls-wrapper {
+        padding: 10px;
+    }
+
+    /* Recent News */
+    .recent-news {
+        padding: 2rem 1rem;
+    }
+
+    .news-item {
+        padding: 15px 0;
+    }
+
+    /* Downloads Section */
+    .dowloads {
+        padding: 2rem 1rem;
+    }
+
+    .downloads-grid2,
+    .articles-grid2,
+    .solutions-grid2 {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .card2 {
+        margin-bottom: 20px;
+    }
+
+    .card-image2 {
+        height: 180px;
+    }
+
+    /* Header Connect */
+    .header2 {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .heading2 {
+        font-size: 28px;
+    }
+
+    .contact-button2 {
+        width: 100%;
+        text-align: center;
+        padding: 15px 20px;
     }
 }

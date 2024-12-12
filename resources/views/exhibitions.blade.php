@@ -131,7 +131,7 @@
         </ul>
 
         <div class="timeline">
-            <img src="/api/placeholder/800/150" alt="Timeline showing IMO targets">
+            <img src="{{ asset('asset/image/foto pekerja pabrik.jpg') }}" alt="Timeline showing IMO targets">
         </div>
     </section>
 

@@ -333,11 +333,7 @@ h2 {
     margin-bottom: 0.5rem;
 }
 
-@media (max-width: 768px) {
-    .grid {
-        grid-template-columns: 1fr;
-    }
-}
+
 
 .container {
     margin: 0 auto;
@@ -521,23 +517,7 @@ p {
     margin-bottom: 0.75rem;
 }
 
-@media (max-width: 768px) {
-    .grid, .cii-status-container {
-        grid-template-columns: 1fr;
-    }
 
-    .cii-guide-image {
-        margin: 0 auto;
-    }
-
-    h1 {
-        font-size: 1.75rem;
-    }
-
-    h2 {
-        font-size: 1.25rem;
-    }
-}
 
 .maritime-section {
     padding: 3rem 3rem;
@@ -867,48 +847,7 @@ p {
 .maritime2-card:nth-child(2) { animation-delay: 0.2s; }
 .maritime2-card:nth-child(3) { animation-delay: 0.3s; }
 
-/* Responsive Design */
-@media (max-width: 1024px) {
-    .maritime2-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    
-    .maritime2-title {
-        font-size: 32px;
-    }
-}
 
-@media (max-width: 768px) {
-    .maritime2-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .maritime2-buttons {
-        flex-direction: column;
-    }
-    
-    .maritime2-button {
-        width: 100%;
-    }
-    
-    .maritime2-title {
-        font-size: 28px;
-    }
-    
-    .maritime2-section {
-        padding: 30px 15px;
-    }
-}
-
-@media (hover: none) {
-    .maritime2-card:hover {
-        transform: none;
-    }
-    
-    .maritime2-card:hover img {
-        transform: none;
-    }
-}
 
 .wartsila-section {
     margin: 0 auto;
@@ -999,3 +938,244 @@ p {
 .wartsila-social img:hover {
     opacity: 0.8;
 }
+
+@media screen and (max-width: 768px) {
+    /* Global Container */
+    .container {
+        padding: 20px;
+        margin: 0;
+    }
+
+    /* Header and Navigation */
+    .breadcrumb {
+        padding: 15px 20px;
+        padding-top: 4rem;
+        font-size: 14px;
+    }
+
+    .nav-logo img {
+        height: 24px;
+    }
+
+    /* Common Text Styles */
+    h1 {
+        font-size: 32px;
+        font-weight: 300;
+        margin-bottom: 20px;
+        line-height: 1.3;
+        color: #333;
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 1.6;
+        color: #666;
+        margin-bottom: 20px;
+    }
+
+    /* Card Grid Layout */
+    .card-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 0;
+        margin: 20px 0;
+    }
+
+    /* Card Styles */
+    .card {
+        background: #fff;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+        transform: translateY(-3px);
+    }
+
+    .card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        display: block;
+    }
+
+    .card-content {
+        padding: 20px;
+    }
+
+    .card-title {
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom: 10px;
+        color: #333;
+        line-height: 1.4;
+    }
+
+    .card-description {
+        font-size: 14px;
+        color: #666;
+        margin-bottom: 15px;
+        line-height: 1.5;
+    }
+
+    /* Article Grid */
+    .article-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 24px;
+        margin: 24px 0;
+    }
+
+    .article-card {
+        background: #fff;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .article-image {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .article-content {
+        padding: 20px;
+    }
+
+    .article-meta {
+        display: flex;
+        gap: 12px;
+        margin-bottom: 12px;
+        font-size: 14px;
+        color: #666;
+    }
+
+    .article-title {
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom: 12px;
+        line-height: 1.4;
+        color: #333;
+    }
+
+    .article-excerpt {
+        font-size: 14px;
+        color: #666;
+        line-height: 1.5;
+        margin-bottom: 15px;
+    }
+
+    /* Tags */
+    .tag-container {
+        display: flex;
+        gap: 8px;
+        flex-wrap: wrap;
+        margin-top: 12px;
+    }
+
+    .tag {
+        font-size: 12px;
+        padding: 4px 12px;
+        background: #f5f5f5;
+        border-radius: 16px;
+        color: #666;
+    }
+
+    /* Webinar Cards */
+    .webinar-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        margin: 24px 0;
+    }
+
+    .webinar-card {
+        background: #fff;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    .webinar-date {
+        font-size: 14px;
+        color: #666;
+        margin-bottom: 8px;
+    }
+
+    .webinar-type {
+        font-size: 14px;
+        color: #0066cc;
+        margin-bottom: 12px;
+    }
+
+    /* Read More Links */
+    .read-more {
+        color: #0066cc;
+        text-decoration: none;
+        font-size: 14px;
+        display: inline-flex;
+        align-items: center;
+        gap: 4px;
+    }
+
+    .read-more:after {
+        content: "→";
+        transition: transform 0.3s ease;
+    }
+
+    .read-more:hover:after {
+        transform: translateX(4px);
+    }
+
+    /* Buttons */
+    .button {
+        display: inline-block;
+        padding: 12px 24px;
+        border: 2px solid #333;
+        border-radius: 4px;
+        color: #333;
+        text-decoration: none;
+        font-size: 16px;
+        transition: all 0.3s ease;
+        text-align: center;
+        width: 100%;
+        margin: 8px 0;
+    }
+
+    .button:hover {
+        background: #333;
+        color: #fff;
+    }
+}
+
+/* Extra Small Devices */
+@media screen and (max-width: 375px) {
+    .card img,
+    .article-image {
+        height: 180px;
+    }
+
+    .card-title,
+    .article-title {
+        font-size: 16px;
+    }
+
+    .card-description,
+    .article-excerpt {
+        font-size: 13px;
+    }
+
+    .tag {
+        font-size: 11px;
+        padding: 3px 10px;
+    }
+
+    .button {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+}
+

@@ -198,30 +198,7 @@ body {
     height: auto;
 }
 
-/* Media Queries for Responsiveness */
-@media (max-width: 768px) {
-    .wrts-future__grid,
-    .wrts-stats__grid,
-    .wrts-ref__grid {
-        grid-template-columns: 1fr;
-        gap: 40px;
-    }
 
-    .wrts-hero__heading,
-    .wrts-future__heading,
-    .wrts-tech__heading,
-    .wrts-ref__heading {
-        font-size: 36px;
-    }
-
-    .wrts-stats__number {
-        font-size: 36px;
-    }
-
-    .wrts-container {
-        padding: 0 15px;
-    }
-}
 
 .carousel-container {
     max-width: 1700px;
@@ -725,19 +702,6 @@ body {
     }
 }
 
-@media (max-width: 768px) {
-    .wartsila-hero-title {
-        font-size: 2.5rem;
-    }
-    
-    .wartsila-hero-description {
-        font-size: 1.1rem;
-    }
-
-    .wartsila-hero-content {
-        padding: 60px 20px;
-    }
-}
 
 .press-custom-container {
     margin: 0 auto;
@@ -815,15 +779,6 @@ body {
     }
 }
 
-@media (max-width: 768px) {
-    .press-custom-title {
-        font-size: 2rem;
-    }
-    
-    .press-custom-heading {
-        font-size: 1.1rem;
-    }
-}
 
 .wartsila-features-container {
     margin: 60px auto;
@@ -938,25 +893,6 @@ body {
     }
 }
 
-@media (max-width: 768px) {
-    .wartsila-feature-title {
-        font-size: 1.75rem;
-    }
-    
-    .wartsila-feature-description {
-        font-size: 1rem;
-    }
-    
-    .wartsila-title {
-        font-size: 2rem;
-    }
-    
-    .wartsila-footer {
-        flex-direction: column;
-        gap: 20px;
-        text-align: center;
-    }
-}
 
 .offices-custom-container {
     margin: 40px auto;
@@ -1061,21 +997,326 @@ body {
     }
 }
 
-@media (max-width: 768px) {
-    .offices-custom-container {
-        padding: 2rem 1rem;
-    }
-    
-    .offices-custom-title {
-        font-size: 2rem;
+@media screen and (max-width: 768px) {
+    /* Global Container Adjustments */
+    .wrts-container {
+        padding: 2rem 1.5rem;
     }
 
-    .offices-custom-tab-button {
-        font-size: 0.9rem;
-        padding: 15px 10px;
+    /* Breadcrumb */
+    .breadcrumb {
+        padding: 15px 20px;
+        padding-top: 4rem;
+        font-size: 14px;
+        flex-wrap: wrap;
+    }
+
+    /* Hero Section */
+    .wrts-hero {
+        height: 50vh;
+    }
+
+    .wrts-hero__overlay {
+        background: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.7) 0%,
+            rgba(0, 0, 0, 0.7) 100%
+        );
+    }
+
+    .wrts-hero__content {
+        padding: 40px 20px;
+    }
+
+    .wrts-hero__heading {
+        font-size: 32px;
+        max-width: 100%;
+    }
+
+    /* Future Section */
+    .wrts-future__grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .wrts-future__heading {
+        font-size: 32px;
+        text-align: left;
+    }
+
+    .wrts-future__text {
+        font-size: 16px;
+        text-align: left;
+    }
+
+    /* Stats Section */
+    .wrts-stats {
+        padding: 30px 0;
+    }
+
+    .wrts-stats__grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .wrts-stats__title {
+        font-size: 32px;
+        margin-bottom: 30px;
+        text-align: left;
+    }
+
+    .wrts-stats__number {
+        font-size: 36px;
+    }
+
+    /* Technology Section */
+    .wrts-tech {
+        padding: 40px 0;
+    }
+
+    .wrts-tech__content {
+        padding: 0 20px;
+        text-align: left;
+    }
+
+    .wrts-tech__heading {
+        font-size: 32px;
+    }
+
+    /* References Section */
+    .wrts-ref__grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .wrts-ref__heading {
+        font-size: 32px;
+        text-align: left;
+    }
+
+    .wrts-ref__text {
+        text-align: left;
+    }
+
+    .wrts-ref__map {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Success Stories Carousel */
+    .carousel-container {
+        overflow: hidden;
+    }
+
+    .slide {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .content {
+        order: 2;
+        padding: 15px 0;
+    }
+
+    .image {
+        order: 1;
+        padding: 0;
+    }
+
+    .image img {
+        height: 200px;
+    }
+
+    .header h1 {
+        font-size: 32px;
+        padding: 15px;
+    }
+
+    /* White Papers Section */
+    .container-papers {
+        padding: 2rem 1.5rem;
+    }
+
+    .container-papers h1 {
+        font-size: 32px;
+        text-align: left;
+    }
+
+    .papers-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Sustainable Shipping Carousel */
+    .ssc-container {
+        height: 400px;
+    }
+
+    .ssc-slide {
+        padding: 20px;
+        flex-direction: column;
+    }
+
+    .ssc-content {
+        width: 100%;
+        padding: 0;
+        text-align: left;
+    }
+
+    .sustainable-shipping-carousel h1 {
+        font-size: 28px;
+    }
+
+    .sustainable-shipping-carousel p {
+        font-size: 16px;
+    }
+
+    .ssc-image {
+        width: 100%;
+        height: 50%;
+        top: auto;
+        bottom: 0;
+    }
+
+    .ssc-navigation {
+        right: 10px;
+    }
+
+    /* Africa Gallery */
+    .africa_gallery {
+        padding: 2rem 1.5rem;
+    }
+
+    .africa_gallery_title {
+        font-size: 32px;
+        text-align: left;
+    }
+
+    .africa_gallery_wrapper {
+        gap: 20px;
+        padding: 15px 0;
+    }
+
+    .africa_gallery_item {
+        min-width: 100%;
+    }
+
+    /* Articles Section */
+    .article-custom-container {
+        padding: 2rem 1.5rem;
+    }
+
+    .article-custom-heading {
+        font-size: 32px;
+        text-align: left;
+    }
+
+    .article-custom-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Wartsila Hero */
+    .wartsila-hero {
+        padding: 2rem 1.5rem;
+    }
+
+    .wartsila-hero-container {
+        height: 400px;
+    }
+
+    .wartsila-hero-content {
+        padding: 2rem 1.5rem;
+    }
+
+    .wartsila-hero-title {
+        font-size: 32px;
+    }
+
+    .wartsila-hero-description {
+        font-size: 16px;
+    }
+
+    /* Press Releases */
+    .press-custom-container {
+        padding: 2rem 1.5rem;
+    }
+
+    .press-custom-title {
+        font-size: 32px;
+        text-align: left;
+    }
+
+    /* Features Section */
+    .wartsila-features-container {
+        padding: 2rem 1.5rem;
+    }
+
+    .wartsila-features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .wartsila-feature-card {
+        height: 300px;
+    }
+
+    .wartsila-feature-title {
+        font-size: 24px;
+    }
+
+    .wartsila-footer {
+        flex-direction: column;
+        gap: 20px;
+        text-align: left;
+    }
+
+    .wartsila-title {
+        font-size: 32px;
+    }
+
+    .wartsila-contact-btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Offices Section */
+    .offices-custom-container {
+        padding: 2rem 1.5rem;
+    }
+
+    .offices-custom-title {
+        font-size: 32px;
+        text-align: left;
     }
 
     .offices-custom-tab-list {
+        flex-wrap: nowrap;
         overflow-x: auto;
+        justify-content: flex-start;
+        gap: 10px;
+    }
+
+    .offices-custom-tab-button {
+        flex: 0 0 auto;
+        min-width: max-content;
+    }
+}
+
+/* Extra Small Devices */
+@media screen and (max-width: 375px) {
+    .wrts-hero__heading,
+    .wrts-future__heading,
+    .wrts-stats__title,
+    .wrts-tech__heading,
+    .wrts-ref__heading,
+    .container-papers h1,
+    .article-custom-heading,
+    .wartsila-hero-title,
+    .press-custom-title,
+    .offices-custom-title {
+        font-size: 28px;
+    }
+
+    .wrts-stats__number {
+        font-size: 32px;
     }
 }

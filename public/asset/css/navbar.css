@@ -298,6 +298,24 @@
   transition: transform 0.3s ease;
 }
 
+.home-teks a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* Optional: jika ingin ada efek hover */
+.home-teks a:hover {
+  color: #ff6b00; /* atau warna lain yang diinginkan */
+} 
+
+.home-teks a {
+  text-decoration: none;
+}
+
+.home-teks a p {
+  color: #000;
+  margin: 0;
+}
 /* Search Styles */
 .search-container {
   display: inline-block;
@@ -390,6 +408,7 @@
     display: none;
 }
 
+/* Responsive Styles */
 /* Responsive Styles */
 @media screen and (max-width: 768px) {
   /* Basic navbar setup */
@@ -510,6 +529,28 @@
       right: 0;
   }
 
+  /* Styling untuk home-teks */
+  .home-teks {
+      width: 100%;
+      padding: 1rem 1.5rem;
+      border-bottom: 1px solid #eee;
+  }
+
+  .home-teks a {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: #000;
+      text-decoration: none;
+      font-size: 1rem;
+      width: 100%;
+  }
+
+  .home-teks a p {
+      margin: 0;
+      font-size: 1rem;
+  }
+
   .nav-menu {
       display: none;
   }
@@ -521,7 +562,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      color: #333;
+      color: #000;
       text-decoration: none;
       font-size: 1rem;
   }
@@ -636,6 +677,14 @@
 
   .menu-toggle {
       right: 5px;
+  }
+
+  .home-teks {
+      padding: 0.8rem 1rem;
+  }
+
+  .home-teks a p {
+      font-size: 0.9rem;
   }
 
   .nav-item {

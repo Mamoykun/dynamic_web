@@ -261,21 +261,6 @@ body {
     text-decoration: underline;
 }
 
-@media (max-width: 1024px) {
-    .service-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 768px) {
-    .service-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .service-finder__title {
-        font-size: 32px;
-    }
-}
 
 .cii-status {
     position: relative;
@@ -395,19 +380,6 @@ body {
     line-height: 1.5;
 }
 
-@media (max-width: 768px) {
-    .equipment {
-        grid-template-columns: 1fr;
-    }
-
-    .equipment__content {
-        padding-right: 0;
-    }
-
-    .cii-status__title {
-        font-size: 36px;
-    }
-}
 
 .content-video{
     padding: 2rem 3rem;
@@ -521,52 +493,7 @@ body {
     opacity: 1;
 }
 
-/* Responsive Design */
-@media (max-width: 1200px) {
-    .video-container {
-        width: 70%;
-    }
-}
 
-@media (max-width: 768px) {
-    .video-container {
-        width: 90%;
-    }
-    
-    .testimonial-title {
-        font-size: 32px;
-    }
-    
-    .testimonial-subtitle {
-        font-size: 16px;
-    }
-    
-    #playPauseBtn {
-        width: 50px;
-        height: 50px;
-    }
-    
-    .play-icon, .pause-icon {
-        width: 24px;
-        height: 24px;
-    }
-}
-
-@media (max-width: 480px) {
-    .video-container {
-        width: 100%;
-    }
-    
-    #playPauseBtn {
-        width: 40px;
-        height: 40px;
-    }
-    
-    .play-icon, .pause-icon {
-        width: 20px;
-        height: 20px;
-    }
-}
 
 
 .contact{
@@ -649,27 +576,258 @@ body {
     object-fit: contain;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
+    /* Global Spacing */
+    .services-intro,
+    .popular-services,
+    .service-list,
+    .service-finder,
+    .equipment,
+    .why-choose,
+    .content-video,
     .wartsila-contact {
+        padding: 2rem 1.5rem;
+    }
+
+    /* Breadcrumb */
+    .breadcrumb {
+        padding: 15px 20px;
+        padding-top: 4rem;
+        font-size: 14px;
+        flex-wrap: wrap;
+    }
+
+    /* Hero Section */
+    .hero {
+        height: 400px;
+    }
+
+    .hero-overlay {
+        clip-path: none;
+        background: linear-gradient(
+            to bottom,
+            rgba(0,0,0,0.8) 0%,
+            rgba(0,0,0,0.6) 100%
+        );
+    }
+
+    .hero-content {
+        padding: 20px;
+        margin-top: 30px;
+        max-width: 100%;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+        margin-bottom: 15px;
+    }
+
+    .hero p {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    /* Services Introduction */
+    .services-intro h2 {
+        font-size: 32px;
+        text-align: left;
+    }
+
+    .services-intro p {
+        font-size: 16px;
+        text-align: left;
+    }
+
+    /* Popular Services */
+    .popular-services h2 {
+        font-size: 28px;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    /* Service List */
+    .service-list p,
+    .service-list li {
+        font-size: 16px;
+        text-align: left;
+    }
+
+    /* Service Finder */
+    .service-finder__title {
+        font-size: 32px;
+    }
+
+    .service-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .service-card {
+        margin-bottom: 20px;
+    }
+
+    .service-card__image {
+        height: 200px;
+    }
+
+    .service-card__title {
+        font-size: 20px;
+    }
+
+    /* CII Status Section */
+    .cii-status {
+        height: auto;
+        min-height: 400px;
         padding: 40px 20px;
     }
-    
+
+    .cii-status__content {
+        padding: 20px;
+    }
+
+    .cii-status__title {
+        font-size: 32px;
+    }
+
+    .cii-status__text {
+        font-size: 16px;
+    }
+
+    /* Equipment Section */
+    .equipment {
+        grid-template-columns: 1fr;
+    }
+
+    .equipment__title {
+        font-size: 32px;
+    }
+
+    .equipment__content {
+        padding-right: 0;
+    }
+
+    .equipment__image {
+        height: 250px;
+    }
+
+    /* Why Choose Section */
+    .why-choose__title {
+        font-size: 32px;
+    }
+
+    .why-choose__intro,
+    .benefits-list li {
+        font-size: 16px;
+    }
+
+    /* Video Section */
+    .testimonial-title {
+        font-size: 32px;
+    }
+
+    .video-container {
+        width: 100%;
+    }
+
+    #playPauseBtn {
+        width: 50px;
+        height: 50px;
+    }
+
+    .play-icon, 
+    .pause-icon {
+        width: 24px;
+        height: 24px;
+    }
+
+    /* Contact Section */
     .wartsila-contact__title {
-        font-size: 48px;
+        font-size: 32px;
+        margin-bottom: 20px;
     }
-    
+
     .wartsila-contact__subtitle {
-        font-size: 20px;
-        margin-bottom: 60px;
+        font-size: 16px;
+        margin-bottom: 40px;
     }
-    
+
     .wartsila-contact__brand {
-        font-size: 36px;
+        font-size: 28px;
     }
-    
+
+    .contact {
+        flex-direction: column;
+        gap: 20px;
+    }
+
     .wartsila-contact__actions {
         flex-direction: column;
         align-items: flex-start;
-        gap: 30px;
+        padding-left: 0;
+        gap: 20px;
+    }
+
+    .wartsila-contact__btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .wartsila-contact__social {
+        width: 100%;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    /* Buttons */
+    .contact-btn,
+    .download-btn,
+    .contact-center-btn {
+        width: 100%;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .contact-center-wrapper {
+        padding: 2rem 1.5rem;
+    }
+
+    /* Lists */
+    ul, ol {
+        padding-left: 20px;
+    }
+
+    /* Link Spacing */
+    .links-section a {
+        padding: 10px 0;
+    }
+}
+
+/* Extra Small Devices */
+@media screen and (max-width: 375px) {
+    .hero h1,
+    .services-intro h2,
+    .service-finder__title,
+    .cii-status__title,
+    .equipment__title,
+    .why-choose__title,
+    .testimonial-title,
+    .wartsila-contact__title {
+        font-size: 28px;
+    }
+
+    .service-card__image {
+        height: 180px;
+    }
+
+    .service-card__title {
+        font-size: 18px;
+    }
+
+    .wartsila-contact__social-icon {
+        width: 20px;
+        height: 20px;
     }
 }
