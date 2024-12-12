@@ -69,22 +69,7 @@
   <!-- foto 1 dan 2 end -->
 
   <!-- the interim report -->
-  <section class="report-section">
-    <div class="report-content">
-      <div class="report-text">
-        <h2>The interim report</h2>
-        <p>for Q3 2024 has been published</p>
-        <a href="#" class="result-btn">See the result</a>
-      </div>
-      <div class="report-images">
-        <div class="image-wrapper">
-          <div class="image-item-image-top">
-            <img src="{{asset('asset/image/pabrik.jpg')}}" alt="Factory">
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+ 
   <!-- the interim report end -->
   <!-- slide home -->
   <section>
@@ -92,7 +77,7 @@
       <div class="slide active">
         <img src="{{asset('asset/image/foto pekerja pabrik.jpg')}}" alt="Factory Workers" class="slide-image">
         <div class="content">
-          <h1>Report: Sustainable fuels for shipping by 2050 – the 3 key elements of success</h1>
+          <h1>Report: Sustainable fuels for shipping by 2050 – Succes</h1>
           <p>This research-backed report on future fuels in the marine industry reveals key actions to take today to
             achieve sustainable shipping by 2050.</p>
           <button class="download-btn">dowloand this report now!</button>
@@ -598,4 +583,3 @@
     </div>
   </section>
   <!-- 4 konten end -->
-</html>

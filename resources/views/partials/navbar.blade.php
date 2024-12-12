@@ -17,7 +17,9 @@
     </div>
       
     <ul class="nav-items">
-        <li class="nav-item"><a href="{{asset('home')}}">Home</a></li>
+        <li class="nav-item">
+            <a href="{{ route('home') }}">Home</a>
+        </li>
         <li class="nav-item" id="energy-nav">
             Product & Services
             <span class="arrow">&#9662;</span>
