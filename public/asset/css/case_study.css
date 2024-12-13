@@ -8,7 +8,7 @@ body {
     font-family: "Noto Sans small", "Noto Sans", sans-serif;
 }
 
-/* First Hero Section - Keeping original padding */
+/* Previous styles unchanged */
 .breadcrumb {
     padding: 20px 40px;
     background: white;
@@ -20,814 +20,462 @@ body {
     text-decoration: none;
 }
 
-.breadcrumb span {
-    margin: 0 10px;
-    color: #666;
-}
-
-.hero {
+.hero-section {
     position: relative;
-    height: 500px;
-    color: white;
-    overflow: hidden;
-}
-
-.hero-image-container {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
-    height: 100%;
+    height: 500px;
+    overflow: hidden;
+    margin-bottom: 40px;
 }
 
 .hero-image {
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
-
-.hero-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, 
-        rgba(0,0,0,0.8) 0%, 
-        rgba(0,0,0,0.6) 40%, 
-        rgba(0,0,0,0.4) 60%,
-        rgba(0,0,0,0) 100%);
-    clip-path: polygon(0 0, 100% 0, 85% 100%, 0 100%);
+    filter: brightness(0.8);
 }
 
 .hero-content {
-    position: relative;
-    max-width: 600px;
-    padding: 40px;
-    margin-top: 60px;
-    z-index: 2;
-}
-
-.hero h1 {
-    font-size: 48px;
-    margin-bottom: 20px;
-    font-weight: normal;
-}
-
-.hero p {
-    font-size: 20px;
-    margin-bottom: 30px;
-}
-
-/* Button Styles */
-.contact-btn {
-    display: inline-block;
-    padding: 10px 30px;
-    border: 2px solid white;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
     color: white;
-    text-decoration: none;
-    border-radius: 4px;
-    transition: all 0.3s;
+    max-width: 600px;
+    z-index: 1;
 }
 
-.contact-btn:hover {
-    background: white;
-    color: black;
-}
-
-/* Services Introduction Section Styles */
-.services-intro {
-    text-align: left;
-    padding: 2rem 3rem;
-
-    margin: 0 auto;
-}
-
-.services-intro h2 {
-    font-size: 60px;
+.hero-title {
+    font-size: 3rem;
     font-weight: 300;
-    margin-bottom: 20px;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
 }
 
-/* Popular Services Section Styles */
-.popular-services {
-    padding: 2rem 3rem;
-    margin: 0 auto;
-}
-
-.popular-services h2 {
-    font-size: 36px;
-    font-weight: normal;
-    margin-bottom: 30px;
-}
-
-.services-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-}
-
-/* Service Card Styles */
-.service-card {
-    border: 1px solid #eee;
-    padding: 20px;
-}
-
-.service-card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    margin-bottom: 20px;
-}
-
-.service-card h3 {
-    font-size: 24px;
-    margin-bottom: 15px;
-}
-
-.service-card p {
-    color: #666;
+.hero-description {
+    font-size: 1.2rem;
     line-height: 1.6;
+    opacity: 0.9;
 }
 
-/* Service List Section Styles */
-.service-list {
-    padding: 2rem 3rem;
+/* New layout structure */
+.main-content {
+    position: relative;
+    max-width: 1200px;
     margin: 0 auto;
+    padding: 0 40px;
 }
 
-.service-list ul {
-    list-style: none;
-}
-
-.service-list li {
-    margin-bottom: 20px;
-    line-height: 1.6;
-}
-
-.service-list a {
-    color: #0066cc;
-    text-decoration: none;
-}
-
-.service-list a:hover {
-    text-decoration: underline;
-}
-
-.contact-center-wrapper {
+.content-grid {
+    position: relative;
     display: flex;
-    justify-content: center;
+    gap: 60px;
+}
+
+/* Fixed subscribe sidebar */
+.subscribe-sidebar {
+    width: 120px;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.subscribe-container {
+    position: sticky;
+    top: 20px;
+}
+
+.subscribe-btn {
     width: 100%;
-    padding: 4rem;
-}
-
-/* Button khusus untuk kontak tengah */
-.contact-center-btn {
-    display: inline-block;
-    padding: 12px 40px;
-    border: 1px solid #333;
-    color: #333;
-    text-decoration: none;
+    padding: 8px 20px;
+    border: 1.5px solid #333;
     border-radius: 4px;
-    font-size: 16px;
-    transition: all 0.3s ease;
-    font-family: Arial, sans-serif;
+    background: white;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    transition: all 0.2s ease;
 }
 
-.contact-center-btn:hover {
+.subscribe-btn:hover {
     background-color: #333;
     color: white;
 }
 
-.service-finder {
-    margin: 0 auto;
-    padding: 2rem 3rem;
+/* Article content */
+.article-content {
+    flex-grow: 1;
+    max-width: 800px;
 }
 
-.service-finder__title {
-    font-size: 42px;
-    font-weight: normal;
-    margin-bottom: 20px;
-    color: #000;
-}
-
-.service-finder__intro {
-    margin-bottom: 40px;
-    color: #333;
-}
-
-.service-finder__intro a {
-    color: #0066cc;
-    text-decoration: none;
-}
-
-.service-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-    margin-bottom: 30px;
-}
-
-.service-card {
+.meta-info {
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 32px;
+    font-size: 15px;
+    color: #666;
 }
 
-.service-card__image {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-    margin-bottom: 20px;
-}
-
-.service-card__title {
-    font-size: 24px;
-    color: #000;
-    margin-bottom: 15px;
-    font-weight: normal;
-}
-
-.service-card__description {
+.tag {
+    background: #f5f5f5;
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 14px;
     color: #333;
-    line-height: 1.6;
 }
 
-.service-card__description a {
-    color: #0066cc;
+.article-title {
+    font-size: 25px;
+    line-height: 1.4;
+    margin-bottom: 32px;
+    font-weight: 300;
+    color: #000;
+}
+
+.article-title2 {
+    font-size: 45px;
+    line-height: 1.4;
+    margin-bottom: 32px;
+    font-weight: 300;
+    color: #000;
+}
+
+.article-content p {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #333;
+    margin-bottom: 24px;
+}
+
+.article-card a {
     text-decoration: none;
 }
 
-.service-card__description a:hover {
+
+/* Add these styles to the existing CSS */
+
+.article-footer {
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+.get-in-touch {
+    margin-bottom: 40px;
+}
+
+.get-in-touch a {
+    color: #064283;
+    text-decoration: none;
+}
+
+.get-in-touch a:hover {
     text-decoration: underline;
 }
 
-
-.cii-status {
-    position: relative;
-    height: 500px;
-    color: white;
-    overflow: hidden;
-    background: linear-gradient(90deg, rgba(0,0,20,0.8) 0%, rgba(0,0,20,0.6) 50%, rgba(0,0,20,0) 100%);
-}
-
-.cii-status__image {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1;
-}
-
-.cii-status__content {
-    max-width: 800px;
-    padding: 60px 40px;
-}
-
-.cii-status__title {
-    font-size: 48px;
-    margin-bottom: 20px;
-    font-weight: 300;
-    line-height: 1.2;
-}
-
-.cii-status__text {
-    font-size: 18px;
-    margin-bottom: 30px;
-    line-height: 1.5;
-}
-
-.download-btn {
-    display: inline-block;
-    padding: 12px 30px;
-    border: 1px solid white;
-    color: white;
-    text-decoration: none;
-    border-radius: 4px;
-    transition: all 0.3s;
-}
-
-/* Equipment Section */
-.equipment {
-    padding: 5rem 3rem;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 40px;
-}
-
-.equipment__title {
-    font-size: 42px;
-    margin-bottom: 20px;
-    font-weight: 300;
-    grid-column: 1 / -1;
-}
-
-.equipment__content {
-    padding-right: 40px;
-}
-
-.equipment__intro {
-    color: #333;
-    margin-bottom: 20px;
-}
-
-.equipment__list {
-    list-style: none;
-    margin-bottom: 30px;
-}
-
-.equipment__list li {
-    margin-bottom: 10px;
-}
-
-.equipment__list a {
-    color: #0066cc;
-    text-decoration: none;
-}
-
-.equipment__image {
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
-}
-
-/* Why Choose Section */
-.why-choose {
-    padding: 2rem 3rem;
-    margin: 0 auto;
-}
-
-.why-choose__title {
-    font-size: 42px;
-    margin-bottom: 20px;
-    font-weight: 300;
-}
-
-.why-choose__intro {
-    margin-bottom: 30px;
-    line-height: 1.5;
-}
-
-.benefits-list {
-    list-style: none;
-    margin-bottom: 40px;
-}
-
-.benefits-list li {
-    margin-bottom: 10px;
-    line-height: 1.5;
-}
-
-
-.content-video{
-    padding: 2rem 3rem;
-}
-
-.testimonial-header {
-    max-width: 1200px;
-    width: 100%;
-    margin-bottom: 40px;
-}
-
-.testimonial-title {
-    font-size: 42px;
-    font-weight: 300;
-    margin-bottom: 20px;
-    color: #000;
-    line-height: 1.2;
-}
-
-.testimonial-subtitle {
-    font-size: 18px;
-    color: #333;
-    font-weight: normal;
-    line-height: 1.5;
-}
-
-.video-container {
-    position: relative;
-    width: 50%;
-    aspect-ratio: 16/9;
-    background: #1a1f25;
-    overflow: hidden;
-}
-
-.main-video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-/* Center Controls */
-.center-controls {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 4;
-    transition: opacity 0.3s ease;
-}
-
-/* Bottom Right Controls */
-.bottom-right-controls {
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-    z-index: 4;
-    transition: opacity 0.3s ease;
-}
-
-.video-btn {
-    background-color: rgba(0, 0, 0, 0.5);
-    border: none;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.3s ease;
-    padding: 0;
-}
-
-/* Different sizes for center and fullscreen buttons */
-#playPauseBtn {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-}
-
-.fullscreen-btn {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-}
-
-.video-btn:hover {
-    background-color: rgba(0, 0, 0, 0.7);
-    transform: scale(1.1);
-}
-
-/* Icons */
-.play-icon, .pause-icon {
-    fill: white;
-    width: 30px;
-    height: 30px;
-}
-
-.fullscreen-icon {
-    fill: white;
-    width: 24px;
-    height: 24px;
-}
-
-/* Hide controls when playing */
-.video-container.playing .center-controls,
-.video-container.playing .bottom-right-controls {
-    opacity: 0;
-}
-
-/* Show controls on hover */
-.video-container:hover .center-controls,
-.video-container:hover .bottom-right-controls {
-    opacity: 1;
-}
-
-
-
-
-.contact{
-    display: flex;
-}
-
-.wartsila-contact {
-
-    padding: 2rem 3rem;
-}
-
-.wartsila-contact__title {
-    font-size: 64px;
-    font-weight: 200;
-    margin: 0 0 35px 0;
-    color: #000;
-    line-height: 1;
-    letter-spacing: -0.02em;
-}
-
-.wartsila-contact__subtitle {
-    font-size: 24px;
-    line-height: 1.5;
-    color: #333;
-    margin: 0 0 80px 0;
-    max-width: 1000px;
-    font-weight: 300;
-}
-
-.wartsila-contact__brand {
-    font-size: 48px;
-    margin: 0 0 35px 0;
-    font-weight: 200;
-    color: #000;
-    line-height: 1.2;
-    letter-spacing: -0.02em;
-}
-
-.wartsila-contact__actions {
-    display: flex;
-    align-items: center;
-    gap: 50px;
-    padding-left: 9rem;
-}
-
-.wartsila-contact__btn {
-    display: inline-block;
-    padding: 12px 24px;
-    border: 1px solid #000;
-    border-radius: 2px;
-    text-decoration: none;
-    color: #000;
+.article-note {
     font-size: 16px;
+    color: #333;
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+.written-by {
+    margin-bottom: 20px;
+    color: #000;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.author-info {
+    margin-bottom: 10px;
+}
+
+.author-name {
+    color: #000;
+    font-size: 18px;
     font-weight: 400;
-    transition: all 0.2s ease;
-    min-width: 120px;
-    text-align: center;
-}
-
-.wartsila-contact__btn:hover{
-    color: #fff;
-    background-color: #000;
-}
-.wartsila-contact__social {
-    display: flex;
-    gap: 30px;
-    align-items: center;
-}
-
-.wartsila-contact__social-icon {
-    width: 24px;
-    height: 24px;
     text-decoration: none;
-    opacity: 0.85;
 }
 
-.wartsila-contact__social-img {
+.author-title {
+    color: #064283;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.author-title:hover {
+    text-decoration: underline;
+}
+
+.wcs-divider {
     width: 100%;
-    height: 100%;
-    object-fit: contain;
+    height: 2px;
+    background: linear-gradient(to right, #e0e0e0, #cccccc, #e0e0e0);
+    margin: 30px 0;
+    border: none;
+}
+
+.wcs-divider-container {
+    padding: 0 20px;
+    max-width: 1800px;
+    margin: 0 auto;
+}
+
+.wcs-container {
+    
+    margin: 0 auto;
+    padding: 3rem 3rem;
+}
+
+.wcs-main-heading {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+
+.wcs-card-wrapper {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+    max-width: 600px;
+}
+
+.wcs-card-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+}
+
+.wcs-card-content {
+    padding: 20px;
+}
+
+.wcs-card-title {
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.wcs-card-description {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+.rct-container {
+    margin: 0 auto;
+    padding: 3rem 3rem;
+}
+
+.rct-title {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 30px;
+    font-weight: 300;
+}
+
+.rct-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.rct-card {
+    background: #fff;
+    border-radius: 4px;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.rct-card-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.rct-card-content {
+    padding: 20px 0;
+}
+
+.rct-card-meta {
+    display: flex;
+    gap: 10px;
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+    font-family: Arial, sans-serif;
+}
+
+.rct-card-title {
+    font-size: 1.5rem;
+    color: #000;
+    margin-bottom: 15px;
+    font-weight: 300;
+    line-height: 1.3;
+}
+
+.rct-card-description {
+    color: #666;
+    font-size: 1rem;
+    line-height: 1.5;
+    font-family: Arial, sans-serif;
+}
+
+.rct-tag {
+    display: inline-block;
+    padding: 4px 12px;
+    background: #f5f5f5;
+    border-radius: 16px;
+    margin-right: 8px;
+    margin-top: 15px;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.rct-read-time {
+    color: #666;
+    font-size: 0.9rem;
 }
 
 @media screen and (max-width: 768px) {
-    /* Global Spacing */
-    .services-intro,
-    .popular-services,
-    .service-list,
-    .service-finder,
-    .equipment,
-    .why-choose,
-    .content-video,
-    .wartsila-contact {
-        padding: 2rem 1.5rem;
-    }
-
-    /* Breadcrumb */
     .breadcrumb {
-        padding: 15px 20px;
+        padding: 10px 20px;
         padding-top: 4rem;
-        font-size: 14px;
-        flex-wrap: wrap;
     }
 
-    /* Hero Section */
-    .hero {
-        height: 400px;
-    }
-
-    .hero-overlay {
-        clip-path: none;
-        background: linear-gradient(
-            to bottom,
-            rgba(0,0,0,0.8) 0%,
-            rgba(0,0,0,0.6) 100%
-        );
+    .hero-section {
+        height: 300px;
     }
 
     .hero-content {
-        padding: 20px;
-        margin-top: 30px;
+        left: 20px;
+        right: 20px;
         max-width: 100%;
     }
 
-    .hero h1 {
-        font-size: 32px;
-        margin-bottom: 15px;
+    .hero-title {
+        font-size: 2rem;
+        margin-bottom: 1rem;
     }
 
-    .hero p {
-        font-size: 16px;
+    .hero-description {
+        font-size: 1rem;
+    }
+
+    .main-content {
+        padding: 0 20px;
+    }
+
+    .content-grid {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .subscribe-sidebar {
+        width: 100%;
         margin-bottom: 20px;
     }
 
-    /* Services Introduction */
-    .services-intro h2 {
-        font-size: 32px;
-        text-align: left;
+    .subscribe-container {
+        position: static;
     }
 
-    .services-intro p {
-        font-size: 16px;
-        text-align: left;
+    .article-content {
+        max-width: 100%;
     }
 
-    /* Popular Services */
-    .popular-services h2 {
-        font-size: 28px;
+    .article-title {
+        font-size: 22px;
     }
 
-    .services-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-
-    /* Service List */
-    .service-list p,
-    .service-list li {
-        font-size: 16px;
-        text-align: left;
-    }
-
-    /* Service Finder */
-    .service-finder__title {
+    .article-title2 {
         font-size: 32px;
     }
 
-    .service-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
+    .meta-info {
+        flex-wrap: wrap;
+        gap: 12px;
     }
 
-    .service-card {
+    .wcs-container {
+        padding: 2rem 1rem;
+    }
+
+    .wcs-main-heading {
+        font-size: 2rem;
+    }
+
+    .wcs-card-wrapper {
         margin-bottom: 20px;
     }
 
-    .service-card__image {
+    .wcs-card-image {
         height: 200px;
     }
 
-    .service-card__title {
-        font-size: 20px;
+    .wcs-card-title {
+        font-size: 1.5rem;
     }
 
-    /* CII Status Section */
-    .cii-status {
-        height: auto;
-        min-height: 400px;
-        padding: 40px 20px;
+    .rct-container {
+        padding: 2rem 1rem;
     }
 
-    .cii-status__content {
-        padding: 20px;
+    .rct-title {
+        font-size: 2rem;
     }
 
-    .cii-status__title {
-        font-size: 32px;
-    }
-
-    .cii-status__text {
-        font-size: 16px;
-    }
-
-    /* Equipment Section */
-    .equipment {
+    .rct-grid {
         grid-template-columns: 1fr;
-    }
-
-    .equipment__title {
-        font-size: 32px;
-    }
-
-    .equipment__content {
-        padding-right: 0;
-    }
-
-    .equipment__image {
-        height: 250px;
-    }
-
-    /* Why Choose Section */
-    .why-choose__title {
-        font-size: 32px;
-    }
-
-    .why-choose__intro,
-    .benefits-list li {
-        font-size: 16px;
-    }
-
-    /* Video Section */
-    .testimonial-title {
-        font-size: 32px;
-    }
-
-    .video-container {
-        width: 100%;
-    }
-
-    #playPauseBtn {
-        width: 50px;
-        height: 50px;
-    }
-
-    .play-icon, 
-    .pause-icon {
-        width: 24px;
-        height: 24px;
-    }
-
-    /* Contact Section */
-    .wartsila-contact__title {
-        font-size: 32px;
-        margin-bottom: 20px;
-    }
-
-    .wartsila-contact__subtitle {
-        font-size: 16px;
-        margin-bottom: 40px;
-    }
-
-    .wartsila-contact__brand {
-        font-size: 28px;
-    }
-
-    .contact {
-        flex-direction: column;
         gap: 20px;
     }
 
-    .wartsila-contact__actions {
-        flex-direction: column;
-        align-items: flex-start;
-        padding-left: 0;
-        gap: 20px;
-    }
-
-    .wartsila-contact__btn {
-        width: 100%;
-        text-align: center;
-    }
-
-    .wartsila-contact__social {
-        width: 100%;
-        justify-content: center;
-        gap: 20px;
-    }
-
-    /* Buttons */
-    .contact-btn,
-    .download-btn,
-    .contact-center-btn {
-        width: 100%;
-        text-align: center;
-        padding: 15px;
-    }
-
-    .contact-center-wrapper {
-        padding: 2rem 1.5rem;
-    }
-
-    /* Lists */
-    ul, ol {
-        padding-left: 20px;
-    }
-
-    /* Link Spacing */
-    .links-section a {
-        padding: 10px 0;
-    }
-}
-
-/* Extra Small Devices */
-@media screen and (max-width: 375px) {
-    .hero h1,
-    .services-intro h2,
-    .service-finder__title,
-    .cii-status__title,
-    .equipment__title,
-    .why-choose__title,
-    .testimonial-title,
-    .wartsila-contact__title {
-        font-size: 28px;
-    }
-
-    .service-card__image {
+    .rct-card-image {
         height: 180px;
     }
 
-    .service-card__title {
+    .rct-card-title {
+        font-size: 1.3rem;
+    }
+}
+
+/* Additional responsive styles for very small screens */
+@media screen and (max-width: 480px) {
+    .hero-title {
+        font-size: 1.75rem;
+    }
+
+    .hero-description {
+        font-size: 0.9rem;
+    }
+
+    .article-content p {
+        font-size: 15px;
+    }
+
+    .tag {
+        padding: 4px 12px;
+        font-size: 13px;
+    }
+
+    .written-by {
         font-size: 18px;
     }
 
-    .wartsila-contact__social-icon {
-        width: 20px;
-        height: 20px;
+    .author-name {
+        font-size: 16px;
+    }
+
+    .author-title {
+        font-size: 14px;
     }
 }

@@ -134,6 +134,7 @@
     <!-- Articles -->
     <div class="articles-grid" id="articles-content">
       <article class="article-card">
+        <a href="{{ route('News_Articles') }}" class="article-link" style="text-decoration: none;">
         <img src="{{asset('asset/image/kapal.jpg')}}" alt="Yellow LNG gas pipe" class="article-image">
         <div class="article-content">
           <div class="article-meta">
@@ -147,9 +148,11 @@
           <span class="tag">Decarbonisation and future fuels</span>
           <span class="tag">Engine systems</span>
         </div>
+        </a>
       </article>
 
       <article class="article-card">
+        <a href="{{ route('News_Articles') }}" class="article-link" style="text-decoration: none;">
         <img src="{{asset('asset/image/pabrik.jpg')}}" alt="Worker maintaining propulsion equipment" class="article-image">
         <div class="article-content">
           <div class="article-meta">
@@ -163,9 +166,11 @@
           <span class="tag">Decarbonisation and future fuels</span>
           <span class="tag">Engine systems</span>
         </div>
+        </a>
       </article>
 
       <article class="article-card">
+        <a href="{{ route('News_Articles') }}" class="article-link" style="text-decoration: none;">
         <img src="{{asset('asset/image/pabrik.jpg')}}" alt="Workers inspecting industrial equipment" class="article-image">
         <div class="article-content">
           <div class="article-meta">
@@ -180,12 +185,14 @@
           <span class="tag">Engine systems</span>
         </div>
       </article>
+      </a>
     </div>
 
     <!-- Case Studies -->
     <div class="articles-grid" id="case-studies-content">
       <!-- Hanya 3 artikel untuk Case Studies -->
       <article class="article-card">
+        <a href="{{ route('case_study') }}" class="article-link" style="text-decoration: none;">
         <img src="{{asset('asset/image/pabrik.jpg')}}" alt="Marine vessel case study" class="article-image">
         <div class="article-content">
           <div class="article-meta">
@@ -199,9 +206,11 @@
           <span class="tag">Decarbonisation and future fuels</span>
           <span class="tag">Engine systems</span>
         </div>
+        </a>
       </article>
 
       <article class="article-card">
+        <a href="{{ route('case_study') }}" class="article-link" style="text-decoration: none;">
         <img src="{{asset('asset/image/kapal report.jpg')}}" alt="Energy facility case study" class="article-image">
         <div class="article-content">
           <div class="article-meta">
@@ -215,9 +224,11 @@
           <span class="tag">Decarbonisation and future fuels</span>
           <span class="tag">Engine systems</span>
         </div>
+        </a>
       </article>
 
       <article class="article-card">
+        <a href="{{ route('case_study') }}" class="article-link" style="text-decoration: none;">
         <img src="{{asset('asset/image/pabrik report.jpg')}}" alt="Industrial case study" class="article-image">
         <div class="article-content">
           <div class="article-meta">
@@ -231,6 +242,7 @@
           <span class="tag">Decarbonisation and future fuels</span>
           <span class="tag">Engine systems</span>
         </div>
+        </a>
       </article>
     </div>
 

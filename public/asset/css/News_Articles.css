@@ -8,7 +8,7 @@ body {
     font-family: "Noto Sans small", "Noto Sans", sans-serif;
 }
 
-/* First Hero Section - Keeping original padding */
+/* Previous styles unchanged */
 .breadcrumb {
     padding: 20px 40px;
     background: white;
@@ -20,863 +20,462 @@ body {
     text-decoration: none;
 }
 
-.breadcrumb span {
-    margin: 0 10px;
-    color: #666;
-}
-
-.carousel-container {
+.hero-section {
     position: relative;
     width: 100%;
     height: 500px;
     overflow: hidden;
-    background: linear-gradient(to right, #041e42 40%, rgba(4, 30, 66, 0.8) 100%);
+    margin-bottom: 40px;
 }
 
-.carousel-slides {
-    position: relative;
-    width: 600%;
-    height: 100%;
-    display: flex;
-    transition: transform 0.8s ease-in-out;
-}
-
-.carousel-slide {
-    position: relative;
-    width: 16.666%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    padding: 0 50px;
-    color: white;
-    flex-shrink: 0;
-}
-
-.carousel-content {
-    width: 50%;
-    z-index: 2;
-    padding-right: 20px;
-    opacity: 0;
-    transform: translateY(20px);
-    transition: all 0.5s ease-out;
-}
-
-.carousel-slide.active .carousel-content {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-.carousel-image {
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 60%;
+.hero-image {
+    width: 100%;
     height: 100%;
     object-fit: cover;
-    opacity: 0.8;
+    filter: brightness(0.8);
 }
 
-h1 {
-    font-size: 3.5rem;
-    margin-bottom: 1.5rem;
-    font-weight: 300;
-    line-height: 1.2;
-}
-
-p {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
-    opacity: 0.9;
-    line-height: 1.5;
-}
-
-.download-btn {
-    display: inline-block;
-    padding: 12px 24px;
-    color: white;
-    border: 1px solid white;
-    text-decoration: none;
-    border-radius: 4px;
-    font-size: 1rem;
-    transition: all 0.3s ease;
-}
-
-.download-btn:hover {
-    background: white;
-    color: #041e42;
-}
-
-.navigation-dots {
+.hero-content {
     position: absolute;
-    right: 30px;
     top: 50%;
+    left: 5%;
     transform: translateY(-50%);
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    z-index: 3;
-}
-
-.dot {
-    width: 15px;   /* Ubah ini menjadi lebih besar, misal 20px */
-    height: 15px;  /* Ubah ini menjadi lebih besar, misal 20px */
-    background: rgba(255, 255, 255, 0.3);
-    border: 2px solid white;  /* Bisa juga memperbesar border, misal 3px */
-    border-radius: 50%;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-.dot.active {
-    background: white;
-    transform: scale(1.3);  /* Bisa disesuaikan, misal scale(1.3) */
-}
-
-.overlay {
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 60%;
-    height: 100%;
-    background: linear-gradient(to right, #041e42 0%, rgba(4, 30, 66, 0) 100%);
+    color: white;
+    max-width: 600px;
     z-index: 1;
 }
 
+.hero-title {
+    font-size: 3rem;
+    font-weight: 300;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
 
-.container {
+.hero-description {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+/* New layout structure */
+.main-content {
+    position: relative;
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 4rem 3rem;
-    
+    padding: 0 40px;
 }
-.intro-text {
-    font-size: 20px;
-    line-height: 1.5;
+
+.content-grid {
+    position: relative;
+    display: flex;
+    gap: 60px;
+}
+
+/* Fixed subscribe sidebar */
+.subscribe-sidebar {
+    width: 120px;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.subscribe-container {
+    position: sticky;
+    top: 20px;
+}
+
+.subscribe-btn {
+    width: 100%;
+    padding: 8px 20px;
+    border: 1.5px solid #333;
+    border-radius: 4px;
+    background: white;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 400;
     color: #333;
-    margin-bottom: 40px;
+    transition: all 0.2s ease;
 }
 
-.track-record {
-    margin-bottom: 20px;
+.subscribe-btn:hover {
+    background-color: #333;
+    color: white;
 }
 
-.track-record h2 {
-    font-size: 24px;
+/* Article content */
+.article-content {
+    flex-grow: 1;
+    max-width: 800px;
+}
+
+.meta-info {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 32px;
+    font-size: 15px;
+    color: #666;
+}
+
+.tag {
+    background: #f5f5f5;
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    color: #333;
+}
+
+.article-title {
+    font-size: 25px;
+    line-height: 1.4;
+    margin-bottom: 32px;
     font-weight: 300;
     color: #000;
-    margin-bottom: 20px;
 }
 
-.track-record p {
-    font-size: 20px;
-    line-height: 1.5;
-    color: #333;
-    margin-bottom: 20px;
-}
-
-.highlight {
-    font-size: 20px;
-    line-height: 1.5;
-    color: #333;
-}
-
-
-.conten-next_steps{
-    padding: 2rem 3rem;
-}
-.description {
-    font-size: 18px;
-    line-height: 1.6;
-    color: #333;
-    margin-bottom: 40px;
-    max-width: 1000px;
-}
-
-.grid-section {
-    margin-bottom: 60px;
-}
-
-.card-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 30px;
-    margin-bottom: 40px;
-}
-
-.card {
-    position: relative;
-    transition: transform 0.3s ease;
-    cursor: pointer;
-}
-
-.card:hover {
-    transform: translateY(-5px);
-}
-
-.card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 4px;
-    margin-bottom: 15px;
-}
-
-.card h3 {
-    font-size: 20px;
-    font-weight: 600;
-    color: #000;
-    margin-bottom: 10px;
-}
-
-.card p {
-    font-size: 16px;
-    color: #666;
+.article-title2 {
+    font-size: 45px;
     line-height: 1.4;
+    margin-bottom: 32px;
+    font-weight: 300;
+    color: #000;
 }
 
-.links-section {
-    margin-top: 15px;
-    align-items: flex-start;
-}
-
-.links-section a {
-    display: block;
-    color: #006699;
-    text-decoration: none;
-    margin-bottom: 8px;
+.article-content p {
     font-size: 16px;
-    transition: color 0.2s ease;
-    
+    line-height: 1.7;
+    color: #333;
+    margin-bottom: 24px;
 }
 
-.links-section a:hover {
-    color: #004466;
+.article-card a {
+    text-decoration: none;
+}
+
+
+/* Add these styles to the existing CSS */
+
+.article-footer {
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+.get-in-touch {
+    margin-bottom: 40px;
+}
+
+.get-in-touch a {
+    color: #064283;
+    text-decoration: none;
+}
+
+.get-in-touch a:hover {
     text-decoration: underline;
 }
 
-/* Solution finder section */
-.solution-finder {
-    margin-top: 60px;
-}
-
-.solution-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
-}
-
-.solution-card {
-    position: relative;
-    transition: all 0.3s ease;
-}
-
-.solution-card:hover {
-    transform: translateY(-5px);
-}
-
-.solution-card img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-    border-radius: 4px;
-    margin-bottom: 15px;
-}
-
-.solution-card h3 {
-    font-size: 22px;
-    font-weight: 500;
-    margin-bottom: 15px;
-}
-
-.container-comlex_problems {
-    padding: 2rem 3rem;
-    margin: 0 auto;
-    padding: 40px 20px;
-}
-
-.container-comlex_problems h1 {
-    font-size: 48px;
-    font-weight: 300;
-    color: #000;
-    margin-bottom: 30px;
-}
-
-.container-comlex_problems .intro-text {
-    font-size: 20px;
-    line-height: 1.5;
-    color: #333;
-    margin-bottom: 30px;
-}
-
-.complex-problems-list {
-    list-style: none;
-    padding-left: 20px;
-}
-
-.complex-problems-item {
-    position: relative;
-    padding-left: 25px;
-    margin-bottom: 25px;
-    font-size: 18px;
-    line-height: 1.6;
-    color: #333;
-}
-
-.complex-problems-item:before {
-    content: "•";
-    position: absolute;
-    left: 0;
-    color: #000;
-    font-size: 20px;
-}
-
-.complex-problems-item:last-child {
-    margin-bottom: 0;
-}
-
-/* Optional animation */
-.container-comlex_problems {
-    opacity: 0;
-    transform: translateY(20px);
-    animation: complexFadeIn 0.8s ease forwards;
-}
-
-@keyframes complexFadeIn {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.complex-problems-item {
-    opacity: 0;
-    transform: translateX(-20px);
-    animation: complexSlideIn 0.5s ease forwards;
-}
-
-.complex-problems-item:nth-child(1) { animation-delay: 0.3s; }
-.complex-problems-item:nth-child(2) { animation-delay: 0.5s; }
-.complex-problems-item:nth-child(3) { animation-delay: 0.7s; }
-
-@keyframes complexSlideIn {
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-.decarb-hero-section {
-    position: relative;
-    height: 500px;
-    width: 100%;
-    overflow: hidden;
-    background: linear-gradient(100deg, rgba(13, 24, 42, 0.95) 50%, transparent 100%);
-}
-
-.decarb-hero-img {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1;
-}
-
-.decarb-content-wrapper {
-    margin: 0 auto;
-    padding: 80px 40px;
-    position: relative;
-    z-index: 2;
-}
-
-.decarb-title {
-    font-size: 56px;
-    font-weight: 300;
-    color: white;
-    margin-bottom: 30px;
-    max-width: 600px;
-    line-height: 1.2;
-    opacity: 0;
-    transform: translateY(20px);
-    animation: decarb-fade-in 0.8s ease forwards;
-}
-
-.decarb-description {
-    font-size: 20px;
-    line-height: 1.6;
-    color: white;
-    margin-bottom: 40px;
-    max-width: 600px;
-    opacity: 0;
-    transform: translateY(20px);
-    animation: decarb-fade-in 0.8s ease forwards 0.2s;
-}
-
-.decarb-cta-button {
-    display: inline-block;
-    padding: 15px 30px;
-    color: white;
-    text-decoration: none;
-    border: 2px solid white;
-    border-radius: 4px;
+.article-note {
     font-size: 16px;
-    transition: all 0.3s ease;
-    opacity: 0;
-    transform: translateY(20px);
-    animation: decarb-fade-in 0.8s ease forwards 0.4s;
-}
-
-.decarb-cta-button:hover {
-    background: white;
-    color: #0d182a;
-}
-
-.decarb-overlay-img {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 60%;
-    height: 100%;
-    object-fit: cover;
-    clip-path: polygon(33.33% 0, 100% 0, 100% 100%, 0 100%);
-    z-index: 1;
-}
-
-@keyframes decarb-fade-in {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-
-
-.marine-container {
-    margin: 0 auto;
-    padding: 2rem 3rem;
-}
-
-.marine-title {
-    font-size: 48px;
-    font-weight: 300;
-    color: #000;
+    color: #333;
     margin-bottom: 40px;
+    line-height: 1.6;
 }
 
-.marine-subtitle {
-    font-size: 36px;
-    font-weight: 300;
+.written-by {
+    margin-bottom: 20px;
     color: #000;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.author-info {
+    margin-bottom: 10px;
+}
+
+.author-name {
+    color: #000;
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.author-title {
+    color: #064283;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.author-title:hover {
+    text-decoration: underline;
+}
+
+.wcs-divider {
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, #e0e0e0, #cccccc, #e0e0e0);
+    margin: 30px 0;
+    border: none;
+}
+
+.wcs-divider-container {
+    padding: 0 20px;
+    max-width: 1800px;
+    margin: 0 auto;
+}
+
+.wcs-container {
+    
+    margin: 0 auto;
+    padding: 3rem 3rem;
+}
+
+.wcs-main-heading {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+
+.wcs-card-wrapper {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     margin-bottom: 30px;
+    max-width: 600px;
 }
 
-.marine-grid {
+.wcs-card-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+}
+
+.wcs-card-content {
+    padding: 20px;
+}
+
+.wcs-card-title {
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.wcs-card-description {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+.rct-container {
+    margin: 0 auto;
+    padding: 3rem 3rem;
+}
+
+.rct-title {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 30px;
+    font-weight: 300;
+}
+
+.rct-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
-    margin-bottom: 60px;
 }
 
-.marine-card {
+.rct-card {
+    background: #fff;
+    border-radius: 4px;
+    overflow: hidden;
     text-decoration: none;
     color: inherit;
-    transition: transform 0.3s ease;
+    display: block;
 }
 
-.marine-card:hover {
-    transform: translateY(-5px);
-}
-
-.marine-card img {
+.rct-card-image {
     width: 100%;
     height: 200px;
     object-fit: cover;
-    border-radius: 4px;
-    margin-bottom: 15px;
+    display: block;
 }
 
-.marine-card h3 {
-    font-size: 24px;
-    font-weight: 500;
-    color: #000;
-    margin-bottom: 10px;
+.rct-card-content {
+    padding: 20px 0;
 }
 
-.marine-card p {
-    font-size: 16px;
-    line-height: 1.5;
-    color: #333;
-}
-
-.marine-intro-text {
-    font-size: 18px;
-    line-height: 1.6;
-    color: #333;
-    margin-bottom: 40px;
-    max-width: 1000px;
-}
-
-.marine-segment-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px;
-}
-
-.marine-segment-card {
-    text-decoration: none;
-    color: inherit;
-    transition: transform 0.3s ease;
-}
-
-.marine-segment-card:hover {
-    transform: translateY(-5px);
-}
-
-.marine-segment-card img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-    border-radius: 4px;
-    margin-bottom: 15px;
-}
-
-.marine-segment-card h3 {
-    font-size: 22px;
-    font-weight: 500;
-    color: #000;
-    margin-bottom: 10px;
-}
-
-.marine-segment-card p {
-    font-size: 16px;
-    line-height: 1.5;
-    color: #333;
-}
-
-
-.wartsila-container {
-    margin: 0 auto;
-    padding: 2rem 3rem;
-}
-
-.wartsila-heading {
-    font-size: 2.5rem;
-    font-weight: normal;
-    color: #333;
-    margin-bottom: 20px;
-}
-
-.wartsila-intro-text {
-    font-size: 1.1rem;
-    color: #444;
-    line-height: 1.6;
-    margin-bottom: 20px;
-}
-
-.wartsila-steps {
-    margin: 30px 0;
-}
-
-.wartsila-steps ol {
-    list-style-position: inside;
-    margin-left: 20px;
-}
-
-.wartsila-steps li {
-    margin-bottom: 15px;
-    color: #444;
-    font-size: 1.1rem;
-}
-
-.wartsila-steps strong {
-    color: #000;
-}
-
-.wartsila-sustainability-text {
-    font-size: 1.1rem;
-    color: #444;
-    line-height: 1.6;
-    margin: 30px 0;
-}
-
-.wartsila-next-step-section {
-    margin-top: 50px;
-}
-
-.wartsila-next-step-section .wartsila-heading {
-    margin-bottom: 15px;
-}
-
-.wartsila-connect-section {
-    margin-top: 50px;
+.rct-card-meta {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    gap: 10px;
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+    font-family: Arial, sans-serif;
 }
 
-.wartsila-brand-text {
-    font-size: 3rem;
-    color: #333;
+.rct-card-title {
+    font-size: 1.5rem;
+    color: #000;
+    margin-bottom: 15px;
+    font-weight: 300;
+    line-height: 1.3;
 }
 
-.wartsila-contact-button {
-    background-color: white;
-    border: 1px solid #333;
-    padding: 10px 30px;
+.rct-card-description {
+    color: #666;
     font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s;
+    line-height: 1.5;
+    font-family: Arial, sans-serif;
 }
 
-.wartsila-contact-button:hover {
-    background-color: #f5f5f5;
+.rct-tag {
+    display: inline-block;
+    padding: 4px 12px;
+    background: #f5f5f5;
+    border-radius: 16px;
+    margin-right: 8px;
+    margin-top: 15px;
+    font-size: 0.9rem;
+    color: #666;
 }
 
-.wartsila-social-icons {
-    display: flex;
-    gap: 20px;
-    align-items: center;
-}
-
-.wartsila-social-icons img {
-    height: 24px;
-    width: auto;
+.rct-read-time {
+    color: #666;
+    font-size: 0.9rem;
 }
 
 @media screen and (max-width: 768px) {
-    /* Breadcrumb */
     .breadcrumb {
-        padding: 15px 20px;
+        padding: 10px 20px;
         padding-top: 4rem;
-        font-size: 14px;
-        flex-wrap: wrap;
     }
 
-    /* Carousel Section */
-    .carousel-container {
-        height: 600px;
+    .hero-section {
+        height: 300px;
     }
 
-    .carousel-slide {
+    .hero-content {
+        left: 20px;
+        right: 20px;
+        max-width: 100%;
+    }
+
+    .hero-title {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .hero-description {
+        font-size: 1rem;
+    }
+
+    .main-content {
+        padding: 0 20px;
+    }
+
+    .content-grid {
         flex-direction: column;
-        padding: 20px;
+        gap: 30px;
     }
 
-    .carousel-content {
+    .subscribe-sidebar {
         width: 100%;
-        padding: 0;
-        text-align: left;
-        order: 2;
-    }
-
-    .carousel-content h1 {
-        font-size: 28px;
-        margin-bottom: 15px;
-    }
-
-    .carousel-content p {
-        font-size: 16px;
         margin-bottom: 20px;
     }
 
-    .carousel-image {
-        width: 100%;
-        height: 50%;
-        position: relative;
-        order: 1;
+    .subscribe-container {
+        position: static;
     }
 
-    .navigation-dots {
-        right: 10px;
-        top: auto;
-        bottom: 20px;
-        flex-direction: row;
+    .article-content {
+        max-width: 100%;
     }
 
-    .overlay {
-        width: 100%;
-        background: linear-gradient(to bottom, rgba(4, 30, 66, 0.8) 0%, rgba(4, 30, 66, 0.9) 100%);
+    .article-title {
+        font-size: 22px;
     }
 
-    /* Container Sections */
-    .container,
-    .container-comlex_problems,
-    .marine-container,
-    .wartsila-container {
-        padding: 2rem 1.5rem;
-    }
-
-    h1 {
+    .article-title2 {
         font-size: 32px;
+    }
+
+    .meta-info {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .wcs-container {
+        padding: 2rem 1rem;
+    }
+
+    .wcs-main-heading {
+        font-size: 2rem;
+    }
+
+    .wcs-card-wrapper {
         margin-bottom: 20px;
-        text-align: left;
     }
 
-    .intro-text,
-    .track-record p,
-    .highlight {
-        font-size: 16px;
-        text-align: left;
+    .wcs-card-image {
+        height: 200px;
     }
 
-    /* Grid Sections */
-    .card-grid,
-    .solution-grid,
-    .marine-grid,
-    .marine-segment-grid {
+    .wcs-card-title {
+        font-size: 1.5rem;
+    }
+
+    .rct-container {
+        padding: 2rem 1rem;
+    }
+
+    .rct-title {
+        font-size: 2rem;
+    }
+
+    .rct-grid {
         grid-template-columns: 1fr;
         gap: 20px;
     }
 
-    .card,
-    .solution-card,
-    .marine-card,
-    .marine-segment-card {
-        margin-bottom: 20px;
+    .rct-card-image {
+        height: 180px;
     }
 
-    .card img,
-    .solution-card img,
-    .marine-card img,
-    .marine-segment-card img {
-        height: 200px;
-    }
-
-    /* Links Section */
-    .links-section {
-        margin-top: 10px;
-    }
-
-    .links-section a {
-        padding: 8px 0;
-        font-size: 15px;
-    }
-
-    /* Complex Problems Section */
-    .complex-problems-list {
-        padding-left: 10px;
-    }
-
-    .complex-problems-item {
-        font-size: 16px;
-        padding-left: 20px;
-        margin-bottom: 15px;
-    }
-
-    /* Decarbonisation Hero Section */
-    .decarb-hero-section {
-        height: auto;
-        min-height: 500px;
-    }
-
-    .decarb-content-wrapper {
-        padding: 40px 20px;
-    }
-
-    .decarb-title {
-        font-size: 32px;
-        max-width: 100%;
-    }
-
-    .decarb-description {
-        font-size: 16px;
-        max-width: 100%;
-    }
-
-    .decarb-overlay-img {
-        width: 100%;
-        clip-path: none;
-        opacity: 0.3;
-    }
-
-    /* Marine Section */
-    .marine-title,
-    .marine-subtitle {
-        font-size: 32px;
-        margin-bottom: 20px;
-    }
-
-    .marine-card h3,
-    .marine-segment-card h3 {
-        font-size: 20px;
-    }
-
-    .marine-intro-text {
-        font-size: 16px;
-        margin-bottom: 30px;
-    }
-
-    /* Wärtsilä Section */
-    .wartsila-heading {
-        font-size: 28px;
-    }
-
-    .wartsila-intro-text,
-    .wartsila-sustainability-text,
-    .wartsila-steps li {
-        font-size: 16px;
-    }
-
-    .wartsila-connect-section {
-        flex-direction: column;
-        gap: 20px;
-        align-items: flex-start;
-    }
-
-    .wartsila-brand-text {
-        font-size: 28px;
-    }
-
-    .wartsila-contact-button {
-        width: 100%;
-        text-align: center;
-        padding: 15px;
-    }
-
-    .wartsila-social-icons {
-        width: 100%;
-        justify-content: center;
-        margin-top: 20px;
-    }
-
-    /* Buttons */
-    .download-btn,
-    .decarb-cta-button {
-        width: 100%;
-        text-align: center;
-        padding: 15px;
-    }
-
-    /* Solution Finder */
-    .solution-finder {
-        margin-top: 30px;
-    }
-
-    .description {
-        font-size: 16px;
-        margin-bottom: 30px;
+    .rct-card-title {
+        font-size: 1.3rem;
     }
 }
 
-/* Extra Small Devices */
-@media screen and (max-width: 375px) {
-    .carousel-content h1,
-    .decarb-title,
-    .marine-title,
-    .wartsila-heading {
-        font-size: 24px;
+/* Additional responsive styles for very small screens */
+@media screen and (max-width: 480px) {
+    .hero-title {
+        font-size: 1.75rem;
     }
 
-    .navigation-dots .dot {
-        width: 12px;
-        height: 12px;
+    .hero-description {
+        font-size: 0.9rem;
     }
 
-    .card h3,
-    .solution-card h3 {
+    .article-content p {
+        font-size: 15px;
+    }
+
+    .tag {
+        padding: 4px 12px;
+        font-size: 13px;
+    }
+
+    .written-by {
         font-size: 18px;
     }
 
-    .wartsila-brand-text {
-        font-size: 24px;
+    .author-name {
+        font-size: 16px;
+    }
+
+    .author-title {
+        font-size: 14px;
     }
 }
