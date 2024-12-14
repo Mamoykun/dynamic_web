@@ -339,7 +339,7 @@
         </div>
 
         <li class="globe-icon" id="globe-nav">
-            <a href="/map" title="Select country">
+            <a href="{{ route('select_country') }}" title="Select country">
                 <i class="fas fa-globe"></i>
             </a>
             <div class="tooltip"></div>

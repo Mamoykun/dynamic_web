@@ -68,4 +68,8 @@ class PageController extends Controller
     {
         return view('gallery_video');
     }
+    public function  select_country()
+    {
+        return view('select_country');
+    }
 }

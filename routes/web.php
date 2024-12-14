@@ -17,6 +17,7 @@ Route::get('/suppliers', [App\Http\Controllers\PageController::class, 'suppliers
 Route::get('/contact_information', [App\Http\Controllers\PageController::class, 'contact_information'])->name('contact_information');
 Route::get('/gallery_foto', [App\Http\Controllers\PageController::class, 'gallery_foto'])->name('gallery_foto');
 Route::get('/gallery_video', [App\Http\Controllers\PageController::class, 'gallery_video'])->name('gallery_video');
+Route::get('/select_country', [App\Http\Controllers\PageController::class, 'select_country'])->name('select_country');
 Route::get('/test-image', function () {
     $homeSetting = \App\Models\HomeSettings::first();
     return view('test-image', compact('homeSetting'));
