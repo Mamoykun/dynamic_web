@@ -52,11 +52,7 @@
     
             <!-- Second Video Section -->
             <div class="man_maintenance_container">
-                <div class="man_text_section">
-                    <h1 class="man_maintenance_title">Service Kits:<br>Four-stroke engines</h1>
-                    <p class="man_maintenance_description">Complete maintenance solutions designed specifically for four-stroke marine engines. Our kits contain all necessary components for routine maintenance.</p>
-                    <a href="#" class="man_cta_button">Contact service team</a>
-                </div>
+               
                 <div class="man_video_section">
                     <div class="man_video_container">
                         <video class="man_maintenance_video">
@@ -78,6 +74,11 @@
                             <button class="man_fullscreen_button">⤢</button>
                         </div>
                     </div>
+                </div>
+                <div class="man_text_section">
+                    <h1 class="man_maintenance_title">Service Kits:<br>Four-stroke engines</h1>
+                    <p class="man_maintenance_description">Complete maintenance solutions designed specifically for four-stroke marine engines. Our kits contain all necessary components for routine maintenance.</p>
+                    <a href="#" class="man_cta_button">Contact service team</a>
                 </div>
             </div>
         </div>

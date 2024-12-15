@@ -72,4 +72,16 @@ class PageController extends Controller
     {
         return view('select_country');
     }
+    public function  careers()
+    {
+        return view('careers');
+    }
+    public function  halaman_article()
+    {
+        return view('halaman_article');
+    }
+    public function  halaman_case_study()
+    {
+        return view('halaman_case_study');
+    }
 }

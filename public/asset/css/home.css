@@ -395,7 +395,27 @@
     font-weight: 400;
     line-height: 1.4;
     transition: color 0.3s ease;
-  }
+    
+    /* Untuk multi-line ellipsis */
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    box-orient: vertical;
+    
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
+    /* Line clamp dengan multiple browser support */
+    -webkit-line-clamp: 3;
+    -moz-line-clamp: 3;
+    line-clamp: 3;
+    
+    /* Fallback untuk browser yang tidak mendukung line-clamp */
+    max-height: 4.2em; /* line-height * number of lines */
+}
   
   .article-card:hover .article-title {
     color: #007AFF;

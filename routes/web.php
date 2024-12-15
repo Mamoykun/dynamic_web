@@ -18,6 +18,9 @@ Route::get('/contact_information', [App\Http\Controllers\PageController::class, 
 Route::get('/gallery_foto', [App\Http\Controllers\PageController::class, 'gallery_foto'])->name('gallery_foto');
 Route::get('/gallery_video', [App\Http\Controllers\PageController::class, 'gallery_video'])->name('gallery_video');
 Route::get('/select_country', [App\Http\Controllers\PageController::class, 'select_country'])->name('select_country');
+Route::get('/careers', [App\Http\Controllers\PageController::class, 'careers'])->name('careers');
+Route::get('/halaman_article', [App\Http\Controllers\PageController::class, 'halaman_article'])->name('halaman_article');
+Route::get('/halaman_case_study', [App\Http\Controllers\PageController::class, 'halaman_case_study'])->name('halaman_case_study');
 Route::get('/test-image', function () {
     $homeSetting = \App\Models\HomeSettings::first();
     return view('test-image', compact('homeSetting'));

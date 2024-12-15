@@ -138,7 +138,7 @@
                         <div class="menu-section">
                             <img src="{{ asset('asset/image/foto_home.jpg') }}" alt="Power and propulsion"
                                 class="section-img">
-                            <a href="{{route('News_Articles')}}">
+                            <a href="{{route('halaman_article')}}">
                                 <h4>News & Articles</h4>
                             </a>
                             <ul>
@@ -153,7 +153,7 @@
                         <div class="menu-section">
                             <img src="{{ asset('asset/image/foto pekerja pabrik.jpg') }}" alt="Liquid and gas handling"
                                 class="section-img">
-                            <a href="{{route('case_study')}}">
+                            <a href="{{route('halaman_case_study')}}">
                                 <h4>Case Study</h4>
                             </a>
                             <ul>
@@ -270,7 +270,7 @@
                             <span>Contact Information</span>
                             <span class="arrow">→</span>
                         </a>
-                        <a href="#" class="nav-item" id="careers-button">
+                        <a href="{{route('careers')}}" class="nav-item" id="careers-button">
                             <span>Careers & Multitechnic</span>
                             <span class="arrow">→</span>
                         </a>
