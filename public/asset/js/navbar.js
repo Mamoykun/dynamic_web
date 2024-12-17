@@ -222,35 +222,74 @@ document.querySelectorAll('.nav-item').forEach(item => {
 //   search
 // =============================================
 
-function toggleSearch() {
-    const inputContainer = document.querySelector('.search-input-container');
-    inputContainer.classList.toggle('active');
+// Get DOM elements
+const searchIcon = document.querySelector('.search-icon');
+const searchContainer = document.querySelector('.search-container');
+const searchInput = document.querySelector('.search-input');
+const searchInputContainer = document.querySelector('.search-input-container');
+
+// Toggle search input visibility
+function toggleSearch(event) {
+    event.preventDefault(); // Prevent default behavior
+    event.stopPropagation(); // Prevent event bubbling
     
-    if (inputContainer.classList.contains('active')) {
-        // Focus input saat muncul
-        inputContainer.querySelector('.search-input').focus();
+    searchInputContainer.classList.toggle('active');
+    
+    if (searchInputContainer.classList.contains('active')) {
+        // Focus the input when shown
+        setTimeout(() => {
+            searchInput.focus();
+        }, 100);
     }
 }
 
-// Tutup search saat klik di luar
-document.addEventListener('click', function(event) {
-    const searchContainer = document.querySelector('.search-container');
-    const inputContainer = document.querySelector('.search-input-container');
+// Handle search submission
+function handleSearch(event) {
+    event.preventDefault();
     
-    if (!searchContainer.contains(event.target)) {
-        inputContainer.classList.remove('active');
+    const searchTerm = searchInput.value.trim();
+    
+    if (searchTerm) {
+        // You can modify this to match your actual search route
+        const searchUrl = `/search?q=${encodeURIComponent(searchTerm)}`;
+        window.location.href = searchUrl;
     }
-});
+}
 
-// Handle search saat tekan Enter
-document.querySelector('.search-input').addEventListener('keypress', function(e) {
-    if (e.key === 'Enter') {
-        const searchTerm = this.value.trim();
-        if (searchTerm) {
-            // Redirect ke halaman hasil pencarian
-            window.location.href = `search-results.html?q=${encodeURIComponent(searchTerm)}`;
-        }
-    }});
+// Close search when clicking outside
+function handleClickOutside(event) {
+    if (!searchContainer.contains(event.target)) {
+        searchInputContainer.classList.remove('active');
+    }
+}
+
+// Handle Enter key press
+function handleKeyPress(event) {
+    if (event.key === 'Enter') {
+        handleSearch(event);
+    }
+}
+
+// Initialize event listeners
+function initializeSearchFunctionality() {
+    // Toggle search on icon click
+    searchIcon.addEventListener('click', toggleSearch);
+    
+    // Handle search submission
+    searchInput.addEventListener('keypress', handleKeyPress);
+    
+    // Close search when clicking outside
+    document.addEventListener('click', handleClickOutside);
+    
+    // Handle form submission if search is wrapped in a form
+    const searchForm = searchContainer.closest('form');
+    if (searchForm) {
+        searchForm.addEventListener('submit', handleSearch);
+    }
+}
+
+// Initialize when DOM is loaded
+document.addEventListener('DOMContentLoaded', initializeSearchFunctionality);
 
 
 // =============================================

@@ -328,14 +328,12 @@
         </li>
 
         <div class="search-container">
-            <div class="search-icon" onclick="toggleSearch()">
+            <div class="search-icon" onclick="toggleSearch(event)">
                 <i class="fas fa-search"></i>
             </div>
-
-            <!-- Input yang tersembunyi -->
-            <div class="search-input-container">
+            <form class="search-input-container">
                 <input type="text" class="search-input" placeholder="Search...">
-            </div>
+            </form>
         </div>
 
         <li class="globe-icon" id="globe-nav">
