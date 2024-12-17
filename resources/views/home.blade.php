@@ -421,6 +421,7 @@
   </div>
   <!-- Latest press releases and news end -->
   <!-- Career at Wärtsilä -->
+  <section class="atur_posisi_career">
   <section class="career-section">
     <div class="career-image-container">
       <img src="{{asset('asset/image/foto pekerja pabrik.jpg')}}" alt="Career at Wärtsilä" class="career-image">
@@ -439,6 +440,9 @@
     </div>
   </section>
   <section class="career-section">
+    <div class="career-image-container">
+      <img src="{{asset('asset/image/kapal report.jpg')}}" alt="Career at Wärtsilä" class="career-image">
+    </div>
     <div class="career-content">
       <h1 class="career-title">Career at Wärtsilä</h1>
       <p class="career-description">
@@ -449,9 +453,6 @@
       <div class="more-papers-container">
         <a href="#" class="more-papers-link">Find out more</a>
       </div>
-    </div>
-    <div class="career-image-container">
-      <img src="{{asset('asset/image/kapal report.jpg')}}" alt="Career at Wärtsilä" class="career-image">
     </div>
   </section>
   <section class="career-section">
@@ -471,17 +472,6 @@
     </div>
   </section>
   <section class="career-section">
-    <div class="career-content">
-      <h1 class="career-title">Contact us</h1>
-      <p class="career-description">
-        We at Wärtsilä are always on the look for bright minds to join us in our journey in shaping the decarbonisation
-        of marine and energy. Since 1834, Wärtsilians have challenged the general status quo and decided to make a
-        difference in our society – together.
-      </p>
-      <div class="more-papers-container">
-        <a href="{{ route('contact_information') }}" class="more-papers-link">Contact us</a>
-      </div>
-    </div>
     <div class="video-container">
       <video id="myVideo" class="career-video">
           <source src="{{asset('asset/video/The Vamps - Somebody To You ft. Demi Lovato.mp4')}}" type="video/mp4">
@@ -556,7 +546,19 @@
           </div>
       </div>
   </div>
+  <div class="career-content">
+    <h1 class="career-title">Contact us</h1>
+    <p class="career-description">
+      We at Wärtsilä are always on the look for bright minds to join us in our journey in shaping the decarbonisation
+      of marine and energy. Since 1834, Wärtsilians have challenged the general status quo and decided to make a
+      difference in our society – together.
+    </p>
+    <div class="more-papers-container">
+      <a href="{{ route('contact_information') }}" class="more-papers-link">Contact us</a>
+    </div>
+  </div>
   </section>
+</section>
   <!-- career at watsila end -->
   <!-- 4 konten -->
   <section>
