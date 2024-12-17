@@ -5,14 +5,14 @@
 @section('content')
     @push('styles')
         <link rel="stylesheet" href="{{ asset('asset/css/navbar.css') }}">
-        <link rel="stylesheet" href="{{ asset('asset/css/halaman_article.css') }}">
+        <link rel="stylesheet" href="{{ asset('asset/css/halaman_exhibitions.css') }}">
         <link rel="stylesheet" href="{{ asset('asset/css/footer.css') }}">
     @endpush
     <section class="first-hero">
         <nav class="breadcrumb">
             <a href="{{ route('home') }}">Home</a>
             <span>></span>
-            <a href="#">Article</a>
+            <a href="#">Exhibitions</a>
         </nav>
     </section>
 
@@ -37,9 +37,7 @@
                 </div>
                 <div class="card-content">
                     <div class="card-meta">
-                        <span class="card-date">3 Dec 2024</span>
-                        <span class="card-type">Article</span>
-                        <span class="card-read-time">3 min read</span>
+                        <span class="card-type">Exhibitions</span>
                     </div>
                     <h2 class="card-title">Strength in numbers – why maritime cyber security is a team sport</h2>
                     <p class="card-description">Learn why regular cyber incident exercises...</p>
@@ -56,9 +54,7 @@
                 </div>
                 <div class="card-content">
                     <div class="card-meta">
-                        <span class="card-date">3 Dec 2024</span>
-                        <span class="card-type">Article</span>
-                        <span class="card-read-time">3 min read</span>
+                        <span class="card-type">Exhibitions</span>
                     </div>
                     <h2 class="card-title">Strength in numbers – why maritime cyber security is a team sport</h2>
                     <p class="card-description">Learn why regular cyber incident exercises...</p>
@@ -75,9 +71,7 @@
                 </div>
                 <div class="card-content">
                     <div class="card-meta">
-                        <span class="card-date">22 Nov 2024</span>
-                        <span class="card-type">Article</span>
-                        <span class="card-read-time">5 min read</span>
+                        <span class="card-type">Exhibitions</span>
                     </div>
                     <h2 class="card-title">4 great reasons why bio-LNG is the bridge fuel of the future for vessels</h2>
                     <p class="card-description">Learn why bio-LNG is a good choice as a bridge fuel to move the maritime industry towards net-...</p>
@@ -87,6 +81,5 @@
                     </div>
                 </div>
             </div>
-          
         </div>
     </section>

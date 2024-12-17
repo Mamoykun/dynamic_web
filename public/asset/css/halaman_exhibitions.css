@@ -99,7 +99,7 @@ body {
  
  .insights-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
     padding: 3rem 3rem;
     margin-top: 2rem;
@@ -107,13 +107,11 @@ body {
 
 .insight-card {
     background: #fff;
-    max-width: 400px;
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
 
 .insight-card:hover {
     transform: translateY(-5px);
@@ -192,15 +190,25 @@ body {
     background: #e5e5e5;
 }
 
+/* Mobile First Approach */
 @media screen and (max-width: 768px) {
     .breadcrumb {
         padding: 15px 20px;
-        padding-top: 6rem;
+        padding-top: 4rem;
     }
 
     .hero {
         height: auto;
         min-height: 400px;
+    }
+
+    .hero-overlay {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        background: linear-gradient(180deg,
+            rgba(0,0,0,0.8) 0%,
+            rgba(0,0,0,0.6) 50%,
+            rgba(0,0,0,0.4) 75%,
+            rgba(0,0,0,0) 100%);
     }
 
     .hero-content {
@@ -219,15 +227,6 @@ body {
         margin-bottom: 20px;
     }
 
-    .hero-overlay {
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-        background: linear-gradient(180deg,
-            rgba(0,0,0,0.8) 0%,
-            rgba(0,0,0,0.6) 50%,
-            rgba(0,0,0,0.4) 75%,
-            rgba(0,0,0,0) 100%);
-    }
-
     .read-more-btn {
         padding: 10px 20px;
         width: 100%;
@@ -235,9 +234,10 @@ body {
     }
 
     .insights-container {
+        grid-template-columns: 1fr;
         padding: 1.5rem;
         gap: 1.5rem;
-        grid-template-columns: 1fr;
+        margin-top: 1rem;
     }
 
     .insight-card {
@@ -245,7 +245,7 @@ body {
     }
 
     .card-content {
-        padding: 1.25rem;
+        padding: 1rem;
     }
 
     .card-meta {
@@ -268,5 +268,34 @@ body {
     .tag {
         padding: 0.25rem 0.5rem;
         font-size: 0.75rem;
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .hero-content {
+        padding: 60px 40px;
+        max-width: 500px;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .insights-container {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 2rem;
+    }
+}
+
+/* Desktop adjustments if needed */
+@media screen and (min-width: 1025px) {
+    .insights-container {
+        grid-template-columns: repeat(3, 1fr);
+        padding: 3rem;
+    }
+
+    .hero-content {
+        max-width: 600px;
     }
 }

@@ -169,7 +169,7 @@
                         <div class="menu-section">
                             <img src="{{ asset('asset/image/pabrik.jpg') }}" alt="Voyage and fleet optimisation"
                                 class="section-img">
-                            <a href="{{route('exhibitions')}}">
+                            <a href="{{route('halaman_exhibitions')}}">
                                 <h4>Exhibitions</h4>
                             </a>
                             <ul>

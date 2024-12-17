@@ -84,4 +84,9 @@ class PageController extends Controller
     {
         return view('halaman_case_study');
     }
+    public function  halaman_exhibitions()
+    {
+        return view('halaman_exhibitions');
+    }
+    
 }
