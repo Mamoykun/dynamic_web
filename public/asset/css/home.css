@@ -622,15 +622,7 @@
   }
   
       /* Career Section */
-  .career-section {
-    display: flex;
-    flex-direction: row;
-    gap: 80px;
-    align-items: flex-start;
-    background-color: #fff;
-    padding: 50px;
-    margin: 0 auto;
-  }
+  
   
   .career-content {
     flex: 1;
@@ -872,33 +864,80 @@
   .atur_posisi_career {
     display: flex;
     flex-direction: column;
-    gap: 0;
     background-color: #fff;
+    max-width: 1400px;
+    margin: 0;
   }
 
   .career-section {
     display: flex;
-    flex-direction: row;
-    gap: 150px;
-    align-items: flex-start;
-    background-color: #f5f6f7;
-    padding: 50px;
-    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem 4rem;
+    gap: 8rem;
   }
+  .career-content {
+    flex: 1;
+    max-width: 600px;
+    padding: 0;
+  }
+  
+  .career-title {
+    font-size: 2.8rem;
+    font-weight: 300;
+    color: #333;
+    margin-bottom: 30px;
+    line-height: 1.2;
+  }
+  
+  .career-description {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #444;
+    margin-bottom: 30px;
+    max-width: 600px;
+  }
+  
+  .career-image-container {
+    flex: 1;
+    max-width: 600px;
+  }
+  
+  .career-image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+  
+  .find-out-more {
+    display: inline-block;
+    color: #007AFF;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .find-out-more:hover {
+    text-decoration: underline;
+    color: #0056b3;
+  }
+  
   .career-section:nth-child(even) {
-  flex-direction: row-reverse;
+ flex-direction: row-reverse;
 }
 
   .video-container {
     flex: 1;
     position: relative;
+    height: 400px;
     border-radius: 8px;
     overflow: hidden;
   }
   
   .career-video {
     width: 100%;
-    height: 400px;
+    height: 100%;
     object-fit: cover;
     border-radius: 8px;
   }
@@ -958,73 +997,11 @@
     text-align: center;
   }
   
-  .container {
-    width: 100%;
-    display: flex;
-    padding: 3rem 3rem;
-    gap: 2rem;
-  }
-  
-  .card {
-    position: relative;
-    width: calc(25% - 1.5rem);
-    height: 350px;
-  }
-  
-  .card img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-  .card-content {
-    position: absolute;
-    top: 0; /* Mulai dari atas */
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 2.5rem;
-    background: linear-gradient(to right, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.3) 100%);
-    color: white;
-    display: flex; /* Menggunakan flexbox */
-    flex-direction: column;
-    justify-content: flex-end; /* Meletakkan konten di bagian bawah */
-  }
-  
-  .card-title {
-    font-size: 2.25rem;
-    font-weight: 300;
-    margin-bottom: 1rem;
-    line-height: 1;
-  }
-  
-  .card-description {
-    font-size: 1.125rem;
-    line-height: 1.4;
-    opacity: 0.9;
-    max-width: 95%;
-  }
   
   
   /* video */
-  .video-container {
-    position: relative;
-    width: 100%;
-    max-width: 1000px;
-    margin: 20px;
-    border-radius: 8px;
-    overflow: hidden;
-    background: #000;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-  }
+
   
-  .career-video {
-    width: 100%;
-    height: 100%;
-    max-height: 600px;
-    object-fit: contain;
-  }
   
   .video-controls {
     position: absolute;
@@ -1237,6 +1214,55 @@
   .quality-option.active {
     color: #007AFF;
   }
+
+  /* card */
+  .container {
+    width: 100%;
+    display: flex;
+    padding: 3rem 3rem;
+    gap: 2rem;
+  }
+  
+  .card {
+    position: relative;
+    width: calc(25% - 1.5rem);
+    height: 350px;
+  }
+  
+  .card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .card-content {
+    position: absolute;
+    top: 0; /* Mulai dari atas */
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 2.5rem;
+    background: linear-gradient(to right, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.3) 100%);
+    color: white;
+    display: flex; /* Menggunakan flexbox */
+    flex-direction: column;
+    justify-content: flex-end; /* Meletakkan konten di bagian bawah */
+  }
+  
+  .card-title {
+    font-size: 2.25rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+    line-height: 1;
+  }
+  
+  .card-description {
+    font-size: 1.125rem;
+    line-height: 1.4;
+    opacity: 0.9;
+    max-width: 95%;
+  }
+  
   
 /* Mobile Responsive Styles */
 /* Mobile Responsive Styles */
@@ -1459,16 +1485,9 @@
 
   /* Career Section */
   .atur_posisi_career {
-    padding: 0;
-    margin: 0;
-  }
+    max-width: 100%;
+}
 
-  .career-section {
-    flex-direction: column !important;
-    padding: 30px 20px;
-    gap: 1.5rem;
-    margin: 0;
-  }
 
   .career-section:nth-child(even) {
     flex-direction: column !important;
@@ -1477,17 +1496,20 @@
   /* Image Container - Force to top */
   .career-image-container {
     width: 100%;
-    margin: 0;
-    padding: 0;
-    order: -1;
-  }
+    max-width: 100%;
+    height: 250px;
+}
 
   .career-image {
     width: 100%;
-    height: 220px;
+    height: 250px;
     object-fit: cover;
-    border-radius: 8px;
   }
+  .career-section {
+    flex-direction: column !important;
+    padding: 2rem 1.5rem;
+    gap: 1.5rem;
+}
 
   /* Video Container - Force to top */
   .video-container {
@@ -1512,36 +1534,30 @@
     width: 100%;
     max-width: 100%;
     padding: 0;
-    order: 1;
   }
 
   .career-title {
-    font-size: 2.25rem;
+    font-size: 1.8rem;
     margin-bottom: 1rem;
     line-height: 1.2;
-  }
+}
 
-  .career-description {
-    font-size: 1rem;
-    line-height: 1.6;
-    margin-bottom: 1.5rem;
-  }
+
+.career-description {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;
+  max-width: 100%;
+}
 
   /* Call to action */
   .more-papers-container {
-    text-align: left;
-    padding: 1rem 0;
-    margin: 0;
-  }
+    margin-top: 1rem;
+}
 
-  .more-papers-link {
-    display: inline-block;
-    font-size: 1rem;
-    color: #007AFF;
-    text-decoration: none;
-    border-bottom: 1px solid #007AFF;
-    padding-bottom: 2px;
-  }
+.more-papers-link {
+  font-size: 1rem;
+}
   /* Final Cards */
   .container {
     flex-direction: column;
