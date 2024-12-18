@@ -2,7 +2,7 @@
     <div class="footer-container">
       <!-- Logo Section -->
       <div class="footer-logo">
-        <img src="{{asset('asset/image/images.png')}}" alt="Wärtsilä Logo" class="logo">
+        <img src="{{asset('asset/image/logo.png')}}" alt="Wärtsilä Logo" class="logo">
       </div>
 
       <!-- Primary Content Section -->

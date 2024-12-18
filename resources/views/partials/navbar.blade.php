@@ -7,7 +7,7 @@
 <nav class="navbar">
     <div class="logo">
        
-        <img src="{{ asset('asset/image/images.png') }}" alt="Wärtsilä">
+        <img src="{{ asset('asset/image/logo.png') }}" alt="Wärtsilä">
         <button class="menu-toggle">
             <span></span>
             <span></span>

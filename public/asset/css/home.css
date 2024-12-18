@@ -865,7 +865,6 @@
     display: flex;
     flex-direction: column;
     background-color: #fff;
-    max-width: 1400px;
     margin: 0;
   }
 
