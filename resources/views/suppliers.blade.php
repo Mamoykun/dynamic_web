@@ -29,20 +29,6 @@
 
     <section>
         <div class="wartsila-container">
-            <div class="wartsila-sidebar">
-                <div class="wartsila-nav-item has-submenu">Supplier requirements
-                    <div class="wartsila-submenu">
-                        <div class="wartsila-submenu-item">Environment,health and safety requirements</div>
-                        <div class="wartsila-submenu-item">Customer and trade compliance requirements</div>
-                    </div>
-                </div>
-                <div class="wartsila-nav-item">Whistleblowing channel</div>
-                <div class="wartsila-nav-item">Suppliers guidelines</div>
-                <div class="wartsila-nav-item">Digital collaboration</div>
-                <div class="wartsila-nav-item">Report & presentations</div>
-                <div class="wartsila-nav-item">Apply to become a supplier</div>
-            </div>
-
             <div class="wartsila-content">
                 <div class="w1-wrapper">
                     <div class="w1-container">

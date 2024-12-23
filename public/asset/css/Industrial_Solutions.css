@@ -1049,6 +1049,19 @@ body {
         text-align: left;
     }
 
+    .wrts-future__heading,
+    .wrts-stats__title,
+    .wrts-ref__heading,
+    .header h1,
+    .container-papers h1,
+    .africa_gallery_title,
+    .article-custom-heading,
+    .press-custom-title,
+    .offices-custom-title{
+        font-size: 40px;
+        font-weight: 500;
+    }
+
     /* Stats Section */
     .wrts-stats {
         padding: 30px 0;

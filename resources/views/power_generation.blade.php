@@ -78,7 +78,7 @@
         <section>
             <div class="container-Lifecycle-Solutions">
                 <div class="left-content">
-                    <h2 style="font-size: 36px; font-weight: 300; margin-bottom: 30px;">Succeed with our Lifecycle Solutions
+                    <h2 >Succeed with our Lifecycle Solutions
                     </h2>
                     <p>Our Lifecycle solutions range from collaborative spare parts planning and budgeting solutions all the
                         way to complete Operation and Maintenance solutions to cater for different customer needs over the

@@ -91,23 +91,7 @@
     margin-bottom: 30px;
  }
 
- .wartsila-container {
-    display: flex;
-    min-height: 100vh;
-    padding: 3rem 3rem;
- }
- 
- .wartsila-sidebar {
-    width: 280px;
-    min-width: 280px;
-    position: sticky;
-    top: 100px;
-    max-height: calc(100vh - 100px);
-    overflow-y: auto;
-    background: #fff;
-    border-right: 1px solid #eee;
- }
- 
+
  .wartsila-content {
     flex: 1;
     padding: 1rem 1rem;
@@ -131,48 +115,7 @@
     font-weight: 300;
  }
  
- .wartsila-nav-item {
-    padding: 15px 20px;
-    cursor: pointer;
-    border-bottom: 1px solid #eee;
-    position: relative;
- }
- 
- .wartsila-nav-item.has-submenu::after {
-    content: '';
-    position: absolute;
-    right: 20px;
-    top: 20px;
-    width: 8px;
-    height: 8px;
-    border-right: 2px solid #666;
-    border-bottom: 2px solid #666;
-    transform: rotate(45deg);
-    transition: transform 0.3s;
- }
- 
- .wartsila-nav-item.active::after {
-    transform: rotate(-135deg);
- }
- 
- .wartsila-submenu {
-    display: none;
-    background: #f9f9f9;
- }
- 
- .wartsila-submenu.active {
-    display: block;
- }
- 
- .wartsila-submenu-item {
-    padding: 12px 20px 12px 40px;
-    cursor: pointer;
-    border-bottom: 1px solid #eee;
- }
- 
- .wartsila-submenu-item:hover {
-    background: #f0f0f0;
- }
+
  
  .reports-gallery {
     display: grid;
@@ -437,7 +380,7 @@
 
 @media (max-width: 768px) {
     .breadcrumb {
-        padding: 15px 20px;
+        padding: 3rem 1rem;
         padding-top: 6rem;
     }
 
@@ -472,15 +415,20 @@
     }
 
     /* Typography Adjustments */
-    .w1-main-title,
     .w2-supply-title {
-        font-size: 2rem;
+        font-size: 40px;
+        font-weight: 500;
         margin-bottom: 1rem;
     }
 
-    .w1-apply-title,
-    .w2-subtitle,
-    .w3-role-title {
+    .w1-main-title,
+    .w2-mission-container h2,
+    .w3-role-container h2{
+        font-size: 40px;
+        font-weight: 500;
+    }
+
+    .w1-apply-title {
         font-size: 1.6rem;
         margin-bottom: 1rem;
     }
@@ -564,7 +512,7 @@
     /* Typography Adjustments */
     .w1-main-title,
     .w2-supply-title {
-        font-size: 1.8rem;
+        font-size: 2rem;
     }
 
     .w1-apply-title,
@@ -587,7 +535,7 @@
     }
 
     .w1-apply-section {
-        padding: 0.75rem;
+        padding: 3rem 1rem;
     }
 
     .w3-role-item {

@@ -31,48 +31,6 @@
 
    <section>
         <div class="wartsila-container">
-            <div class="wartsila-sidebar">
-                <div class="wartsila-nav-item has-submenu">This is Wärtsilä
-                    <div class="wartsila-submenu">
-                        <div class="wartsila-submenu-item">Our businesses</div>
-                        <div class="wartsila-submenu-item">Business model</div>
-                        <div class="wartsila-submenu-item">Market shares</div>
-                        <div class="wartsila-submenu-item">Research & Development</div>
-                        <div class="wartsila-submenu-item">Risk management</div>
-                        <div class="wartsila-submenu-item">FAQ and glossary</div>
-                    </div>
-                </div>
-                <div class="wartsila-nav-item has-submenu">Strategy & Purpose
-                    <div class="wartsila-submenu">
-                        <div class="wartsila-submenu-item">Purpose</div>
-                        <div class="wartsila-submenu-item">Strategic steps</div>
-                        <div class="wartsila-submenu-item">Brand</div>
-                        <div class="wartsila-submenu-item">Financial targets</div>
-                        <div class="wartsila-submenu-item">Outlook</div>
-                        <div class="wartsila-submenu-item">Decarbonisation</div>
-                    </div>
-                </div>
-                <div class="wartsila-nav-item has-submenu">Organisation & Management
-                    <div class="wartsila-submenu">
-                        <div class="wartsila-submenu-item">Board of Directors</div>
-                        <div class="wartsila-submenu-item">Board of Management</div>
-                        <div class="wartsila-submenu-item">Corporate Management</div>
-                    </div>
-                </div>
-                <div class="wartsila-nav-item">History</div>
-                <div class="wartsila-nav-item has-submenu">190 anniversary
-                    <div class="wartsila-submenu">
-                        <div class="wartsila-submenu-item">Articles</div>
-                        <div class="wartsila-submenu-item">History</div>
-                        <div class="wartsila-submenu-item">Wärtsilä's sea partnerships</div>
-                        <div class="wartsila-submenu-item">Sustainable Technology Hub</div>
-                    </div>
-                </div>
-                <div class="wartsila-nav-item">Cyber security</div>
-                <div class="wartsila-nav-item">Contact information</div>
-                <div class="wartsila-nav-item">Worldwide presence</div>
-            </div>
-            
             <div class="wartsila-content">
                 <div class="this-watsila"><h1>This is Wärtsilä</h1></div>
                 <p>Wärtsilä is a global leader in innovative technologies and lifecycle solutions for the marine and energy markets. We emphasise innovation in sustainable technology and services to help our customers continuously improve environmental and economic performance. Our dedicated and passionate team of 17,800 professionals in more than 280 locations in 79 countries shape the decarbonisation transformation of our industries across the globe. In 2023, Wärtsilä's net sales totalled EUR 6.0 billion. Wärtsilä is listed on Nasdaq Helsinki.</p>
@@ -86,7 +44,7 @@
                     <h2>Wärtsilä video</h2>
                     <div class="video-container">
                         <video class="video-player">
-                            <source src="video.mp4" type="video/mp4">
+                            <source src="{{asset('asset/video/The Vamps - Somebody To You ft. Demi Lovato.mp4')}}" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                         <div class="video-overlay">

@@ -64,7 +64,7 @@ body {
 .hero-content {
     position: relative;
     max-width: 600px;
-    padding: 100px;
+    padding: 20px;
     margin-top: 60px;
     z-index: 2;
 }
@@ -95,23 +95,7 @@ body {
     color: #064283;
 }
 
-/* Container and Sidebar styles */
-.wartsila-container {
-    display: flex;
-    min-height: 100vh;
-    padding: 3rem;
-}
 
-.wartsila-sidebar {
-    width: 280px;
-    min-width: 280px;
-    position: sticky;
-    top: 100px;
-    max-height: calc(100vh - 100px);
-    overflow-y: auto;
-    background: #fff;
-    border-right: 1px solid #eee;
-}
 
 .wartsila-content {
     flex: 1;
@@ -119,70 +103,14 @@ body {
     overflow-y: auto;
 }
 
-/* Updated Navigation Menu styles with fixed top arrows */
-.wartsila-nav-item {
-    padding: 15px 20px;
-    cursor: pointer;
-    border-bottom: 1px solid #eee;
-    position: relative;
-    font-weight: 400;
-}
-
-.wartsila-nav-item.has-submenu {
-    padding-right: 40px;
-}
-
-.wartsila-nav-item.has-submenu::after {
-    content: '';
-    position: absolute;
-    right: 20px;
-    top: 20px;  /* Fixed position from top */
-    width: 8px;
-    height: 8px;
-    border-right: 2px solid #666;
-    border-bottom: 2px solid #666;
-    transform: rotate(45deg);
-    transition: transform 0.3s;
-    transform-origin: center;
-}
-
-.wartsila-nav-item.active::after {
-    transform: rotate(-135deg);
-}
-
-.wartsila-submenu {
-    display: none;
-    background: #f9f9f9;
-}
-
-.wartsila-submenu .wartsila-nav-item {
-    padding-left: 40px;
-}
-
-.wartsila-submenu-item {
-    padding: 12px 20px 12px 40px;
-    cursor: pointer;
-    border-bottom: 1px solid #eee;
-    color: #666;
-}
-
-.wartsila-submenu .wartsila-submenu .wartsila-submenu-item {
-    padding-left: 60px;
-}
-
-.wartsila-submenu-item:hover {
-    background: #f0f0f0;
-    color: #000;
-}
 
 .wartsila-hero {
+
     background-color: #ffffff;
-    margin: 0 auto;
 }
 
 .hero-container {
-    max-width: 1200px;
-    margin: 0 auto;
+    padding: 3rem 3rem;
 }
 
 .hero-title {
@@ -248,15 +176,19 @@ body {
     font-weight: 300;
 }
 
+.teks{
+    padding: 3rem 3rem;
+}
+.teks h1{
+    font-weight: 300;
+    font-size: 40px;
+}
 /* Video section styles */
 .video-container-wrapper {
     display: flex;
     gap: 24px;
-    justify-content: center;
     flex-wrap: wrap;
-    padding: 20px;
-    max-width: 1400px;
-    margin: 0 auto;
+    padding: 0rem 3rem;
 }
 
 .video-section {
@@ -406,7 +338,7 @@ body {
 }
 
 .wr-stats-container {
-    margin: 0 auto;
+    padding: 3rem 3rem;
     color: #333;
 }
 
@@ -447,7 +379,7 @@ body {
 }
 
 .wr-locations-container {
-    margin: 0 auto;
+    padding: 3rem 3rem ;
     color: #333;
 }
 
@@ -485,8 +417,7 @@ body {
 }
 
 .careers-container {
-    padding: 3rem 0rem;
-    margin: 0 auto;
+    padding: 3rem 3rem;
     color: #333;
 }
 
@@ -564,8 +495,7 @@ body {
 
 
 .purpose-container {
-    margin: 0 auto;
-    padding: 3rem 0rem;
+    padding: 3rem 3rem;
 }
 
 .purpose-title {
@@ -609,8 +539,7 @@ body {
 
 
 .values-container {
-    margin: 0 auto;
-    padding: 3rem 0rem;
+    padding: 3rem 3rem;
 }
 
 .values-grid {
@@ -662,8 +591,7 @@ body {
 }
 
 .career-container {
-    margin: 0 auto;
-    padding: 3rem 0rem;
+    padding: 3rem 3rem;
 }
 
 .career-title {
@@ -711,8 +639,7 @@ body {
 }
 
 .meet-container {
-    margin: 0 auto;
-    padding: 3rem 0rem;
+    padding: 3rem 3rem;
 }
 
 .meet-title {
@@ -745,8 +672,7 @@ body {
 }
 
 .story-container1 {
-    margin: 0 auto;
-    padding: 3rem 0rem;
+    padding: 3rem 3rem;
 }
 
 .story-card1 {
@@ -797,8 +723,7 @@ body {
 }
 
 .stories-section {
-    margin: 0 auto;
-    padding: 3rem 0rem;
+    padding: 3rem 3rem;
 }
 
 .stories-heading {
@@ -876,200 +801,263 @@ body {
     line-height: 1.5;
 }
 
-/* Mobile responsive styles */
-/* Base styles for sidebar and container */
-.wartsila-container {
-    display: flex;
-    min-height: 100vh;
-    padding: 3rem;
-}
 
-.wartsila-sidebar {
-    width: 280px;
-    min-width: 280px;
-    position: sticky;
-    top: 100px;
-    max-height: calc(100vh - 100px);
-    overflow-y: auto;
-    background: #fff;
-    border-right: 1px solid #eee;
-}
-
-.wartsila-content {
-    flex: 1;
-    padding: 1rem;
-    overflow-y: auto;
-}
-
-/* Mobile responsive styles */
+/* Base mobile responsive styles */
+/* Base mobile responsive styles */
 @media screen and (max-width: 768px) {
-    /* Hide sidebar on mobile */
     .wartsila-sidebar {
         display: none;
     }
 
     .wartsila-container {
         flex-direction: column;
-        padding: 1rem;
+        padding: 0.5rem;
     }
 
     .wartsila-content {
         width: 100%;
-        padding: 0.5rem;
+        padding: 0.75rem;
+        margin: 0;
     }
 
-    /* Typography adjustments */
-    .hero-title {
-        font-size: 2.25rem;
-        line-height: 1.3;
-    }
-
-    .hero-intro {
-        font-size: 1.25rem;
-        line-height: 1.5;
-    }
-
-    .hero-story {
-        font-size: 1rem;
-        line-height: 1.6;
-    }
-
-    .wartsila-content h2 {
-        font-size: 28px;
-        padding-top: 1.5rem;
-    }
-
-    .wr-stats-title {
-        font-size: 32px;
-    }
-
-    .wr-stats-number {
-        font-size: 40px;
-    }
-
-    .wr-stats-label {
-        font-size: 16px;
-    }
-
-    /* Layout adjustments */
-    .hero {
-        height: auto;
-        min-height: 350px;
-    }
-
-    .hero-content {
-        padding: 2rem 1rem;
-        margin-top: 1rem;
-    }
-
-    .wr-stats-grid {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-    }
-
-    .careers-grid {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-    }
-
-    .values-grid {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-    }
-
-    .stories-grid {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-    }
-
-    .story-card1 {
-        grid-template-columns: 1fr;
-    }
-
-    /* Spacing adjustments */
-    .careers-container,
-    .purpose-container,
-    .values-container,
-    .story-container1,
-    .stories-section {
-        padding: 2rem 1rem;
-    }
-
-    /* Image and media adjustments */
-    .story-image1 {
-        width: 100%;
-        height: auto;
-        max-height: 300px;
-    }
-
-    .video-container-wrapper {
-        padding: 1rem;
-    }
-
-    .video-section {
-        min-width: 100%;
-    }
-}
-
-/* Small Mobile Devices (480px and below) */
-@media screen and (max-width: 480px) {
-    .wartsila-container {
-        padding: 0.5rem;
-    }
-
-    /* Typography */
+    /* Typography scaling */
     .hero-title {
         font-size: 2rem;
+        font-weight: 500;
+        line-height: 1.3;
+        margin-bottom: 1rem;
     }
 
     .hero-intro {
         font-size: 1.125rem;
+        line-height: 1.4;
+    }
+
+    .hero-story {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
+    .wr-stats-title,
+    .wr-locations-title,
+    .careers-header,
+    .purpose-title,
+    .career-title,
+    .meet-title{
+        font-size: 40px;
+        font-weight: 500;
     }
 
     .wartsila-content h2 {
-        font-size: 24px;
+        font-size: 1.75rem;
+        padding-top: 1.25rem;
+        margin-bottom: 1rem;
     }
 
-    .wr-stats-number {
-        font-size: 36px;
-    }
-
-    .wr-stats-label {
-        font-size: 14px;
-    }
-
-    /* Spacing */
+    /* Container padding adjustments */
+    .hero-container,
+    .teks,
+    .wr-stats-container,
+    .wr-locations-container,
     .careers-container,
     .purpose-container,
     .values-container,
+    .career-container,
+    .meet-container,
     .story-container1,
     .stories-section {
-        padding: 1.5rem 0.75rem;
+        padding: 1.5rem 1rem;
     }
 
-    .hero-content {
-        padding: 1.5rem 0.75rem;
+    /* Grid layouts */
+    .wr-stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.25rem;
     }
 
-    /* Component adjustments */
-    .story-title {
-        font-size: 1.5rem;
+    .careers-grid,
+    .story-card1 {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
     }
 
-    .value-image {
-        height: 200px;
+    .values-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.25rem;
+    }
+
+    /* Component specific adjustments */
+    .video-container-wrapper {
+        padding: 0.75rem;
+        gap: 1rem;
+    }
+
+    .video-section {
+        min-width: 100%;
+        margin: 0.5rem 0;
+    }
+
+    .story-image1 {
+        width: 100%;
+        height: 300px;
+        margin-bottom: 1rem;
+    }
+
+    .careers-content {
+        padding-right: 0;
+    }
+
+    .careers-sidebar {
+        padding-left: 1rem;
+        border-left: 2px solid #ff6b00;
+    }
+
+    .careers-percentage {
+        font-size: 4rem;
+        margin: 1.5rem 0;
     }
 }
 
-/* Landscape orientation fixes */
+/* Small mobile devices (480px and below) */
+@media screen and (max-width: 480px) {
+    .wartsila-container {
+        padding: 0.25rem;
+    }
+
+    /* Further typography adjustments */
+    .hero-title {
+        font-size: 1.75rem;
+        line-height: 1.2;
+    }
+
+    .hero-intro {
+        font-size: 1rem;
+    }
+
+    .wartsila-content h2 {
+        font-size: 1.5rem;
+    }
+
+    /* Grid adjustments */
+    .wr-stats-grid,
+    .values-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    /* Stats section */
+    .wr-stats-number {
+        font-size: 2.5rem;
+    }
+
+    .wr-stats-label {
+        font-size: 0.875rem;
+    }
+
+    /* Story cards */
+    .story-image {
+        height: 200px;
+    }
+
+    .story-title {
+        font-size: 1.25rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .story-meta {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+
+    /* Value cards */
+    .value-image {
+        height: 180px;
+    }
+
+    .value-title {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .value-item {
+        font-size: 0.875rem;
+    }
+}
+
+/* Tablet devices (768px to 1024px) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .wartsila-container {
+        padding: 1rem;
+    }
+
+    .hero-container,
+    .teks,
+    .wr-stats-container,
+    .wr-locations-container,
+    .careers-container,
+    .purpose-container,
+    .values-container,
+    .career-container,
+    .meet-container,
+    .story-container1,
+    .stories-section {
+        padding: 2rem 1.5rem;
+    }
+
+    .values-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .story-image1 {
+        height: 400px;
+    }
+}
+
+/* Landscape orientation optimizations */
 @media screen and (max-height: 500px) and (orientation: landscape) {
     .hero {
-        height: auto;
-        min-height: 300px;
+        min-height: 250px;
     }
 
     .hero-content {
         padding: 1.5rem;
-        margin-top: 1rem;
+        margin-top: 4rem;
+        text-align: left;
+    }
+    
+    .hero h1 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+    
+    .hero p {
+        font-size: 1.125rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .video-container {
+        max-height: 70vh;
+    }
+
+    .story-image1 {
+        height: 250px;
+    }
+}
+
+/* Touch device optimizations */
+@media (hover: none) {
+    .read-more-btn,
+    .story-card,
+    .career-link,
+    .purpose-link {
+        transition: none;
+    }
+
+    .play-button {
+        transform: none;
+    }
+
+    .video-controls {
+        opacity: 1;
     }
 }

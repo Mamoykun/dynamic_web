@@ -31,50 +31,6 @@
 
     <section>
         <div class="wartsila-container">
-            <div class="wartsila-sidebar">
-                <div class="wartsila-nav-item has-submenu">Wärtsilä as an investment
-                    <div class="wartsila-submenu">
-                        <div class="wartsila-submenu-item">Sustainable inverstment</div>
-                        <div class="wartsila-submenu-item">CEO review</div>
-                        <div class="wartsila-submenu-item">Factsheet</div>
-                        <div class="wartsila-submenu-item">Strategy & business model</div>
-                        <div class="wartsila-submenu-item">FAQ and glossary</div>
-                    </div>
-                </div>
-                <div class="wartsila-nav-item has-submenu">Markets
-                    <div class="wartsila-submenu">
-                        <div class="wartsila-submenu-item">Outlook</div>
-                        <div class="wartsila-submenu-item">Announced orders</div>
-                        <div class="wartsila-submenu-item">Acquisitions and divestment</div>
-                        <div class="wartsila-submenu-item">Market shares</div>
-                        <div class="wartsila-submenu-item">Competitors</div>
-                        <div class="wartsila-submenu-item">Growth drivers</div>
-                    </div>
-                </div>
-                <div class="wartsila-nav-item has-submenu">Shares
-                    <div class="wartsila-submenu">
-                        <div class="wartsila-submenu-item">Board of Directors</div>
-                        <div class="wartsila-submenu-item">Board of Management</div>
-                        <div class="wartsila-submenu-item">Corporate Management</div>
-                    </div>
-                </div>
-                <div class="wartsila-nav-item">Analytics</div>
-                <div class="wartsila-nav-item has-submenu">Shareholders
-                    <div class="wartsila-submenu">
-                        <div class="wartsila-submenu-item">Articles</div>
-                        <div class="wartsila-submenu-item">History</div>
-                        <div class="wartsila-submenu-item">Wärtsilä's sea partnerships</div>
-                        <div class="wartsila-submenu-item">Sustainable Technology Hub</div>
-                    </div>
-                </div>
-                <div class="wartsila-nav-item">Governance</div>
-                <div class="wartsila-nav-item">Financial information</div>
-                <div class="wartsila-nav-item">Report & presentations</div>
-                <div class="wartsila-nav-item">IR Calendar</div>
-                <div class="wartsila-nav-item">Investor relations</div>
-                <div class="wartsila-nav-item">IR Blog</div>
-            </div>
-
             <div class="wartsila-content">
                 <div class="reports-gallery">
                     <div class="gallery-item">
@@ -89,6 +45,18 @@
                                 loading="lazy">
                         </div>
                         <div class="gallery-text">Annual Report 2023</div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="image-wrapper">
+                            <img src="{{ asset('asset/image/foto_home.jpg') }}" alt="Roadshow" loading="lazy">
+                        </div>
+                        <div class="gallery-text">Roadshow presentation December 2024</div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="image-wrapper">
+                            <img src="{{ asset('asset/image/foto_home.jpg') }}" alt="Roadshow" loading="lazy">
+                        </div>
+                        <div class="gallery-text">Roadshow presentation December 2024</div>
                     </div>
                     <div class="gallery-item">
                         <div class="image-wrapper">
@@ -305,13 +273,7 @@
                 <section class="join-section">
                     <h1>Would you like to join our distribution list?</h1>
                     <a href="#" class="request-btn">Click here to send an e-mail request</a>
-                </section>
-                
-                <section class="survey-section">
-                    <h1>Inderes survey</h1>
-                </section>
-                
-
+                </section>           
             </div>
     </section>
 

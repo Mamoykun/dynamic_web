@@ -269,7 +269,7 @@ video::-webkit-media-controls-timeline {
     padding: 0 1rem;
 }
 
-h1 {
+.container-card h1 {
     font-size: 2rem;
     margin-bottom: 4rem;
     color: #000;
@@ -448,7 +448,6 @@ h1 {
 .header h1 {
     font-size: 2.5em;
     color: #333;
-    font-family: Arial, sans-serif;
 }
 
 .carousel {
@@ -549,7 +548,6 @@ h1 {
     top: 5%;
     left: 5%;
     color: white;
-    font-family: Arial, sans-serif;
     font-size: 3vw;
     font-weight: bold;
     z-index: 2;
@@ -612,7 +610,6 @@ h1 {
 
 .time-display {
     color: white;
-    font-family: Arial, sans-serif;
     min-width: 100px;
     text-align: center;
 }
@@ -851,6 +848,15 @@ h1 {
         gap: 20px;
     }
 
+    .main-heading,
+    .left-content h2,
+    .content-text h1,
+    .carousel-container .header h1 ,
+    .recent-news h1,
+    .subheading2{
+        font-size: 40px;
+        font-weight: 500;
+    }
     /* Stats Section */
     .stats-container {
         grid-template-columns: 1fr;

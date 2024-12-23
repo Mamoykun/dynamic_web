@@ -31,37 +31,6 @@
 
     <section>
         <div class="wartsila-container">
-            <div class="wartsila-sidebar">
-                <div class="wartsila-nav-item has-submenu">
-                    Why Wärtsilä?
-                    <div class="wartsila-submenu">
-                        <div class="wartsila-submenu-item">Our Values</div>
-                        <div class="wartsila-submenu-item">Employee benefits</div>
-                    </div>
-                </div>
-                <div class="wartsila-nav-item has-submenu">
-                    Career areas
-                    <div class="wartsila-submenu">
-                        <div class="wartsila-nav-item has-submenu">
-                            Students & Graduates
-                            <div class="wartsila-submenu">
-                                <div class="wartsila-submenu-item">Parts Coordination Management Programme</div>
-                                <div class="wartsila-submenu-item">EnergyTalent Programme</div>
-                                <div class="wartsila-submenu-item">Summer Power trainee program</div>
-                            </div>
-                        </div>
-                        <div class="wartsila-submenu-item">Field service & workshops</div>
-                    </div>
-                </div>
-                <div class="wartsila-nav-item has-submenu">
-                    Join us
-                    <div class="wartsila-submenu">
-                        <div class="wartsila-submenu-item">Recruitment process</div>
-                        <div class="wartsila-submenu-item">FAQ & Contact</div>
-                    </div>
-                </div>
-            </div>
-
             <div class="wartsila-content">
                 <section class="wartsila-hero">
                     <div class="hero-container">
@@ -351,6 +320,9 @@
                 </section>
 
                 <section>
+                    <div class="teks">
+                        <h1>Meet Andreij and Monique</h1>
+                    </div>
                     <div class="video-container-wrapper">
                         <!-- First Video -->
                         <div class="video-section">
