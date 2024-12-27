@@ -1,6 +1,6 @@
 @extends('layouts.main')
 
-@section('title', 'Home - Wärtsilä')
+@section('title', 'Select Country - Multitechnic')
 
 @section('content')
     @push('styles')
@@ -15,17 +15,17 @@
             <div class="overlay"></div>
             <div class="content">
                 <h1>Find contact information</h1>
-                <p>for all Wärtsilä offices worldwide</p>
+                <p>for all Multitechnic offices worldwide</p>
                 <a href="#" class="contact-button">Global contact information</a>
             </div>
         </div>
     </section>
 
     <section class="peta">
-        <h1>Local Wärtsilä websites</h1>
+        <h1>Local Multitechnic websites</h1>
     
     <p class="description">
-        You will find all available country websites in the list below. If you need to find contact information for a Wärtsilä office, please <a href="#">view our addresses map</a>.
+        You will find all available country websites in the list below. If you need to find contact information for a Multitechnic office, please <a href="#">view our addresses map</a>.
     </p>
 
     <div class="country-grid">

@@ -1,7 +1,7 @@
 
 @extends('layouts.main')
 
-@section('title', 'Home - Wärtsilä')
+@section('title', 'Home - Multitechnic')
 
 @section('content')
 
@@ -18,8 +18,8 @@
   <section class="conten">
     <main class="hero" style="background-image: url('{{asset('asset/image/foto_home.jpg')}}')">
       <div class="hero-text">
-        <h1>Wärtsilä</h1>
-        <p>Wärtsilä is a global leader in innovative technologies and lifecycle solutions for the marine and energy
+        <h1>Multitechnic</h1>
+        <p>Multitechnicis a global leader in innovative technologies and lifecycle solutions for the marine and energy
           markets. We emphasise innovation in sustainable technology and services to help our customers continuously
           improve their environmental and economic performance.</p>
         <a href="#" class="cta-button">Find out more</a>
@@ -35,7 +35,7 @@
         </div>
         <div class="stat-item">
           <div class="stat-number">41 500</div>
-          <div class="stat-description">vessels with Wärtsilä equipment</div>
+          <div class="stat-description">vessels with Multitechnic equipment</div>
         </div>
       </div>
     </main>
@@ -47,7 +47,7 @@
     <div class="service-card">
       <img src="{{asset('asset/image/pabrik.jpg')}}" alt="Energy Plant">
       <h2>Energy</h2>
-      <p>Wärtsilä leads the transition towards a 100% renewable energy future. We provide flexible cutting-edge
+      <p>Multitechnic leads the transition towards a 100% renewable energy future. We provide flexible cutting-edge
         solutions and services to manage and optimise complex energy systems. Through power system modelling expertise
         we help our customers on their decarbonisation journeys by providing reliable, cost optimal and future-proof
         technologies.</p>
@@ -102,8 +102,8 @@
       <div class="slide">
         <img src="{{asset('asset/image/foto pekerja pabrik.jpg')}}" alt="Factory Report" class="slide-image">
         <div class="content">
-          <h1>Meet and greet with Wärtsilä 25 Ammonia</h1>
-          <button class="download-btn">Access the Wärtsilä louge</button>
+          <h1>Meet and greet with Multitechnic 25 Ammonia</h1>
+          <button class="download-btn">Access the Multitechnic louge</button>
         </div>
       </div>
 
@@ -374,7 +374,7 @@
         <img src="{{asset('asset/image/foto_home.jpg')}}" alt="Wärtsilä engine" class="news-image">
         <div class="news-content">
           <div class="news-date">13 Nov 2024 · Trade press release</div>
-          <h2 class="news-title">Wärtsilä engines to deliver reliable power for generating facility</h2>
+          <h2 class="news-title">Multitechnic engines to deliver reliable power for generating facility</h2>
         </div>
       </a>
 
@@ -382,7 +382,7 @@
         <img src="{{asset('asset/image/pabrik report.jpg')}}" alt="Wärtsilä logo" class="news-image">
         <div class="news-content">
           <div class="news-date">11 Nov 2024 · Stock exchange release</div>
-          <h2 class="news-title">Wärtsilä President & CEO Håkan Agnevall on sick leave until 25 November</h2>
+          <h2 class="news-title">Multitechnic President & CEO Håkan Agnevall on sick leave until 25 November</h2>
         </div>
       </a>
       <div class="more-papers-container">
@@ -499,7 +499,7 @@
   <div class="career-content">
     <h1 class="career-title">Contact us</h1>
     <p class="career-description">
-      We at Wärtsilä are always on the look for bright minds to join us in our journey in shaping the decarbonisation
+      We at Multitechnic are always on the look for bright minds to join us in our journey in shaping the decarbonisation
       of marine and energy. Since 1834, Wärtsilians have challenged the general status quo and decided to make a
       difference in our society – together.
     </p>
@@ -517,7 +517,7 @@
         <img src="{{asset('asset/image/foto_home.jpg')}}" alt="Annual Report 2023">
         <div class="card-content">
           <h2 class="card-title">Annual Report 2023</h2>
-          <p class="card-description">Wärtsilä Corporation's annual report for the year 2023.</p>
+          <p class="card-description">MultitechnicCorporation's annual report for the year 2023.</p>
         </div>
       </div>
 
@@ -541,7 +541,7 @@
         <img src="{{asset('asset/image/kapal.jpg')}}" alt="Global footprint">
         <div class="card-content">
           <h2 class="card-title">Global footprint</h2>
-          <p class="card-description">Interactive visualization of Wärtsilä's global footprint.</p>
+          <p class="card-description">Interactive visualization of Multitechnic global footprint.</p>
         </div>
       </div>
     </div>

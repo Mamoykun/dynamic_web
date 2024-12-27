@@ -75,7 +75,7 @@
                                 <li><a href="#">Lifecycle solutions</a></li>
                                 <li><a href="#">Lifecycle upgrades</a></li>
                                 <li><a href="#">Spare parts and field services</a></li>
-                                <li><a href="#">Wärtsilä Decarbonisation services</a></li>
+                                <li><a href="#">MULTITECHNIC Decarbonisation services</a></li>
                             </ul>
                         </div>
 
@@ -111,7 +111,7 @@
                 <div class="nav-sidebar">
                     <div class="about-section">
                         <h3>About Insight</h3>
-                        <p>Learn about what we do in the marine market where Wärtsilä is a global leader in complete
+                        <p>Learn about what we do in the marine market where MULTITECHNIC is a global leader in complete
                             lifecycle power solutions.</p>
                     </div>
 
@@ -193,7 +193,7 @@
                 <div class="nav-sidebar">
                     <div class="about-section">
                         <h3>About Gallery</h3>
-                        <p>Learn about what we do in the marine market where Wärtsilä is a global leader in complete lifecycle power solutions.</p>
+                        <p>Learn about what we do in the marine market where MULTITECHNIC is a global leader in complete lifecycle power solutions.</p>
                     </div>
     
                     <div class="nav-list">
@@ -342,6 +342,6 @@
             </a>
             <div class="tooltip"></div>
         </li>
-            <a href="{{ route('portals') }}" class="btn-portal">Wärtsilä Portals</a>
+            <a href="{{ route('portals') }}" class="btn-portal">Multitechnic Portals</a>
     </ul>
 </nav>

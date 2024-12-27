@@ -1,6 +1,6 @@
 @extends('layouts.main')
 
-@section('title', 'Home - Wärtsilä')
+@section('title', 'Marine Shipbuilding - Multitechnic')
 
 @section('content')
 @push('styles')
