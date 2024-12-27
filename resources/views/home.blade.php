@@ -127,8 +127,7 @@
     <div class="tabs">
       <a href="#" class="tab active" data-tab="articles">Articles</a>
       <a href="#" class="tab" data-tab="case-studies">Case studies</a>
-      <a href="#" class="tab" data-tab="webinars">Webinars</a>
-      <a href="#" class="tab" data-tab="white-papers">White papers</a>
+      <a href="#" class="tab" data-tab="webinars">Exhibitions</a>
     </div>
 
     <!-- Articles -->
@@ -246,14 +245,14 @@
       </article>
     </div>
 
-    <!-- Webinars -->
+    <!-- Exhibitions -->
     <div class="articles-grid" id="webinars-content">
-      <!-- Hanya 3 artikel untuk Webinars -->
+      <!-- Hanya 3 artikel untuk Exhibitions -->
       <article class="article-card">
         <img src="{{asset('asset/image/kapal.jpg')}}" alt="Webinar on marine technology" class="article-image">
         <div class="article-content">
           <div class="article-meta">
-            <span>20 Nov 2024 · Webinar</span>
+            <span>20 Nov 2024 · Exhibitions</span>
             <span>60 min</span>
           </div>
           <h2 class="article-title">Future of Marine Propulsion: Sustainable Solutions for 2025 and Beyond</h2>
@@ -269,7 +268,7 @@
         <img src="{{asset('asset/image/pabrik.jpg')}}" alt="Energy transition webinar" class="article-image">
         <div class="article-content">
           <div class="article-meta">
-            <span>15 Nov 2024 · Webinar</span>
+            <span>15 Nov 2024 · Exhibitions</span>
             <span>45 min</span>
           </div>
           <h2 class="article-title">Navigating the Energy Transition: Practical Steps for Industry Leaders</h2>
@@ -285,7 +284,7 @@
         <img src="{{asset('asset/image/kapal report.jpg')}}" alt="Digital solutions webinar" class="article-image">
         <div class="article-content">
           <div class="article-meta">
-            <span>10 Nov 2024 · Webinar</span>
+            <span>10 Nov 2024 · Exhibitions</span>
             <span>90 min</span>
           </div>
           <h2 class="article-title">Digital Solutions for Modern Maritime Operations</h2>
@@ -298,7 +297,7 @@
       </article>
     </div>
 
-    <!-- White Papers -->
+    {{-- <!-- White Papers -->
     <div class="articles-grid" id="white-papers-content">
       <!-- Hanya 3 artikel untuk White Papers -->
       <article class="article-card">
@@ -348,7 +347,7 @@
           <span class="tag">Marine Engineering</span>
         </div>
       </article>
-    </div>
+    </div> --}}
 
     <div class="more-papers-container">
       <a href="#" class="more-papers-link">More white papers</a>

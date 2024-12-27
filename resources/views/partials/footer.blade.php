@@ -28,40 +28,27 @@
           </div>
 
           <div class="footer-col">
-            <a href="#">Suomi</a>
+            <a href="#">Indonesia</a>
           </div>
         </div>
 
         <!-- About Text Section -->
         <div class="footer-about">
-          <h3>About Wärtsilä</h3>
-          <p>Wärtsilä is a global leader in innovative technologies and lifecycle solutions for the marine and energy
-            markets. We emphasise innovation in sustainable technology and services to help our customers continuously
-            improve their environmental and economic performance.</p>
+          <h3>About Multitechnic</h3>
+          <p>If you want to know about us, please feel free to ask us at.</p>
+          <div class="contact-info">
+            <p><strong>Telp/WA:</strong> +62 817 0882 459</p>
+            <p><strong>Email:</strong> cv_mte@yahoo.com</p>
+            <p><strong>Working Hours:</strong> 7am-5pm</p>
+          </div>
         </div>
       </div>
 
-      <!-- Social Media Section -->
-      <div class="footer-social">
-        <a href="#" class="social-icon">
-          <i class="fab fa-facebook-f"></i>
-        </a>
-        <a href="#" class="social-icon">
-          <i class="fab fa-instagram"></i>
-        </a>
-        <a href="#" class="social-icon">
-          <i class="fab fa-linkedin-in"></i>
-        </a>
-        <a href="#" class="social-icon">
-          <i class="fab fa-twitter"></i>
-        </a>
-        <a href="#" class="social-icon">
-          <i class="fab fa-youtube"></i>
-        </a>
-      </div>
+      <div class="footer-contact">
+       
       <!-- Footer Bottom Section -->
       <div class="footer-bottom">
-        <p>&copy; 2024 Wärtsilä</p>
+        <p>&copy; Multitechnic-Engineering</p>
         <div class="footer-links">
           <a href="#">Privacy notice</a>
           <a href="#">Cookie notice</a>

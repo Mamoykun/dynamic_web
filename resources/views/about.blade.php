@@ -1,6 +1,6 @@
 @extends('layouts.main')
 
-@section('title', 'Home - Wärtsilä')
+@section('title', 'About - Multitechnic')
 
 @section('content')
     @push('styles')
@@ -23,7 +23,7 @@
         </div>
         <div class="hero-overlay"></div>
         <div class="hero-content">
-            <h1>Marine services</h1>
+            <h1>services</h1>
             <p>Maximise the uptime and the lifetime of your vessel.</p>
             <a href="#" class="read-more-btn">Read more</a>
         </div>
@@ -32,16 +32,27 @@
    <section>
         <div class="wartsila-container">
             <div class="wartsila-content">
-                <div class="this-watsila"><h1>This is Wärtsilä</h1></div>
-                <p>Wärtsilä is a global leader in innovative technologies and lifecycle solutions for the marine and energy markets. We emphasise innovation in sustainable technology and services to help our customers continuously improve environmental and economic performance. Our dedicated and passionate team of 17,800 professionals in more than 280 locations in 79 countries shape the decarbonisation transformation of our industries across the globe. In 2023, Wärtsilä's net sales totalled EUR 6.0 billion. Wärtsilä is listed on Nasdaq Helsinki.</p>
+                <div class="this-watsila"><h1>About Multitechnic</h1></div>
 
-                <h2>Our businesses</h2>
-                <p><strong>Wärtsilä Energy</strong> helps our customers and the power sector to accelerate their decarbonisation journeys through our market-leading technologies and power system expertise. Our solutions include flexible engine power plants, energy storage and optimisation technology, and services for the whole lifecycle of our installations. Our engines are future-proof and can run on sustainable fuels.</p>
-
-                <p><strong>Wärtsilä Marine's</strong> broad portfolio of engines, digital technologies, propulsion systems, hybrid technology, and integrated powertrain systems delivers efficiency, reliability, safety, and environmental performance. Wärtsilä Marine also supports customers with lifecycle services related to exhaust treatment, shaft line, and underwater repair.</p>
+                <h2>MULTI TECHNIC AND ENGINEERING(MTE)</h2>
+                <div class="company-intro">
+                    <p class="company-description">
+                        We Multitechnic and Engineering (MTE) has grown into a leading in the field of
+                        trading for ship spare parts, marine diesel engine, marine equipment, ship stores
+                        and ships repairing service since We have established in 2009 at Jakarta, Indonesia.
+                    </p>
+                
+                    <ul class="features-list">
+                        <li>Original Product</li>
+                        <li>Guaranted Product</li>
+                        <li>Maintenance Service</li>
+                        <li>World-Wide Wholesales Trader</li>
+                        <li>Customer Satisfaction</li>
+                    </ul>
+                </div>
 
                 <div class="video-section">
-                    <h2>Wärtsilä video</h2>
+                    <h2>Multitechnic video</h2>
                     <div class="video-container">
                         <video class="video-player">
                             <source src="{{asset('asset/video/The Vamps - Somebody To You ft. Demi Lovato.mp4')}}" type="video/mp4">
@@ -69,7 +80,7 @@
 
                 <div class="content-wrapper">
                     <div class="left-content">
-                        <h1>Wärtsilä's key figures in 2023</h1>
+                        <h1>Multitechnic key figures in 2023</h1>
                         <ul class="wartsila-figures">
                             <li>Net sales EUR 6,015 million <span class="wartsila-prev-value">(5,842)</span></li>
                             <li>Comparable operating result EUR 497 million <span class="wartsila-prev-value">(325)</span></li>
@@ -85,14 +96,14 @@
 
                 <div class="wartsila-factsheet">
                     <h2>Factsheet</h2>
-                    <p>Get a quick overview of Wärtsilä with regards to net sales, operating profit and major shareholders.</p>
+                    <p>Get a quick overview of Multitechnic with regards to net sales, operating profit and major shareholders.</p>
                     <a href="#" class="wartsila-pdf">Link to PDF</a>
                 </div>
                 <div class="wartsila-factsheet">
                         <div class="sustainability-container">
                             <div class="sustainability-title">  <h1>Sustainability</h1></div>
                             <p class="sustainability-intro">
-                                Wärtsilä has an important role in meeting the world's increased demand for energy in a sustainable way. This is the cornerstone of our commitment to sustainability.
+                                Multitechnic has an important role in meeting the world's increased demand for energy in a sustainable way. This is the cornerstone of our commitment to sustainability.
                             </p>
                             <p class="sustainability-approach">
                                 Our sustainability approach is based on economic, environmental and social performance. We strive to improve our procedures and performance across a wide front. Our overriding focus is on ensuring profitability, providing environmentally sound products and services and ensuring responsible business conduct.
@@ -104,7 +115,7 @@
                     <div class="sustainability-container">
                         <div class="sustainability-title"><h1>Code of conduct and ethical stance</h1></div>
                         <p class="sustainability-intro">
-                            Wärtsilä is committed to carrying out its business in a sustainable way. In order to promote the long-term interests of Wärtsilä and its stakeholders, the company strives to maintain the highest legal and ethical standards in all its business practices.
+                            Multitechnic is committed to carrying out its business in a sustainable way. In order to promote the long-term interests of Wärtsilä and its stakeholders, the company strives to maintain the highest legal and ethical standards in all its business practices.
                         </p>
                        
                         <a href="#" class="sustainability-link">See our sustainability pages for more information</a>

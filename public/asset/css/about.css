@@ -100,6 +100,7 @@
  
 
  .this-watsila h1 {
+    text-align: center;
     font-size: 55px;
     font-weight: 300;
 }
@@ -290,6 +291,39 @@
     margin-bottom: 20px;
  }
  
+ .company-intro {
+    max-width: 800px;
+    padding: 3rem 3rem;
+}
+
+.company-description {
+    color: #333;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.features-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.features-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    color: #333;
+    font-size: 16px;
+}
+
+.features-list li::before {
+    content: "✓";
+    color: #00bcd4;
+    margin-right: 10px;
+    font-weight: bold;
+    font-size: 18px;
+}
  .wartsila-pdf {
     display: inline-block;
     padding: 8px 20px;
@@ -437,6 +471,17 @@
        margin-top: 20px;
    }
 
+   .company-intro {
+    padding: 0 20px;
+}
+
+.company-description {
+    font-size: 14px;
+}
+
+.features-list li {
+    font-size: 14px;
+}
    .hero h1 {
        font-size: 32px;
        margin-bottom: 15px;
