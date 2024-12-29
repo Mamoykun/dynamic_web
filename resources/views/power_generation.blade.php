@@ -30,7 +30,7 @@
     </section>
     <section>
         <div class="content-watsila">
-            <h1 class="main-heading">Wärtsilä Lifecycle solutions for power plants</h1>
+            <h1 class="main-heading">Multitechnic Lifecycle solutions for power plants</h1>
         </div>
 
         <section class="content-section">
@@ -41,7 +41,7 @@
                             baseload generation declines, the share of renewables rapidly increases alongside the expanding
                             application of energy storage technology and flexible gas adoption.</p>
                         <p>Choosing a reliable partner with best-in-class expertise is essential in securing your
-                            investments. With Wärtsilä Lifecycle solutions, we maintain and optimise your power plant
+                            investments. With Multitechnic Lifecycle solutions, we maintain and optimise your power plant
                             performance.</p>
                     </div>
                     <div class="video-container">
@@ -115,13 +115,13 @@
                                     fill="currentColor" />
                             </svg>
                         </div>
-                        <h2 class="card-title">Wärtsilä Optimised maintenance</h2>
+                        <h2 class="card-title">Multitechnic Optimised maintenance</h2>
                         <p class="card-subtitle">Ensure safe and reliable operations:</p>
                         <p class="card-description">We take full responsibility for maintaining your power plant and improve
                             performance, reliability and predictability of your operations and costs.</p>
                         <ul class="features-list">
-                            <li>Maintenance by Wärtsilä</li>
-                            <li>Services and support from Wärtsilä Expertise Centres</li>
+                            <li>Maintenance by Multitechnic</li>
+                            <li>Services and support from Multitechnic Expertise Centres</li>
                             <li>Maintenance cost predictability</li>
                         </ul>
                         <a href="#" class="read-more">Read more</a>
@@ -133,14 +133,14 @@
                                 <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" fill="currentColor" />
                             </svg>
                         </div>
-                        <h2 class="card-title">Wärtsilä Guaranteed asset performance</h2>
+                        <h2 class="card-title">Multitechnic Guaranteed asset performance</h2>
                         <p class="card-subtitle">Ensure power plant performance:</p>
                         <p class="card-description">We take full responsibility for maintaining your power plant and
                             guarantee its performance.</p>
                         <ul class="features-list">
-                            <li>Maintenance by Wärtsilä</li>
+                            <li>Maintenance by Multitechnic</li>
                             <li>Performance guarantees</li>
-                            <li>Services and support from Wärtsilä Expertise Centres</li>
+                            <li>Services and support from Multitechnic Expertise Centres</li>
                         </ul>
                         <a href="#" class="read-more">Read more</a>
                     </div>
@@ -154,12 +154,12 @@
                                 <path d="M15 13H9v-2h6v2z" fill="currentColor" />
                             </svg>
                         </div>
-                        <h2 class="card-title">Wärtsilä Operation and maintenance</h2>
+                        <h2 class="card-title">Multitechnic Operation and maintenance</h2>
                         <p class="card-subtitle">Protect your investment: </p>
                         <p class="card-description">We take full responsibility for operating and maintaining your power
                             plant and guarantee its performance.</p>
                         <ul class="features-list">
-                            <li>Operation and maintenance by Wärtsilä</li>
+                            <li>Operation and maintenance by Multitechnic</li>
                             <li>Performance guarantees</li>
                             <li>Guaranteed operations and maintenance costs</li>
                         </ul>
@@ -282,19 +282,19 @@
 
             <div class="news-item">
                 <div class="date">7 May 2024 · <span class="category">Press release</span></div>
-                <div class="title">Wärtsilä service agreement central to maintaining Nigerian cement plant's production
+                <div class="title">Multitechnic service agreement central to maintaining Nigerian cement plant's production
                     schedule</div>
             </div>
 
             <div class="news-item">
                 <div class="date">25 Apr 2024 · <span class="category">Press release</span></div>
-                <div class="title">Wärtsilä Operations & Maintenance Agreement ensures production reliability for
+                <div class="title">Multitechnic Operations & Maintenance Agreement ensures production reliability for
                     Argentinian lithium mine</div>
             </div>
 
             <div class="news-item">
                 <div class="date">23 Jan 2024 · <span class="category">Trade press release</span></div>
-                <div class="title">Agreement renewal marks Wärtsilä's long-term relationship with Indonesian mining
+                <div class="title">Agreement renewal marks Multitechnic's long-term relationship with Indonesian mining
                     company</div>
             </div>
         </section>
@@ -335,7 +335,7 @@
                     <div class="card-content2">
                         <div class="date2">4 Nov 2021</div>
                         <h3 class="title2">Relentless reach with remote support</h3>
-                        <p class="description2">Amidst the coronavirus pandemic, Wärtsilä's remote support was called upon
+                        <p class="description2">Amidst the coronavirus pandemic, Multitechnic's remote support was called upon
                             to perform like...</p>
                     </div>
                 </div>
@@ -383,7 +383,7 @@
                 </div>
             </div>
             <div class="header2">
-                <h1 class="heading2">Wärtsilä Energy. Let's connect.</h1>
+                <h1 class="heading2">Multitechnic Energy. Let's connect.</h1>
                 <a href="#" class="contact-button2">Contact us</a>
             </div>
         </section>

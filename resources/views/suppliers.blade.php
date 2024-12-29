@@ -39,7 +39,7 @@
                         <div class="w1-content-wrapper">
                             <div class="w1-main-content">
                                 <p class="w1-paragraph">
-                                    By sharing common goals and having a strong business relationship with our suppliers, our success is also the success of our suppliers. By continuously improving processes and systems our goal is to sustain excellence in quality, delivery, cost-efficiency, lead-time, solutions, and innovation. At Wärtsilä, we are dedicated to maintaining the highest standards in quality and innovation, ensuring that our products and services meet the evolving needs of our customers.
+                                    By sharing common goals and having a strong business relationship with our suppliers, our success is also the success of our suppliers. By continuously improving processes and systems our goal is to sustain excellence in quality, delivery, cost-efficiency, lead-time, solutions, and innovation. At Multitechnic, we are dedicated to maintaining the highest standards in quality and innovation, ensuring that our products and services meet the evolving needs of our customers.
                                 </p>
                                 <p class="w1-paragraph">
                                     We expect both ourselves and our supplier network to consistently strive for excellence by continuously enhancing our performance and refining our processes. We need to continually assess and gauge the performance and efficiency of our processes, always looking for ways to improve, such as benchmarking. It is essential for us and our suppliers to innovate in sustainable technology and services to help our customers consistently enhance their environmental and economic outcomes.
@@ -54,8 +54,8 @@
                                     <img src="{{ asset('asset/image/kapal.jpg') }}" alt="Industrial machinery component" class="w1-featured-image">
                                 </div>
                                 <div class="w1-apply-section">
-                                    <h2 class="w1-apply-title">Apply to become a Wärtsilä supplier</h2>
-                                    <p class="w1-apply-text">Want to become a supplier to Wärtsilä?</p>
+                                    <h2 class="w1-apply-title">Apply to become a Multitechnic supplier</h2>
+                                    <p class="w1-apply-text">Want to become a supplier to Multitechnic?</p>
                                     <a href="#" class="w1-apply-link">Fill in your application here</a>
                                 </div>
                             </div>
@@ -63,12 +63,12 @@
                     </div>
                 </div>
                 <div class="w2-mission-container">
-                    <h1 class="w2-supply-title">Supply Management in Wärtsilä</h1>
+                    <h1 class="w2-supply-title">Supply Management in Multitechnic</h1>
                     
                     <h2 class="w2-subtitle">Mission</h2>
                     
                     <p class="w2-content">
-                        We create value for Wärtsilä's customers through our supplier base by ensuring supply with the right quality, delivered on time with the lowest total cost and fulfilling customer's lead time requirement.
+                        We create value for Multitechnic's customers through our supplier base by ensuring supply with the right quality, delivered on time with the lowest total cost and fulfilling customer's lead time requirement.
                     </p>
                     
                     <p class="w2-content">
@@ -96,10 +96,10 @@
                             Driving, sustaining and coordinating the Operational Excellence activities in the supplier base
                         </li>
                         <li class="w3-role-item">
-                            Secure supplier qualification and part validation (e.g. Wärtsilä Parts Approval Process, etc.)
+                            Secure supplier qualification and part validation (e.g. Multitechnic Parts Approval Process, etc.)
                         </li>
                         <li class="w3-role-item">
-                            Supplier development and production improvement (e.g. Supplier audit, Wärtsilä Production Improvement Process, Value Analysis/Value Engineering, etc.)
+                            Supplier development and production improvement (e.g. Supplier audit, Multitechnic Production Improvement Process, Value Analysis/Value Engineering, etc.)
                         </li>
                         <li class="w3-role-item">
                             Supplier compliance & risk management
@@ -116,11 +116,11 @@
             
                     <div class="w4-content">
                         <p class="w4-paragraph">
-                            To secure coordinated interfaces and synergies for the cross-divisional supplier base, Wärtsilä has a category management structure in place.
+                            To secure coordinated interfaces and synergies for the cross-divisional supplier base, Multitechnic has a category management structure in place.
                         </p>
             
                         <p class="w4-paragraph">
-                            The main direct material products and components are divided into 19 different categories, based on cross-functional category teams. The direct material categories are divided under Wärtsilä Businesses based on the major volume distribution of the materials and components of each category. The categories are managed by a category team, headed by a Category Manager with his / her Strategic Purchasers and Supplier Development Engineers.
+                            The main direct material products and components are divided into 19 different categories, based on cross-functional category teams. The direct material categories are divided under Multitechnic Businesses based on the major volume distribution of the materials and components of each category. The categories are managed by a category team, headed by a Category Manager with his / her Strategic Purchasers and Supplier Development Engineers.
                         </p>
                     </div>
                 

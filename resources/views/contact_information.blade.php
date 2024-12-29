@@ -24,21 +24,21 @@
         <div class="hero-overlay"></div>
         <div class="hero-content">
             <h1>Find contact information</h1>
-            <p>for all Wärtsilä offices worldwide</p>
+            <p>for all Multitechnic offices worldwide</p>
             <a href="#" class="read-more-btn">Global contact information</a>
         </div>
     </section>
 
     <section>
         <div class="wartsila-container">
-            <h1 class="wartsila-title">Contact Wärtsilä</h1>
+            <h1 class="wartsila-title">Contact Multitechnic</h1>
             
             <div class="wartsila-contact-grid">
               <div class="wartsila-contact-section">
                 <h2 class="wartsila-section-title">Head office <a href="#" class="wartsila-link">[See map here]</a></h2>
                 <div class="wartsila-address">
-                  <a href="#" class="wartsila-link">Wärtsilä Helsinki Campus</a>
-                  <p class="wartsila-text">Wärtsilä Corporation</p>
+                  <a href="#" class="wartsila-link">Multitechnic Helsinki Campus</a>
+                  <p class="wartsila-text">Multitechnic Corporation</p>
                   <p class="wartsila-text">Hiililaiturinkuja 2</p>
                   <p class="wartsila-text">FI-00180 Helsinki</p>
                   <p class="wartsila-text">Finland</p>
@@ -53,9 +53,9 @@
               <div class="wartsila-contact-section">
                 <h2 class="wartsila-section-title">Postal address</h2>
                 <div class="wartsila-address">
-                  <p class="wartsila-text">Wärtsilä Corporation</p>
+                  <p class="wartsila-text">Multitechnic Corporation</p>
                   <p class="wartsila-text">P.O. Box 1834</p>
-                  <p class="wartsila-text">FI-00080 WÄRTSILÄ</p>
+                  <p class="wartsila-text">FI-00080 Multitechnic</p>
                   <p class="wartsila-text">Finland</p>
                 </div>
                 <div class="wartsila-contact-info">
@@ -67,7 +67,7 @@
               <div class="wartsila-contact-section">
                 <h2 class="wartsila-section-title">Invoicing address</h2>
                 <div class="wartsila-address">
-                  <p class="wartsila-text">Wärtsilä Corporation</p>
+                  <p class="wartsila-text">Multitechnic Corporation</p>
                   <p class="wartsila-text">P.O. Box 321</p>
                   <p class="wartsila-text">FI-65101 Vaasa</p>
                   <p class="wartsila-text">Finland</p>
@@ -77,7 +77,7 @@
               <div class="wartsila-contact-section">
                 <h2 class="wartsila-section-title">Global address book</h2>
                 <div class="wartsila-address">
-                  <a href="#" class="wartsila-link">Map, 24h service numbers and contact details of all Wärtsilä offices, production facilities and workshops globally</a>
+                  <a href="#" class="wartsila-link">Map, 24h service numbers and contact details of all Multitechnic offices, production facilities and workshops globally</a>
                 </div>
               </div>
             </div>
@@ -136,7 +136,7 @@
               </a>
               
               <a href="#" class="wartsila-option-card">
-                <p class="wartsila-option-text">Log in or request access to Wärtsilä portals</p>
+                <p class="wartsila-option-text">Log in or request access to Multitechnic portals</p>
                 <div class="wartsila-external-link">
                   <svg viewBox="0 0 24 24">
                     <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/>
@@ -158,8 +158,8 @@
 
     <section>
         <div class="wartsila-social">
-            <h1 class="wartsila-social-title">Wärtsilä social</h1>
-            <p class="wartsila-social-subtitle">Follow Wärtsilä in social channels</p>
+            <h1 class="wartsila-social-title">Multitechnic social</h1>
+            <p class="wartsila-social-subtitle">Follow Multitechnic in social channels</p>
             
             <div class="wartsila-social-icons">
               <a href="#" class="wartsila-social-link">
