@@ -356,7 +356,7 @@
   <!-- Latest insights end -->
 
   <!-- Latest press releases and news -->
-  <div class="container">
+  {{-- <div class="container">
     <!-- News Section -->
     <section class="news-section">
       <h1>Latest press releases and news</h1>
@@ -417,7 +417,7 @@
         <a href="#" class="more-papers-link">More events</a>
       </div>
     </section>
-  </div>
+  </div> --}}
   <!-- Latest press releases and news end -->
   <!-- Career at Wärtsilä -->
   <section class="atur_posisi_career">
@@ -511,7 +511,7 @@
 </section>
   <!-- career at watsila end -->
   <!-- 4 konten -->
-  <section>
+  {{-- <section>
     <div class="container">
       <div class="card">
         <img src="{{asset('asset/image/foto_home.jpg')}}" alt="Annual Report 2023">
@@ -545,5 +545,5 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> --}}
   <!-- 4 konten end -->

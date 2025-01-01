@@ -94,12 +94,12 @@
                     </div>
                 </div>
 
-                <div class="wartsila-factsheet">
+                {{-- <div class="wartsila-factsheet">
                     <h2>Factsheet</h2>
                     <p>Get a quick overview of Multitechnic with regards to net sales, operating profit and major shareholders.</p>
                     <a href="#" class="wartsila-pdf">Link to PDF</a>
-                </div>
-                <div class="wartsila-factsheet">
+                </div> --}}
+                {{-- <div class="wartsila-factsheet">
                         <div class="sustainability-container">
                             <div class="sustainability-title">  <h1>Sustainability</h1></div>
                             <p class="sustainability-intro">
@@ -110,8 +110,8 @@
                             </p>
                             <a href="#" class="sustainability-link">See our sustainability pages for more information</a>
                         </div>
-                </div>
-                <div class="wartsila-factsheet">
+                </div> --}}
+                {{-- <div class="wartsila-factsheet">
                     <div class="sustainability-container">
                         <div class="sustainability-title"><h1>Code of conduct and ethical stance</h1></div>
                         <p class="sustainability-intro">
@@ -120,7 +120,7 @@
                        
                         <a href="#" class="sustainability-link">See our sustainability pages for more information</a>
                     </div>
-            </div>
+            </div> --}}
             </div>
         </div>
     </section>
