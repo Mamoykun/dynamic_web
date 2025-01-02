@@ -15,17 +15,17 @@
             <div class="overlay"></div>
             <div class="content">
                 <h1>Find contact information</h1>
-                <p>for all Multitechnic offices worldwide</p>
+                <p>for all MULTITECHNIC offices worldwide</p>
                 <a href="#" class="contact-button">Global contact information</a>
             </div>
         </div>
     </section>
 
     <section class="peta">
-        <h1>Local Multitechnic websites</h1>
+        <h1>Local MULTITECHNIC websites</h1>
     
     <p class="description">
-        You will find all available country websites in the list below. If you need to find contact information for a Multitechnic office, please <a href="#">view our addresses map</a>.
+        You will find all available country websites in the list below. If you need to find contact information for a MULTITECHNIC office, please <a href="#">view our addresses map</a>.
     </p>
 
     <div class="country-grid">

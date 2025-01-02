@@ -37,7 +37,7 @@
                         <h1 class="hero-title">Fuel your power with us, one of the world's most influential companies</h1>
 
                         <p class="hero-intro">
-                            We are Multitechnic – one global team of purpose-driven experts committed to decarbonising the
+                            We are MULTITECHNIC – one global team of purpose-driven experts committed to decarbonising the
                             marine and energy industries. Operating under our leadership behaviours and core values of
                             customer success, passion, and performance, we are united in shaping a sustainable future for
                             societies.
@@ -132,7 +132,7 @@
 
                 <section>
                     <div class="careers-container">
-                        <h1 class="careers-header">Sense of belonging at Multitechnic</h1>
+                        <h1 class="careers-header">Sense of belonging at MULTITECHNIC</h1>
 
                         <div class="careers-grid">
                             <div class="careers-content">
@@ -142,14 +142,14 @@
                                 </p>
 
                                 <div class="careers-stats">
-                                    <p>Based on our MyVoice employee engagement survey, Multitechnic's employee engagement index
+                                    <p>Based on our MyVoice employee engagement survey, MULTITECHNIC's employee engagement index
                                         score is at 82%. This figure represents the percentage of employees who report being
                                         highly engaged with the company.</p>
 
                                     <p>Wärtsilians consistently rate our relationships with managers and peers as
                                         exceptional. 88% of our respondents feel that they are treated with respect at work.
                                         Furthermore, 89% of our people feel that there is zero tolerance for any kind of
-                                        discrimination and harassment at Multitechnic.</p>
+                                        discrimination and harassment at MULTITECHNIC.</p>
                                 </div>
                             </div>
 
@@ -180,15 +180,15 @@
 
                         <div class="purpose-content">
                             <p class="purpose-text">
-                                Multitechnic's purpose and values lay the foundation for <a href="#"
+                                MULTITECHNIC's purpose and values lay the foundation for <a href="#"
                                     class="purpose-link">our strategy</a>. Our purpose – <span
                                     class="purpose-emphasis">Enabling sustainable societies through innovation in
                                     technology and services</span> – defines why we exist as a company and guides the way
-                                forward: how everyone at Multitechnic can make a difference for the world.
+                                forward: how everyone at MULTITECHNIC can make a difference for the world.
                             </p>
 
                             <p class="purpose-text">
-                                Multitechnic values unite everyone in the company and bring the strategy to life by guiding our
+                                MULTITECHNIC values unite everyone in the company and bring the strategy to life by guiding our
                                 priorities, decision-making, and behaviour when working together in everyday situations.
                             </p>
 
@@ -243,7 +243,7 @@
 
                 <section>
                     <div class="career-container">
-                        <h1 class="career-title">Career mobility in Multitechnic</h1>
+                        <h1 class="career-title">Career mobility in MULTITECHNIC</h1>
 
                         <p class="career-intro">
                             Through internal career mobility options, we enable our people to acquire new knowledge, build
@@ -252,7 +252,7 @@
 
                         <ul class="career-options">
                             <li class="career-option-item">
-                                Apply for one of Multitechnic's open positions through our internal recruitment platform.
+                                Apply for one of MULTITECHNIC's open positions through our internal recruitment platform.
                             </li>
                             <li class="career-option-item">
                                 Apply for a specific job rotation role that is a short and fixed term vacancy in another
@@ -278,9 +278,9 @@
 
                         <div class="meet-content">
                             <p class="meet-text">
-                                As we celebrate Multitechnic's 190th anniversary in 2024, we are honouring some of our
+                                As we celebrate MULTITECHNIC's 190th anniversary in 2024, we are honouring some of our
                                 pioneering colleagues by sharing their career stories. Find out, through their eyes, what is
-                                it like to work at Multitechnic:
+                                it like to work at MULTITECHNIC:
                                 <a href="https://www.wartsila.com/about/190"
                                     class="meet-link">https://www.wartsila.com/about/190</a>.
                             </p>
@@ -309,7 +309,7 @@
                                     construction, and use.</p>
 
                                 <p class="story-text1">Over the last 14 years, he has immersed himself in various roles
-                                    across Multitechnic, including project management and lifecycle services both in the energy
+                                    across MULTITECHNIC, including project management and lifecycle services both in the energy
                                     and marine industries. In the meantime, he has also built a network of trusted
                                     colleagues. Now he sees himself as an energy professional, ready to dive into new
                                     opportunities and sell many more power plants.</p>

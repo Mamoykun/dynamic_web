@@ -20,7 +20,7 @@
     <img src="{{ asset('asset/image/pabrik.jpg') }}" alt="Building" class="hero-image">
     <div class="hero-overlay"></div>
     <div class="hero-content">
-        <h1>Optimised and reliable energy with Multitechnicsolutions</h1>
+        <h1>Optimised and reliable energy with MULTITECHNICsolutions</h1>
         <p>Building power systems for future generations</p>
     </div>
 </div>
@@ -113,6 +113,6 @@
 
 <!-- Connect Section -->
 <section class="connect-section">
-    <h2 class="connect-title">Multitechnic Energy. Let's connect.</h2>
+    <h2 class="connect-title">MULTITECHNIC Energy. Let's connect.</h2>
     <a href="#" class="contact-button">Contact us</a>
 </section>

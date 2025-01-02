@@ -16,7 +16,7 @@
 </section>
 <section class="hero">
     <div class="welcome">
-        <h1>Welcome to Multitechnic online portals</h1>
+        <h1>Welcome to MULTITECHNIC online portals</h1>
     </div>
 </section>
 <section class="conten">
@@ -25,8 +25,8 @@
                 <h1>Energy</h1>
                 
                 <div class="link-item">
-                    <a href="#">Multitechnic Online</a>
-                    <p class="description">Multitechnic customer platform. <span class="info-icon"></span></p>
+                    <a href="#">MULTITECHNIC Online</a>
+                    <p class="description">MULTITECHNIC customer platform. <span class="info-icon"></span></p>
                 </div>
     
                 <div class="link-item">
@@ -45,7 +45,7 @@
                 </div>
     
                 <div class="link-item">
-                    <a href="#">Multitechnic Land & Sea Academy</a>
+                    <a href="#">MULTITECHNIC Land & Sea Academy</a>
                     <p class="description">Training courses. <span class="info-icon"></span></p>
                 </div>
     
@@ -59,8 +59,8 @@
                 <h1>Marine</h1>
                 
                 <div class="link-item">
-                    <a href="#">Multitechnic Online</a>
-                    <p class="description">Multitechnic customer platform. <span class="info-icon"></span></p>
+                    <a href="#">MULTITECHNIC Online</a>
+                    <p class="description">MULTITECHNIC customer platform. <span class="info-icon"></span></p>
                 </div>
     
                 <div class="link-item">
@@ -69,7 +69,7 @@
                 </div>
     
                 <div class="link-item">
-                    <a href="#">MultitechnicLand & Sea Academy</a>
+                    <a href="#">MULTITECHNICLand & Sea Academy</a>
                     <p class="description">Training courses. <span class="info-icon"></span></p>
                 </div>
     

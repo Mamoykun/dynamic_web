@@ -164,12 +164,12 @@
                             <div class="release-list">
                                 <article class="release-item">
                                     <span class="release-date">27 Nov 2024 · Press release</span>
-                                    <a href="#" class="release-title">Major Bangladeshi conglomerate selects Multitechnic cargo handling system for new LPG Carrier vessel</a>
+                                    <a href="#" class="release-title">Major Bangladeshi conglomerate selects MULTITECHNIC cargo handling system for new LPG Carrier vessel</a>
                                 </article>
                 
                                 <article class="release-item">
                                     <span class="release-date">26 Nov 2024 · Press release</span>
-                                    <a href="#" class="release-title">Multitechnic joins new consortium to explore hydrogen-argon power cycle for net-zero power generation</a>
+                                    <a href="#" class="release-title">MULTITECHNIC joins new consortium to explore hydrogen-argon power cycle for net-zero power generation</a>
                                 </article>
                 
                                 <article class="release-item">
@@ -184,17 +184,17 @@
                             <div class="release-list">
                                 <article class="release-item">
                                     <span class="release-date">11 Nov 2024 · Stock exchange release</span>
-                                    <a href="#" class="release-title">Multitechnic President & CEO Håkan Agnevall on sick leave until 25 November</a>
+                                    <a href="#" class="release-title">MULTITECHNIC President & CEO Håkan Agnevall on sick leave until 25 November</a>
                                 </article>
                 
                                 <article class="release-item">
                                     <span class="release-date">29 Oct 2024 · Stock exchange release</span>
-                                    <a href="#" class="release-title">Multitechnic's Interim Report January–September 2024</a>
+                                    <a href="#" class="release-title">MULTITECHNIC's Interim Report January–September 2024</a>
                                 </article>
                 
                                 <article class="release-item">
                                     <span class="release-date">18 Oct 2024 · Flagging notifications</span>
-                                    <a href="#" class="release-title">Notification in accordance with the Finnish Securities Market Act Chapter 9 § 5: Varma Mutual Pension Insurance Company's holding in Multitechnic Corporation</a>
+                                    <a href="#" class="release-title">Notification in accordance with the Finnish Securities Market Act Chapter 9 § 5: Varma Mutual Pension Insurance Company's holding in MULTITECHNIC Corporation</a>
                                 </article>
                             </div>
                         </div>
@@ -222,7 +222,7 @@
                             <div class="blog-content">
                                 <span class="blog-date">29 Oct 2024 · Blog post</span>
                                 <h2>Key messages and Q&A on Interim Report January–September 2024</h2>
-                                <p>Multitechnic published its Interim...</p>
+                                <p>MULTITECHNIC published its Interim...</p>
                             </div>
                         </article>
                 

@@ -24,7 +24,7 @@
         <img src="{{ asset('asset/image/pabrik.jpg')}}" alt="Cape Town Landscape" class="wrts-hero__image">
         <div class="wrts-hero__overlay"></div>
         <div class="wrts-hero__content">
-            <h1 class="wrts-hero__heading">Multitechnic Energy in Africa</h1>
+            <h1 class="wrts-hero__heading">MULTITECHNIC Energy in Africa</h1>
         </div>
     </section>
 
@@ -56,7 +56,7 @@
                 </div>
                 <div>
                     <h3 class="wrts-stats__number">600+</h3>
-                    <p class="wrts-stats__text">Multitechnic engines installed across the continent</p>
+                    <p class="wrts-stats__text">MULTITECHNIC engines installed across the continent</p>
                 </div>
                 <div>
                     <h3 class="wrts-stats__number">180+</h3>
@@ -69,8 +69,8 @@
         <img src="{{ asset('asset/image/foto pekerja pabrik.jpg')}}" alt="Engine Technology" class="wrts-tech__image">
         <div class="wrts-container">
             <div class="wrts-tech__content">
-                <h2 class="wrts-tech__heading">Powering Africa with Multitechnic's Flexible Engine Technology</h2>
-                <p class="wrts-tech__text">Multitechnic engines are the best choice to provide flexible, efficient and decarbonised energy to the continent</p>
+                <h2 class="wrts-tech__heading">Powering Africa with MULTITECHNIC's Flexible Engine Technology</h2>
+                <p class="wrts-tech__text">MULTITECHNIC engines are the best choice to provide flexible, efficient and decarbonised energy to the continent</p>
             </div>
         </div>
     </section>
@@ -79,8 +79,8 @@
         <div class="wrts-container">
             <div class="wrts-ref__grid">
                 <div>
-                    <h2 class="wrts-ref__heading">Multitechnic's industry firsts in Africa</h2>
-                    <p class="wrts-ref__text">With more than 650 employees and service hubs located in Kenya, South Africa, Nigeria and Senegal, Multitechnic is proud to have contributed to many industry firsts.</p>
+                    <h2 class="wrts-ref__heading">MULTITECHNIC's industry firsts in Africa</h2>
+                    <p class="wrts-ref__text">With more than 650 employees and service hubs located in Kenya, South Africa, Nigeria and Senegal, MULTITECHNIC is proud to have contributed to many industry firsts.</p>
                     <p class="wrts-ref__text">Another first, the KivuWatt power plant in Rwanda, is the first ever power plant to use the naturally occurring methane from lake Kivu to generate electricity.</p>
                 </div>
                 <div>
@@ -343,8 +343,8 @@
             <img src="{{ asset('asset/image/pabrik.jpg') }}" alt="Energy Storage Facility" class="wartsila-hero-image">
             <div class="wartsila-hero-overlay"></div>
             <div class="wartsila-hero-content">
-                <h1 class="wartsila-hero-title">Multitechnic Energy Storage and Optimisation</h1>
-                <p class="wartsila-hero-description">Multitechnic Energy Storage & Optimisation offers unrivalled solutions to the most pressing energy challenges, including the integration of more renewables.</p>
+                <h1 class="wartsila-hero-title">MULTITECHNIC Energy Storage and Optimisation</h1>
+                <p class="wartsila-hero-description">MULTITECHNIC Energy Storage & Optimisation offers unrivalled solutions to the most pressing energy challenges, including the integration of more renewables.</p>
             </div>
         </div>
     </section>
@@ -360,7 +360,7 @@
                         <span class="press-custom-type">Press release</span>
                     </div>
                     <a href="#" class="press-custom-link">
-                        <h2 class="press-custom-heading">Multitechnic joins new consortium to explore hydrogen-argon power cycle for net-zero power generation</h2>
+                        <h2 class="press-custom-heading">MULTITECHNIC joins new consortium to explore hydrogen-argon power cycle for net-zero power generation</h2>
                     </a>
                 </article>
     
@@ -382,7 +382,7 @@
                         <span class="press-custom-type">Trade press release</span>
                     </div>
                     <a href="#" class="press-custom-link">
-                        <h2 class="press-custom-heading">Multitechnic engines to deliver reliable power for generating facility</h2>
+                        <h2 class="press-custom-heading">MULTITECHNIC engines to deliver reliable power for generating facility</h2>
                     </a>
                 </article>
             </div>
@@ -411,7 +411,7 @@
             </div>
     
             <div class="wartsila-footer">
-                <h1 class="wartsila-title">Multitechnic Energy. Let's connect.</h1>
+                <h1 class="wartsila-title">MULTITECHNIC Energy. Let's connect.</h1>
                 <a href="#" class="wartsila-contact-btn">Contact us</a>
             </div>
         </div>

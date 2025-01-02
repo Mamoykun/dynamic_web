@@ -34,7 +34,7 @@
 
         <!-- About Text Section -->
         <div class="footer-about">
-          <h3>About Multitechnic</h3>
+          <h3>About MULTITECHNIC</h3>
           <p>If you want to know about us, please feel free to ask us at.</p>
           <div class="contact-info">
             <p><strong>Telp/WA:</strong> +62 817 0882 459</p>

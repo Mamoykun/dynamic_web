@@ -32,12 +32,12 @@
    <section>
         <div class="wartsila-container">
             <div class="wartsila-content">
-                <div class="this-watsila"><h1>About Multitechnic</h1></div>
+                <div class="this-watsila"><h1>About MULTITECHNIC</h1></div>
 
                 <h2>MULTI TECHNIC AND ENGINEERING(MTE)</h2>
                 <div class="company-intro">
                     <p class="company-description">
-                        We Multitechnic and Engineering (MTE) has grown into a leading in the field of
+                        We MULTITECHNIC and Engineering (MTE) has grown into a leading in the field of
                         trading for ship spare parts, marine diesel engine, marine equipment, ship stores
                         and ships repairing service since We have established in 2009 at Jakarta, Indonesia.
                     </p>
@@ -52,7 +52,7 @@
                 </div>
 
                 <div class="video-section">
-                    <h2>Multitechnic video</h2>
+                    <h2>MULTITECHNIC video</h2>
                     <div class="video-container">
                         <video class="video-player">
                             <source src="{{asset('asset/video/The Vamps - Somebody To You ft. Demi Lovato.mp4')}}" type="video/mp4">
@@ -80,7 +80,7 @@
 
                 <div class="content-wrapper">
                     <div class="left-content">
-                        <h1>Multitechnic key figures in 2023</h1>
+                        <h1>MULTITECHNIC key figures in 2023</h1>
                         <ul class="wartsila-figures">
                             <li>Net sales EUR 6,015 million <span class="wartsila-prev-value">(5,842)</span></li>
                             <li>Comparable operating result EUR 497 million <span class="wartsila-prev-value">(325)</span></li>

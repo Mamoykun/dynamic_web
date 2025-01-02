@@ -35,7 +35,7 @@
         <div class="hero-text">
             <p>The energy landscape is in transition towards more flexible and sustainable energy systems. We envision a
                 100% renewable energy future.</p>
-            <p>Multitechnic is at the forefront of the transition – we understand, design, build and serve optimal power systems
+            <p>MULTITECHNIC is at the forefront of the transition – we understand, design, build and serve optimal power systems
                 for future generations.</p>
             <p>Today we are far away from fully renewable energy systems. However, renewables are becoming the major energy
                 source in many regions, pushing inflexible power generation out of the system. When renewables are not
@@ -145,7 +145,7 @@
                 <a href="#" class="material-card">
                     <img src="{{ asset('asset/image/pabrik.jpg') }}" alt="Wärtsilä Energy 2024">
                     <div class="card-content">
-                        <h2>Multitechnic Energy<br>2024</h2>
+                        <h2>MULTITECHNIC Energy<br>2024</h2>
                         <p>Explore the company<br>presentation</p>
                     </div>
                 </a>
@@ -188,7 +188,7 @@
     <section class="connect-section">
         <div class="container">
             <div class="connect-content">
-                <h2 class="connect-title">Multitechnic Energy. Let's connect.</h2>
+                <h2 class="connect-title">MULTITECHNIC Energy. Let's connect.</h2>
                 <a href="#" class="contact-button">Contact us</a>
             </div>
         </div>

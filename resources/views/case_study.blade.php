@@ -70,18 +70,18 @@
 
                     <div class="article-footer">
                         <div class="get-in-touch">
-                            <a href="#">Get in touch to talk</a> about a cyber incident exercise with Multitechnic.
+                            <a href="#">Get in touch to talk</a> about a cyber incident exercise with MULTITECHNIC.
                         </div>
                     
                         <div class="article-note">
-                            This article about maritime cyber security, describing the learnings from a cyber incident exercise first appeared as one of Multitechnic's Insights stories.
+                            This article about maritime cyber security, describing the learnings from a cyber incident exercise first appeared as one of MULTITECHNIC's Insights stories.
                         </div>
                     
                         <div class="written-by">Written by</div>
                         
                         <div class="author-info">
                             <a href="#" class="author-name">Ian Hamilton</a><br>
-                            <a href="#" class="author-title">for Multitechnic Marine Marketing</a>
+                            <a href="#" class="author-title">for MULTITECHNIC Marine Marketing</a>
                         </div>
                     </div>
                 </article>
@@ -100,9 +100,9 @@
             <div class="wcs-card-wrapper">
                 <img src="{{ asset('asset/image/foto_home.jpg') }}" alt="Cyber services dashboard" class="wcs-card-image">
                 <div class="wcs-card-content">
-                    <h2 class="wcs-card-title">Multitechnic Cyber services</h2>
+                    <h2 class="wcs-card-title">MULTITECHNIC Cyber services</h2>
                     <p class="wcs-card-description">
-                        Multitechnic Cyber services help to understand the cyber security status of operational environment
+                        MULTITECHNIC Cyber services help to understand the cyber security status of operational environment
                     </p>
                 </div>
             </div>

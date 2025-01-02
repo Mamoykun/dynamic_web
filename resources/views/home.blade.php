@@ -18,13 +18,13 @@
   <section class="conten">
     <main class="hero" style="background-image: url('{{asset('asset/image/foto_home.jpg')}}')">
       <div class="hero-text">
-        <h1>Multitechnic</h1>
-        <p>Multitechnicis a global leader in innovative technologies and lifecycle solutions for the marine and energy
+        <h1>MULTITECHNIC</h1>
+        <p>MULTITECHNIC a global leader in innovative technologies and lifecycle solutions for the marine and energy
           markets. We emphasise innovation in sustainable technology and services to help our customers continuously
           improve their environmental and economic performance.</p>
         <a href="#" class="cta-button">Find out more</a>
       </div>
-      <div class="stats">
+      {{-- <div class="stats">
         <div class="stat-item">
           <div class="stat-number">17 800</div>
           <div class="stat-description">employees in 79 countries</div>
@@ -37,7 +37,7 @@
           <div class="stat-number">41 500</div>
           <div class="stat-description">vessels with Multitechnic equipment</div>
         </div>
-      </div>
+      </div> --}}
     </main>
   </section>
   <!-- conten 1 home end-->
@@ -47,7 +47,7 @@
     <div class="service-card">
       <img src="{{asset('asset/image/pabrik.jpg')}}" alt="Energy Plant">
       <h2>Energy</h2>
-      <p>Multitechnic leads the transition towards a 100% renewable energy future. We provide flexible cutting-edge
+      <p>MULTITECHNIC leads the transition towards a 100% renewable energy future. We provide flexible cutting-edge
         solutions and services to manage and optimise complex energy systems. Through power system modelling expertise
         we help our customers on their decarbonisation journeys by providing reliable, cost optimal and future-proof
         technologies.</p>
@@ -58,7 +58,7 @@
     <div class="service-card">
       <img src="{{asset('asset/image/kapal.jpg')}}" alt="Marine Ship">
       <h2>Marine</h2>
-      <p>Build your success with Multitechnic broad portfolio of marine technology. Engines, propulsion systems, hybrid
+      <p>Build your success with MULTITECHNIC broad portfolio of marine technology. Engines, propulsion systems, hybrid
         solutions, data and digital tools, liquid and gas handling on vessels, and integrated powertrain systems. These
         building blocks offer you efficiency, reliability, safety, and world-class environmental performance.</p>
       <p>The offering includes performance-based agreements and lifecycle solutions as well as spare parts services and
@@ -102,8 +102,8 @@
       <div class="slide">
         <img src="{{asset('asset/image/foto pekerja pabrik.jpg')}}" alt="Factory Report" class="slide-image">
         <div class="content">
-          <h1>Meet and greet with Multitechnic 25 Ammonia</h1>
-          <button class="download-btn">Access the Multitechnic louge</button>
+          <h1>Meet and greet with MULTITECHNIC 25 Ammonia</h1>
+          <button class="download-btn">Access the MULTITECHNIC louge</button>
         </div>
       </div>
 
@@ -499,7 +499,7 @@
   <div class="career-content">
     <h1 class="career-title">Contact us</h1>
     <p class="career-description">
-      We at Multitechnic are always on the look for bright minds to join us in our journey in shaping the decarbonisation
+      We at MULTITECHNIC are always on the look for bright minds to join us in our journey in shaping the decarbonisation
       of marine and energy. Since 1834, Wärtsilians have challenged the general status quo and decided to make a
       difference in our society – together.
     </p>
