@@ -60,7 +60,7 @@
                 
                 <div class="link-item">
                     <a href="#">Multitechnic Online</a>
-                    <p class="description">Wärtsilä customer platform. <span class="info-icon"></span></p>
+                    <p class="description">Multitechnic customer platform. <span class="info-icon"></span></p>
                 </div>
     
                 <div class="link-item">

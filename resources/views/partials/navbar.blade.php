@@ -27,7 +27,7 @@
                     <!-- About Section -->
                     <div class="about-section">
                         <h3>About Product & Services</h3>
-                        <p>Learn about what we do in the energy market where Wärtsilä is a global leader in complete
+                        <p>Learn about what we do in the energy market where Multitechnic is a global leader in complete
                             lifecycle power solutions.</p>
                     </div>
 

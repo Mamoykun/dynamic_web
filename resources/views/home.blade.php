@@ -58,7 +58,7 @@
     <div class="service-card">
       <img src="{{asset('asset/image/kapal.jpg')}}" alt="Marine Ship">
       <h2>Marine</h2>
-      <p>Build your success with Wärtsilä's broad portfolio of marine technology. Engines, propulsion systems, hybrid
+      <p>Build your success with Multitechnic broad portfolio of marine technology. Engines, propulsion systems, hybrid
         solutions, data and digital tools, liquid and gas handling on vessels, and integrated powertrain systems. These
         building blocks offer you efficiency, reliability, safety, and world-class environmental performance.</p>
       <p>The offering includes performance-based agreements and lifecycle solutions as well as spare parts services and
