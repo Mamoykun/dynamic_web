@@ -94,26 +94,9 @@
             <hr class="wcs-divider">
         </div>
     </section>
-    <section>
-        <div class="wcs-container">
-            <h1 class="wcs-main-heading">Related solutions</h1>
-            <div class="wcs-card-wrapper">
-                <img src="{{ asset('asset/image/foto_home.jpg') }}" alt="Cyber services dashboard" class="wcs-card-image">
-                <div class="wcs-card-content">
-                    <h2 class="wcs-card-title">MULTITECHNIC Cyber services</h2>
-                    <p class="wcs-card-description">
-                        MULTITECHNIC Cyber services help to understand the cyber security status of operational environment
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
+   
 
-    <section>
-        <div class="wcs-divider-container">
-            <hr class="wcs-divider">
-        </div>
-    </section>
+
 
     <section>
         <div class="rct-container">
