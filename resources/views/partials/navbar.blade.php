@@ -251,7 +251,7 @@
                 <div class="nav-sidebar">
                     <div class="about-section">
                         <h3>Company</h3>
-                        <p>Learn about what we do in the marine market where Wärtsilä is a global leader in complete
+                        <p>Learn about what we do in the marine market where MULTITECHNIC is a global leader in complete
                             lifecycle power solutions.</p>
                     </div>
 
@@ -273,7 +273,7 @@
                             <span class="arrow">→</span>
                         </a>
                         <a href="{{ route('careers') }}" class="nav-item" id="careers-button">
-                            <span>Careers & Multitechnic</span>
+                            <span>Careers At Multitechnic</span>
                             <span class="arrow">→</span>
                         </a>
                     </div>
